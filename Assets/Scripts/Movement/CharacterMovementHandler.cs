@@ -5,11 +5,14 @@ using Fusion;
 
 public class CharacterMovementHandler : NetworkBehaviour
 {
+    Vector2 viewInput;
+
     NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
 
     private void Awake()
     {
         networkCharacterControllerPrototypeCustom = GetComponent<NetworkCharacterControllerPrototypeCustom>();
+        
     }
 
     void Start()
@@ -30,6 +33,14 @@ public class CharacterMovementHandler : NetworkBehaviour
             moveDirection.Normalize();
 
             networkCharacterControllerPrototypeCustom.Move(moveDirection);
+
+            if (networkInputData.isJumpPressed)
+                networkCharacterControllerPrototypeCustom.Jump();
         }
+    }
+
+    public void SetViewInputVector(Vector2 viewInput)
+    {
+        this.viewInput = viewInput;
     }
 }

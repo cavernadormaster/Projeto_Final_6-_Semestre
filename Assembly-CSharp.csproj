@@ -63,6 +63,7 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionProfiler.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionStatsBillboard.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\ToggleRunnerVisibility.cs" />
+    <Compile Include="Assets\Scripts\Movement\NetworkCharacterControllerPrototypeCustom.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionStatsMeterBar.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionPhotonClientSocket.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\InputBehaviourPrototype.cs" />
@@ -76,11 +77,14 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\Materials\FusionPrototypingTextures.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\Utilities\FusionUnitySceneManagerUtils.cs" />
+    <Compile Include="Assets\Scripts\Movement\CharacterMovementHandler.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Utilities\FusionEditorUtilitiesExternal.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionBurstIntegration.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\ToggleRunnerProvideInput.cs" />
+    <Compile Include="Assets\Scripts\NetWork\NetWorkInputData.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\NetworkRunnerExtensions.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionStatsObjectIds.cs" />
+    <Compile Include="Assets\Scripts\Input\CharacterInputHandler.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Utilities\NetworkProjectUtilities.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\SpawnPoints\SpawnerPrototypeT.cs" />
@@ -105,10 +109,6 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\SpawnPoints\PlayerSpawnPointManagerPrototype.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\ControllerPrototype.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionGraph.cs" />
-    <Compile Include="Assets\Scripts\Movement\NetworkCharacterControllerPrototypeCustom.cs" />
-    <Compile Include="Assets\Scripts\Movement\CharacterMovementHandler.cs" />
-    <Compile Include="Assets\Scripts\NetWork\NetWorkInputData.cs" />
-    <Compile Include="Assets\Scripts\Input\CharacterInputHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
