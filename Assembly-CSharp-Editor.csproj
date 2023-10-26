@@ -847,6 +847,10 @@
       <Project>{965994A0-B5D8-3831-C55E-0F88F2FD1C71}</Project>
       <Name>Fusion.Addressables</Name>
     </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{0142D912-12B5-7755-D3A6-D42B95E21081}</Project>
+      <Name>ParrelSync</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

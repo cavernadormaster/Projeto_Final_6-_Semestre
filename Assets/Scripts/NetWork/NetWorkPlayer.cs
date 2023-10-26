@@ -20,6 +20,10 @@ public class NetWorkPlayer : NetworkBehaviour, IPlayerLeft
 
 
         }
+        else
+        {
+
+        }
     }
     public void PlayerLeft(PlayerRef player)
     {
