@@ -21,7 +21,7 @@ public class NetWorkRuunigHandler : MonoBehaviour
         var clientTask = IniTializeNetworkRunner(networkRunner, GameMode.AutoHostOrClient, 
                                                  NetAddress.Any(), SceneManager.GetActiveScene().buildIndex, null);
 
-        Debug.Log("Server NetWork Started");
+        Debug.Log("Server NetWork Started"); 
     }
 
    protected virtual Task IniTializeNetworkRunner(NetworkRunner runner, GameMode gameMode, NetAddress address, SceneRef scene, Action<NetworkRunner> initialized)

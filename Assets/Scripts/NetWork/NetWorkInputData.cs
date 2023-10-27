@@ -8,5 +8,6 @@ public struct NetWorkInputData : INetworkInput
     public Vector2 movementInput;
     public float rotationInput;
     public NetworkBool isJumpPressed;
+    public NetworkBool isTakeInputPressed;
 
 }

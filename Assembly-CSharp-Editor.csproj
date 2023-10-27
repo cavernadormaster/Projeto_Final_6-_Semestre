@@ -839,6 +839,10 @@
       <Project>{ED01E7A4-D625-339B-1C57-2DFEB004C4C5}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="ParrelSync.csproj">
+      <Project>{0142D912-12B5-7755-D3A6-D42B95E21081}</Project>
+      <Name>ParrelSync</Name>
+    </ProjectReference>
     <ProjectReference Include="Fusion.Editor.csproj">
       <Project>{DDCB33E0-07EF-B130-8CF7-7CEB312F1C53}</Project>
       <Name>Fusion.Editor</Name>
@@ -846,10 +850,6 @@
     <ProjectReference Include="Fusion.Addressables.csproj">
       <Project>{965994A0-B5D8-3831-C55E-0F88F2FD1C71}</Project>
       <Name>Fusion.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="ParrelSync.csproj">
-      <Project>{0142D912-12B5-7755-D3A6-D42B95E21081}</Project>
-      <Name>ParrelSync</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

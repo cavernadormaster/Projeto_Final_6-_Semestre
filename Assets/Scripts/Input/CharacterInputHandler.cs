@@ -10,6 +10,7 @@ public class CharacterInputHandler : MonoBehaviour
     CharacterMovementHandler characterMovementHandler;
 
     bool isJumpButoonPressed = false;
+    bool isTakeButtonPressed = false;
 
     private void Awake()
     {
@@ -33,6 +34,8 @@ public class CharacterInputHandler : MonoBehaviour
 
         isJumpButoonPressed = Input.GetKey(KeyCode.Space);
 
+        isTakeButtonPressed = Input.GetKey(KeyCode.E);
+
     }
 
     public NetWorkInputData GetNetWorkInput()
@@ -42,6 +45,7 @@ public class CharacterInputHandler : MonoBehaviour
         netWorkInputData.rotationInput = viewInputVector.x;
         netWorkInputData.movementInput = moveInputVector;
         netWorkInputData.isJumpPressed = isJumpButoonPressed;
+        netWorkInputData.isTakeInputPressed = isTakeButtonPressed;
         return netWorkInputData;
     }
 }

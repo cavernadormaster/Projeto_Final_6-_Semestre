@@ -406,12 +406,14 @@
 "Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
 "Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
 "Assets/Scripts/Input/CharacterInputHandler.cs"
+"Assets/Scripts/Itens/ItensScript.cs"
 "Assets/Scripts/Movement/CharacterMovementHandler.cs"
 "Assets/Scripts/Movement/NetworkCharacterControllerPrototypeCustom.cs"
 "Assets/Scripts/NetWork/NetWorkInputData.cs"
 "Assets/Scripts/NetWork/NetWorkPlayer.cs"
 "Assets/Scripts/NetWork/NetWorkRuunigHandler.cs"
 "Assets/Scripts/NetWork/Spawner.cs"
+"Assets/Scripts/Player/PlayerInterations.cs"
 "Assets/Scripts/Utils/Utils.cs"
 -langversion:9.0
 
