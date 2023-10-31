@@ -60,6 +60,6 @@ public class PlayerInterations : NetworkBehaviour
     void OnInteractionRemote()
     {
         if (!Object.HasInputAuthority)
-            Debug.Log("Take!");
+            ItensScript.TakeItem();
     }
 }
