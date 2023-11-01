@@ -6,6 +6,7 @@ public class ItensScript : MonoBehaviour
 {
     public static GameObject esteItem;
     public static string ip;
+    public static bool isItemInHands;
     void Start()
     {
         esteItem = this.gameObject;
@@ -22,6 +23,7 @@ public class ItensScript : MonoBehaviour
         GameObject child = originalGameObject.transform.GetChild(0).gameObject;
         esteItem.transform.position = child.transform.position;
         esteItem.transform.parent = child.transform;
+        isItemInHands = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,5 +42,12 @@ public class ItensScript : MonoBehaviour
         {
             PlayerInterations.isInItemRange = false;
         }
+    }
+
+    public NetWorkInputData GetNetWorkInput()
+    {
+        NetWorkInputData netWorkInputData = new NetWorkInputData();
+        netWorkInputData.isItemInHands = isItemInHands;
+        return netWorkInputData;
     }
 }
