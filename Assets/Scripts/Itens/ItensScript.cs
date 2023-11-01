@@ -19,11 +19,11 @@ public class ItensScript : MonoBehaviour
 
     public static void TakeItem()
     {
-        GameObject originalGameObject = GameObject.Find(ip);
-        GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-        esteItem.transform.position = child.transform.position;
-        esteItem.transform.parent = child.transform;
-        isItemInHands = true;
+            GameObject originalGameObject = GameObject.Find(ip);
+            GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+            esteItem.transform.position = child.transform.position;
+            esteItem.transform.parent = child.transform;
+            isItemInHands = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -44,10 +44,5 @@ public class ItensScript : MonoBehaviour
         }
     }
 
-    public NetWorkInputData GetNetWorkInput()
-    {
-        NetWorkInputData netWorkInputData = new NetWorkInputData();
-        netWorkInputData.isItemInHands = isItemInHands;
-        return netWorkInputData;
-    }
+   
 }

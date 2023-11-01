@@ -19,6 +19,7 @@ public class Despertador : MonoBehaviour
     {
         if(isThrowing)
         {
+            transform.SetParent(null);
             m_Rigidbody.AddForce((transform.forward * m_Thrust) + (transform.up * m_Thrust));
             isThrowing = false;
         }

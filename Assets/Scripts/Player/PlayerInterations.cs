@@ -8,7 +8,9 @@ public class PlayerInterations : NetworkBehaviour
 {
     [Networked(OnChanged = nameof(OnInteractChanged))]
     public bool isTakeInputPressed {get; set;}
+    public bool ISFireInputPressed { get; set;}
     public static bool isInItemRange;
+    public GameObject[] ItensTOSpawn;
     void Start()
     {
         
@@ -25,6 +27,17 @@ public class PlayerInterations : NetworkBehaviour
                 {
                     Interact();
                 }
+
+                if(netWorkInputData.isFireButtonPressed)
+                {
+                    Debug.Log("Despertador");
+                    GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+                    Destroy(temp);
+                    GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+                    GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                    Instantiate(ItensTOSpawn[0], child.transform.parent);
+                    FireInteract();
+                }
             }
         }
 
@@ -35,12 +48,36 @@ public class PlayerInterations : NetworkBehaviour
         StartCoroutine(TakeCO());
     }
 
+    void FireInteract()
+    {
+        StartCoroutine(FireCO());
+    }
+
+    IEnumerator FireCO()
+    {
+        ISFireInputPressed = true;
+        Despertador.ThrowObject();
+        yield return new WaitForSeconds(0.09f);
+        ISFireInputPressed = false;
+
+    }
+
     IEnumerator TakeCO()
     {
         isTakeInputPressed = true;
         ItensScript.TakeItem();
         yield return new WaitForSeconds(0.09f);
         isTakeInputPressed = false;
+    }
+
+    static void OnFIreChange(Changed<PlayerInterations> changed)
+    {
+        Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.ISFireInputPressed}");
+        bool isTakeCurrent = changed.Behaviour.ISFireInputPressed;
+        changed.LoadOld();
+        bool isTakingOld = changed.Behaviour.ISFireInputPressed;
+        if (isTakeCurrent && !isTakingOld)
+            changed.Behaviour.OnInteractionRemote();
     }
 
     static void OnInteractChanged(Changed<PlayerInterations> changed)
@@ -60,6 +97,20 @@ public class PlayerInterations : NetworkBehaviour
     void OnInteractionRemote()
     {
         if (!Object.HasInputAuthority)
-            ItensScript.TakeItem();
+        {
+            if (!ItensScript.isItemInHands)
+            {
+                Debug.Log("DespertadorNO");
+                ItensScript.TakeItem();
+            }
+            else
+            {
+                GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+                Destroy(temp);
+                GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+                GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                Instantiate(ItensTOSpawn[0], child.transform.parent);
+            }
+        }
     }
 }

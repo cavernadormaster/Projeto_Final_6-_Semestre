@@ -11,7 +11,7 @@ public class CharacterInputHandler : MonoBehaviour
 
     bool isJumpButoonPressed = false;
     bool isTakeButtonPressed = false;
-
+    bool isFireButtonPressed = false;
     private void Awake()
     {
         characterMovementHandler = GetComponent<CharacterMovementHandler>();
@@ -34,8 +34,14 @@ public class CharacterInputHandler : MonoBehaviour
 
         isJumpButoonPressed = Input.GetKey(KeyCode.Space);
 
-        isTakeButtonPressed = Input.GetKey(KeyCode.E);
-
+        if (!ItensScript.isItemInHands)
+        {
+            isTakeButtonPressed = Input.GetKey(KeyCode.E);
+        }
+        else
+        {
+            isFireButtonPressed = Input.GetKey(KeyCode.F);
+        }
     }
 
     public NetWorkInputData GetNetWorkInput()
@@ -46,6 +52,7 @@ public class CharacterInputHandler : MonoBehaviour
         netWorkInputData.movementInput = moveInputVector;
         netWorkInputData.isJumpPressed = isJumpButoonPressed;
         netWorkInputData.isTakeInputPressed = isTakeButtonPressed;
+        netWorkInputData.isFireButtonPressed = isFireButtonPressed;
         return netWorkInputData;
     }
 }

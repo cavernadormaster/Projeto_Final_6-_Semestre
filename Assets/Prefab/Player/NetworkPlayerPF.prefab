@@ -674,3 +674,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   _isTakeInputPressed: 0
+  ItensTOSpawn:
+  - {fileID: 4671411570357435588, guid: f23ca35826f808b4ba82e59e83833236, type: 3}
