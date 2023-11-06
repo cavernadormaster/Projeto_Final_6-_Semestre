@@ -52,7 +52,8 @@ public class PlayerInterations : NetworkBehaviour
         Destroy(temp);
         GameObject originalGameObject = GameObject.Find(ItensScript.ip);
         GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-        Instantiate(ItensTOSpawn[0], child.transform.parent);
+        GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
+        temp2.transform.SetParent(null);
         Despertador.FiredRelogio = true;
         StartCoroutine(FireCO());
     }
