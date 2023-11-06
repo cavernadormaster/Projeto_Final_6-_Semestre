@@ -77,9 +77,13 @@ public class PlayerInterations : NetworkBehaviour
     static void OnFIreChange(Changed<PlayerInterations> changed)
     {
         Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.ISFireInputPressed}");
+
         bool isTakeCurrent = changed.Behaviour.ISFireInputPressed;
+
         changed.LoadOld();
+
         bool isTakingOld = changed.Behaviour.ISFireInputPressed;
+
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnInteractionRemote();
     }
@@ -107,7 +111,7 @@ public class PlayerInterations : NetworkBehaviour
                 Debug.Log("DespertadorNO");
                 ItensScript.TakeItem();
             }
-            else if(ItensScript.isItemInHands)
+            else if(ItensScript.isItemInHands && !FiredRelogio)
             {
                 GameObject temp = GameObject.Find("Despertador(Item Desativado)");
                 Destroy(temp);
@@ -117,12 +121,6 @@ public class PlayerInterations : NetworkBehaviour
             }
             else if(FiredRelogio)
             {
-                Debug.Log("Despertador");
-                GameObject temp = GameObject.Find("Despertador(Item Desativado)");
-                Destroy(temp);
-                GameObject originalGameObject = GameObject.Find(ItensScript.ip);
-                GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                Instantiate(ItensTOSpawn[0], child.transform.parent);
                 FireInteract();
             }
         }
