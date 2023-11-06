@@ -115,6 +115,17 @@ public class PlayerInterations : NetworkBehaviour
                 GameObject child = originalGameObject.transform.GetChild(0).gameObject;
                 Instantiate(ItensTOSpawn[0], child.transform.parent);
             }
+
+            if(FiredRelogio)
+            {
+                Debug.Log("Despertador");
+                GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+                Destroy(temp);
+                GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+                GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                Instantiate(ItensTOSpawn[0], child.transform.parent);
+                FireInteract();
+            }
         }
     }
 }
