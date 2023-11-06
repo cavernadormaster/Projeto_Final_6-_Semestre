@@ -12,6 +12,7 @@ public class CharacterInputHandler : MonoBehaviour
     bool isJumpButoonPressed = false;
     bool isTakeButtonPressed = false;
     bool isFireButtonPressed = false;
+
     private void Awake()
     {
         characterMovementHandler = GetComponent<CharacterMovementHandler>();
@@ -25,6 +26,9 @@ public class CharacterInputHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!characterMovementHandler.Object.HasInputAuthority)
+            return;
+
         viewInputVector.x = Input.GetAxis("Mouse X");
 
         characterMovementHandler.SetViewInputVector(viewInputVector);
@@ -53,6 +57,10 @@ public class CharacterInputHandler : MonoBehaviour
         netWorkInputData.isJumpPressed = isJumpButoonPressed;
         netWorkInputData.isTakeInputPressed = isTakeButtonPressed;
         netWorkInputData.isFireButtonPressed = isFireButtonPressed;
+
+        isJumpButoonPressed = false;
+        isFireButtonPressed = false;
+        isTakeButtonPressed = false;
         return netWorkInputData;
     }
 }

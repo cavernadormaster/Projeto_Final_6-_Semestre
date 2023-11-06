@@ -10,7 +10,7 @@ public class PlayerInterations : NetworkBehaviour
     public bool isTakeInputPressed {get; set;}
     public bool ISFireInputPressed { get; set;}
     public static bool isInItemRange;
-    public static bool FiredRelogio;
+    
     public GameObject[] ItensTOSpawn;
     void Start()
     {
@@ -28,19 +28,12 @@ public class PlayerInterations : NetworkBehaviour
                 {
                     Interact();
                 }
-
-                if(netWorkInputData.isFireButtonPressed)
+            }
+            if (netWorkInputData.isFireButtonPressed)
+            {
+                if (!Despertador.FiredRelogio)
                 {
-                    if (!FiredRelogio)
-                    {
-                        Debug.Log("Despertador");
-                        GameObject temp = GameObject.Find("Despertador(Item Desativado)");
-                        Destroy(temp);
-                        GameObject originalGameObject = GameObject.Find(ItensScript.ip);
-                        GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                        Instantiate(ItensTOSpawn[0], child.transform.parent);
-                        FireInteract();
-                    }
+                    FireInteract();
                 }
             }
         }
@@ -54,6 +47,13 @@ public class PlayerInterations : NetworkBehaviour
 
     void FireInteract()
     {
+        Debug.Log("Despertador");
+        GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+        Destroy(temp);
+        GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+        GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+        Instantiate(ItensTOSpawn[0], child.transform.parent);
+        Despertador.FiredRelogio = true;
         StartCoroutine(FireCO());
     }
 
@@ -74,19 +74,6 @@ public class PlayerInterations : NetworkBehaviour
         isTakeInputPressed = false;
     }
 
-    static void OnFIreChange(Changed<PlayerInterations> changed)
-    {
-        Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.ISFireInputPressed}");
-
-        bool isTakeCurrent = changed.Behaviour.ISFireInputPressed;
-
-        changed.LoadOld();
-
-        bool isTakingOld = changed.Behaviour.ISFireInputPressed;
-
-        if (isTakeCurrent && !isTakingOld)
-            changed.Behaviour.OnInteractionRemote();
-    }
 
     static void OnInteractChanged(Changed<PlayerInterations> changed)
     {
@@ -111,14 +98,12 @@ public class PlayerInterations : NetworkBehaviour
                 Debug.Log("DespertadorNO");
                 ItensScript.TakeItem();
             }
-            else if(ItensScript.isItemInHands && FiredRelogio)
+            else if(ItensScript.isItemInHands && Despertador.FiredRelogio)
             {
-                GameObject originalGameObject = GameObject.Find(ItensScript.ip);
-                GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                Instantiate(ItensTOSpawn[0], child.transform.parent);
+                Debug.Log("DespertadorYES");
+                Despertador.ThrowObject();
                 GameObject temp = GameObject.Find("Despertador(Item Desativado)");
                 Destroy(temp);
-                Despertador.ThrowObject();
             }
            
         }

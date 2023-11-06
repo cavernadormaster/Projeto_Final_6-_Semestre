@@ -8,6 +8,7 @@ public class Despertador : MonoBehaviour
     public static GameObject esteItem;
     public static float m_Thrust = 20f;
     public static bool isThrowing;
+    public static bool FiredRelogio;
     public static string ip;
     void Start()
     {
@@ -24,7 +25,7 @@ public class Despertador : MonoBehaviour
     {
        esteItem.transform.SetParent(null);
        m_Rigidbody.AddForce((esteItem.transform.forward * m_Thrust) + (esteItem.transform.up * m_Thrust));
-       PlayerInterations.FiredRelogio = true;
+       FiredRelogio = true;
     }
 
     public void ObjectOnHit()
