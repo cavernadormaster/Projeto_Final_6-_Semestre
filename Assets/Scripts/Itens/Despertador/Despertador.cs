@@ -22,6 +22,7 @@ public class Despertador : MonoBehaviour
             transform.SetParent(null);
             m_Rigidbody.AddForce((transform.forward * m_Thrust) + (transform.up * m_Thrust));
             isThrowing = false;
+            PlayerInterations.FiredRelogio = true; 
         }
     }
 
@@ -33,7 +34,10 @@ public class Despertador : MonoBehaviour
     public void ObjectOnHit()
     {
         GameObject originalGameObject = GameObject.Find(ip);
-        esteItem.transform.parent = originalGameObject.transform;
+        GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+        Destroy(m_Rigidbody);       
+        esteItem.transform.position = child.transform.position;
+        esteItem.transform.parent = child.transform;
     }
 
     private void OnTriggerEnter(Collider other)

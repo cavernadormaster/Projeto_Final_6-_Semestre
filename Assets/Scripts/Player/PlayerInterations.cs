@@ -10,6 +10,7 @@ public class PlayerInterations : NetworkBehaviour
     public bool isTakeInputPressed {get; set;}
     public bool ISFireInputPressed { get; set;}
     public static bool isInItemRange;
+    public static bool FiredRelogio;
     public GameObject[] ItensTOSpawn;
     void Start()
     {
@@ -30,13 +31,16 @@ public class PlayerInterations : NetworkBehaviour
 
                 if(netWorkInputData.isFireButtonPressed)
                 {
-                    Debug.Log("Despertador");
-                    GameObject temp = GameObject.Find("Despertador(Item Desativado)");
-                    Destroy(temp);
-                    GameObject originalGameObject = GameObject.Find(ItensScript.ip);
-                    GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                    Instantiate(ItensTOSpawn[0], child.transform.parent);
-                    FireInteract();
+                    if (!FiredRelogio)
+                    {
+                        Debug.Log("Despertador");
+                        GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+                        Destroy(temp);
+                        GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+                        GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                        Instantiate(ItensTOSpawn[0], child.transform.parent);
+                        FireInteract();
+                    }
                 }
             }
         }
