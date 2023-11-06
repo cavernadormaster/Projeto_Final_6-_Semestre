@@ -107,7 +107,7 @@ public class PlayerInterations : NetworkBehaviour
                 Debug.Log("DespertadorNO");
                 ItensScript.TakeItem();
             }
-            else
+            else if(ItensScript.isItemInHands)
             {
                 GameObject temp = GameObject.Find("Despertador(Item Desativado)");
                 Destroy(temp);
@@ -115,8 +115,7 @@ public class PlayerInterations : NetworkBehaviour
                 GameObject child = originalGameObject.transform.GetChild(0).gameObject;
                 Instantiate(ItensTOSpawn[0], child.transform.parent);
             }
-
-            if(FiredRelogio)
+            else if(FiredRelogio)
             {
                 Debug.Log("Despertador");
                 GameObject temp = GameObject.Find("Despertador(Item Desativado)");

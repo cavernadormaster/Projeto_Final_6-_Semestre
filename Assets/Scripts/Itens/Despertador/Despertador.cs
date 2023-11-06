@@ -6,7 +6,7 @@ public class Despertador : MonoBehaviour
 {
     public static Rigidbody m_Rigidbody;
     public static GameObject esteItem;
-    public float m_Thrust = 20f;
+    public static float m_Thrust = 20f;
     public static bool isThrowing;
     public static string ip;
     void Start()
@@ -17,18 +17,20 @@ public class Despertador : MonoBehaviour
 
     private void Update()
     {
-        if(isThrowing)
-        {
-            transform.SetParent(null);
-            m_Rigidbody.AddForce((transform.forward * m_Thrust) + (transform.up * m_Thrust));
-            isThrowing = false;
-            PlayerInterations.FiredRelogio = true; 
-        }
+        
     }
 
     public static void ThrowObject()
     {
         isThrowing = true;
+
+        if (isThrowing)
+        {
+            esteItem.transform.SetParent(null);
+            m_Rigidbody.AddForce((esteItem.transform.forward * m_Thrust) + (esteItem.transform.up * m_Thrust));
+            isThrowing = false;
+            PlayerInterations.FiredRelogio = true;
+        }
     }
 
     public void ObjectOnHit()
