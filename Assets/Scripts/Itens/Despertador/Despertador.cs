@@ -22,15 +22,9 @@ public class Despertador : MonoBehaviour
 
     public static void ThrowObject()
     {
-        isThrowing = true;
-
-        if (isThrowing)
-        {
-            esteItem.transform.SetParent(null);
-            m_Rigidbody.AddForce((esteItem.transform.forward * m_Thrust) + (esteItem.transform.up * m_Thrust));
-            isThrowing = false;
-            PlayerInterations.FiredRelogio = true;
-        }
+       esteItem.transform.SetParent(null);
+       m_Rigidbody.AddForce((esteItem.transform.forward * m_Thrust) + (esteItem.transform.up * m_Thrust));
+       PlayerInterations.FiredRelogio = true;
     }
 
     public void ObjectOnHit()
