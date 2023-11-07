@@ -8,7 +8,7 @@ public class PlayerInterations : NetworkBehaviour
 {
     [Networked(OnChanged = nameof(OnInteractChanged))]
     public bool isTakeInputPressed {get; set;}
-    public bool ISFireInputPressed { get; set;}
+    public bool isFireButtonPressed { get; set;}
     public static bool isInItemRange;
 
     #region Variaveis de verificação de variaveis da net
@@ -65,10 +65,10 @@ public class PlayerInterations : NetworkBehaviour
 
     IEnumerator FireCO()
     {
-        ISFireInputPressed = true;
+        isFireButtonPressed = true;
         Despertador.ThrowObject();
         yield return new WaitForSeconds(0.09f);
-        ISFireInputPressed = false;
+        isFireButtonPressed = false;
 
     }
 
@@ -91,8 +91,8 @@ public class PlayerInterations : NetworkBehaviour
             Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
         }else if(hasFirePressed)
         {
-            isTakeCurrent = changed.Behaviour.ISFireInputPressed;
-            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.ISFireInputPressed}"); 
+            isTakeCurrent = changed.Behaviour.isFireButtonPressed;
+            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.isFireButtonPressed}"); 
         }
 
         changed.LoadOld();
@@ -104,8 +104,8 @@ public class PlayerInterations : NetworkBehaviour
         }
         else if (hasFirePressed)
         {
-            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.ISFireInputPressed}");
-            isTakingOld = changed.Behaviour.ISFireInputPressed;
+            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.isFireButtonPressed}");
+            isTakingOld = changed.Behaviour.isFireButtonPressed;
         }
 
 
