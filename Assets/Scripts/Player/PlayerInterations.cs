@@ -25,7 +25,7 @@ public class PlayerInterations : NetworkBehaviour
     {
         if(GetInput(out NetWorkInputData netWorkInputData))
         {
-            if (isInItemRange)
+            if (isInItemRange && !ItensScript.isItemInHands)
             {
                 Debug.Log("IsInRange");
                 if (netWorkInputData.isTakeInputPressed)
@@ -75,24 +75,36 @@ public class PlayerInterations : NetworkBehaviour
         isTakeInputPressed = true;
         ItensScript.TakeItem();
         yield return new WaitForSeconds(0.09f);
+        ItensScript.isItemInHands = true;
         isTakeInputPressed = false;
     }
 
 
     static void OnInteractChanged(Changed<PlayerInterations> changed)
     {
-        Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
 
         if (!ItensScript.isItemInHands)
         {
-             isTakeCurrent = changed.Behaviour.isTakeInputPressed;
-             isTakingOld = changed.Behaviour.isTakeInputPressed;
+            Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
+            isTakeCurrent = changed.Behaviour.isTakeInputPressed;
         }else
         {
+            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.ISFireInputPressed}");
             isTakeCurrent = changed.Behaviour.ISFireInputPressed;
+        }
+
+        changed.LoadOld();
+
+        if (!ItensScript.isItemInHands)
+        {
+            Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
+            isTakingOld = changed.Behaviour.isTakeInputPressed;
+        }
+        else
+        {
+            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.ISFireInputPressed}");
             isTakingOld = changed.Behaviour.ISFireInputPressed;
         }
-        changed.LoadOld();
 
 
         if (isTakeCurrent && !isTakingOld)
@@ -108,7 +120,7 @@ public class PlayerInterations : NetworkBehaviour
                 Debug.Log("DespertadorNO");
                 ItensScript.TakeItem();
             }
-            else if(ItensScript.isItemInHands && !Despertador.FiredRelogio)
+            else if(ItensScript.isItemInHands)
             {
                 Debug.Log("DespertadorYES");
                 Despertador.ThrowObject();
