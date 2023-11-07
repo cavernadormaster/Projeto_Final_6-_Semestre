@@ -14,6 +14,7 @@ public class PlayerInterations : NetworkBehaviour
     #region Variaveis de verificação de variaveis da net
     public static bool isTakeCurrent;
     public static bool isTakingOld;
+    public static bool hasFirePressed;
     #endregion
     public GameObject[] ItensTOSpawn;
     void Start()
@@ -33,11 +34,12 @@ public class PlayerInterations : NetworkBehaviour
                     Interact();
                 }
             }
-            if (netWorkInputData.isFireButtonPressed)
+            if (!Despertador.FiredRelogio)
             {
-                if (!Despertador.FiredRelogio)
+                if (netWorkInputData.isFireButtonPressed)
                 {
                     FireInteract();
+                    hasFirePressed = true;
                 }
             }
         }
@@ -72,10 +74,10 @@ public class PlayerInterations : NetworkBehaviour
 
     IEnumerator TakeCO()
     {
+        Debug.Log("TAKE CONTROL");
         isTakeInputPressed = true;
         ItensScript.TakeItem();
         yield return new WaitForSeconds(0.09f);
-        ItensScript.isItemInHands = true;
         isTakeInputPressed = false;
     }
 
@@ -85,12 +87,12 @@ public class PlayerInterations : NetworkBehaviour
 
         if (!ItensScript.isItemInHands)
         {
-            Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
             isTakeCurrent = changed.Behaviour.isTakeInputPressed;
-        }else
+            Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
+        }else if(hasFirePressed)
         {
-            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.ISFireInputPressed}");
             isTakeCurrent = changed.Behaviour.ISFireInputPressed;
+            Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.ISFireInputPressed}"); 
         }
 
         changed.LoadOld();
@@ -100,7 +102,7 @@ public class PlayerInterations : NetworkBehaviour
             Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
             isTakingOld = changed.Behaviour.isTakeInputPressed;
         }
-        else
+        else if (hasFirePressed)
         {
             Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.ISFireInputPressed}");
             isTakingOld = changed.Behaviour.ISFireInputPressed;
@@ -120,10 +122,15 @@ public class PlayerInterations : NetworkBehaviour
                 Debug.Log("DespertadorNO");
                 ItensScript.TakeItem();
             }
-            else if(ItensScript.isItemInHands)
+            else if(ItensScript.isItemInHands && hasFirePressed)
             {
                 Debug.Log("DespertadorYES");
+                GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+                GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
+                temp2.transform.SetParent(null);
                 Despertador.ThrowObject();
+                Despertador.FiredRelogio = true;
                 GameObject temp = GameObject.Find("Despertador(Item Desativado)");
                 Destroy(temp);
             }
