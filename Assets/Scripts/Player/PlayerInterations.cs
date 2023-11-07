@@ -10,7 +10,11 @@ public class PlayerInterations : NetworkBehaviour
     public bool isTakeInputPressed {get; set;}
     public bool ISFireInputPressed { get; set;}
     public static bool isInItemRange;
-    
+
+    #region Variaveis de verificação de variaveis da net
+    public static bool isTakeCurrent;
+    public static bool isTakingOld;
+    #endregion
     public GameObject[] ItensTOSpawn;
     void Start()
     {
@@ -47,7 +51,6 @@ public class PlayerInterations : NetworkBehaviour
 
     void FireInteract()
     {
-        Debug.Log("Despertador");
         GameObject temp = GameObject.Find("Despertador(Item Desativado)");
         Destroy(temp);
         GameObject originalGameObject = GameObject.Find(ItensScript.ip);
@@ -80,11 +83,17 @@ public class PlayerInterations : NetworkBehaviour
     {
         Debug.Log($"{Time.time} OnTakeChanged value {changed.Behaviour.isTakeInputPressed}");
 
-        bool isTakeCurrent = changed.Behaviour.isTakeInputPressed;
-
+        if (!ItensScript.isItemInHands)
+        {
+             isTakeCurrent = changed.Behaviour.isTakeInputPressed;
+             isTakingOld = changed.Behaviour.isTakeInputPressed;
+        }else
+        {
+            isTakeCurrent = changed.Behaviour.ISFireInputPressed;
+            isTakingOld = changed.Behaviour.ISFireInputPressed;
+        }
         changed.LoadOld();
 
-        bool isTakingOld = changed.Behaviour.isTakeInputPressed;
 
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnInteractionRemote();
@@ -99,7 +108,7 @@ public class PlayerInterations : NetworkBehaviour
                 Debug.Log("DespertadorNO");
                 ItensScript.TakeItem();
             }
-            else if(ItensScript.isItemInHands && Despertador.FiredRelogio)
+            else if(ItensScript.isItemInHands && !Despertador.FiredRelogio)
             {
                 Debug.Log("DespertadorYES");
                 Despertador.ThrowObject();
