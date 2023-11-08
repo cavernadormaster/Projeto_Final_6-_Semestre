@@ -6,7 +6,8 @@ public class Despertador : MonoBehaviour
 {
     public static Rigidbody m_Rigidbody;
     public static GameObject esteItem;
-    public static float m_Thrust = 20f;
+    public static float m_Thrust = 10f ;
+    public static float m_Thrust_Up = 5f;
     public static bool isThrowing;
     public static bool FiredRelogio;
     public static string ip;
@@ -23,9 +24,11 @@ public class Despertador : MonoBehaviour
     public static void ThrowObject()
     {
        esteItem = GameObject.Find("Despertador(Item Ativado)(Clone)");
-       m_Rigidbody =esteItem.GetComponent<Rigidbody>();
+       m_Rigidbody = esteItem.GetComponent<Rigidbody>();
        esteItem.transform.SetParent(null);
-       m_Rigidbody.AddForce((esteItem.transform.forward * m_Thrust) + (esteItem.transform.up * m_Thrust));
+
+        Vector3 forceAdd = esteItem.transform.forward * m_Thrust + esteItem.transform.up * m_Thrust_Up;  
+       m_Rigidbody.AddForce(forceAdd, ForceMode.Impulse);
        FiredRelogio = true;
 
     }
