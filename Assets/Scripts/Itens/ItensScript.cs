@@ -26,6 +26,11 @@ public class ItensScript : MonoBehaviour
             isItemInHands = true;
     }
 
+    public static void DestroyYourSelf()
+    {
+        Destroy(esteItem);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))

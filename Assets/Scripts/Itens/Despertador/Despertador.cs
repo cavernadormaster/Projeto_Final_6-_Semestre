@@ -12,7 +12,6 @@ public class Despertador : MonoBehaviour
     public static string ip;
     void Start()
     {
-        esteItem = this.gameObject;
         m_Rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -23,9 +22,12 @@ public class Despertador : MonoBehaviour
 
     public static void ThrowObject()
     {
+       esteItem = GameObject.Find("Despertador(Item Ativado)(Clone)");
+       m_Rigidbody =esteItem.GetComponent<Rigidbody>();
        esteItem.transform.SetParent(null);
        m_Rigidbody.AddForce((esteItem.transform.forward * m_Thrust) + (esteItem.transform.up * m_Thrust));
        FiredRelogio = true;
+
     }
 
     public void ObjectOnHit()
