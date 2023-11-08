@@ -11,9 +11,15 @@ public class Despertador : MonoBehaviour
     public static bool isThrowing;
     public static bool FiredRelogio;
     public static string ip;
+
+    public AudioSource audioSorce;
+
+    [Header("Tempo Para Destruir O Objeto")]
+    public float DestroyCooldown;
     void Start()
     {
-        m_Rigidbody = GetComponent<Rigidbody>();
+        audioSorce.Play();
+        StartCoroutine(DestroyCoolDown());
     }
 
     private void Update()
@@ -30,9 +36,15 @@ public class Despertador : MonoBehaviour
         Vector3 forceAdd = esteItem.transform.forward * m_Thrust + esteItem.transform.up * m_Thrust_Up;  
        m_Rigidbody.AddForce(forceAdd, ForceMode.Impulse);
        FiredRelogio = true;
+        
 
     }
-
+    IEnumerator DestroyCoolDown()
+    {
+        Debug.Log("TIME LEFT TO DESTROY");
+        yield return new WaitForSeconds(DestroyCooldown);
+        Destroy(this.gameObject);
+    }
     public void ObjectOnHit()
     {
         GameObject originalGameObject = GameObject.Find(ip);
