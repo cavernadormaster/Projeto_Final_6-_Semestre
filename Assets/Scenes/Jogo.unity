@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,20 +117,54 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10722056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+  m_PrefabInstance: {fileID: 1989325201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &10722057
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10722056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 21fb32eaaa5626d4b8fb69547152b14e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &10722058 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+  m_PrefabInstance: {fileID: 1989325201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &23092834
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
+    - target: {fileID: 8095360039905633409, guid: edd797982eb0a9846b97b49896bae356, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8095360039905633409, guid: edd797982eb0a9846b97b49896bae356, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.050319
@@ -176,9 +210,6 @@ PrefabInstance:
       value: Apoio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edd797982eb0a9846b97b49896bae356, type: 3}
 --- !u!4 &23092835 stripped
 Transform:
@@ -190,7 +221,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1113009153}
     m_Modifications:
     - target: {fileID: 5059205777145318251, guid: 44775ed3a49acb242a39190ba6995b82, type: 3}
@@ -246,9 +276,6 @@ PrefabInstance:
       value: Curva_U (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44775ed3a49acb242a39190ba6995b82, type: 3}
 --- !u!4 &63245787 stripped
 Transform:
@@ -260,12 +287,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -308,9 +338,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &69156518 stripped
 Transform:
@@ -322,7 +349,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
@@ -374,12 +400,6 @@ PrefabInstance:
       value: 85.636
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 109110352}
   m_SourcePrefab: {fileID: 100100000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
 --- !u!4 &109110350 stripped
 Transform:
@@ -399,30 +419,25 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109110351}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.047841698, y: 0.02218476, z: 0.046359453}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.00006242873, y: 0.000032340387, z: 0.023179734}
 --- !u!1001 &146205290
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -465,9 +480,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &146205291 stripped
 Transform:
@@ -479,12 +491,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -527,9 +542,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &146791808 stripped
 Transform:
@@ -541,7 +553,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -593,9 +604,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &148231849 stripped
 Transform:
@@ -607,7 +615,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -663,9 +670,6 @@ PrefabInstance:
       value: -11.678
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &160184790 stripped
 Transform:
@@ -677,7 +681,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -741,9 +744,6 @@ PrefabInstance:
       value: Parede (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &160647988 stripped
 Transform:
@@ -755,7 +755,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1042990868}
     m_Modifications:
     - target: {fileID: 171413150334201896, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
@@ -831,9 +830,6 @@ PrefabInstance:
       value: 15.327837
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
 --- !u!4 &178565485 stripped
 Transform:
@@ -845,12 +841,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -893,9 +892,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &189314667 stripped
 Transform:
@@ -907,12 +903,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -955,9 +954,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &198785189 stripped
 Transform:
@@ -969,7 +965,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -1033,23 +1028,54 @@ PrefabInstance:
       value: Parede (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &230409530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
   m_PrefabInstance: {fileID: 230409529}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &231140769 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+  m_PrefabInstance: {fileID: 1713433877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &231140770
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231140769}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 745bc0640b2c95e49bbc3fe6fe8686df, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &231140771 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+  m_PrefabInstance: {fileID: 1713433877}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &231799449
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
+    - target: {fileID: 7540776456920967669, guid: 646209bb49418e343b860304290c18de, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7540776456920967669, guid: 646209bb49418e343b860304290c18de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.298319
@@ -1095,9 +1121,6 @@ PrefabInstance:
       value: Produto_Quimico_Verde
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 646209bb49418e343b860304290c18de, type: 3}
 --- !u!4 &231799450 stripped
 Transform:
@@ -1109,12 +1132,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1157,9 +1183,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &240041876 stripped
 Transform:
@@ -1171,7 +1194,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -1235,9 +1257,6 @@ PrefabInstance:
       value: Parede (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &249613275 stripped
 Transform:
@@ -1249,12 +1268,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1297,9 +1319,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &251818520 stripped
 Transform:
@@ -1311,7 +1330,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -1375,9 +1393,6 @@ PrefabInstance:
       value: Parede (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &270589265 stripped
 Transform:
@@ -1389,7 +1404,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
@@ -1398,7 +1412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8149788072315336000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8149788072315336000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1441,12 +1455,6 @@ PrefabInstance:
       value: 183.165
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 273661948}
   m_SourcePrefab: {fileID: 100100000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
 --- !u!4 &273661946 stripped
 Transform:
@@ -1466,25 +1474,16 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273661947}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.047841698, y: 0.022184748, z: 0.04635945}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.00006241441, y: 0.000032342075, z: 0.023179747}
 --- !u!1001 &277994555
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 3514178259349146258, guid: 11f248cee14faf9419618d0198a7eea5, type: 3}
@@ -1536,21 +1535,86 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f248cee14faf9419618d0198a7eea5, type: 3}
 --- !u!4 &277994556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5052990629080597309, guid: 11f248cee14faf9419618d0198a7eea5, type: 3}
   m_PrefabInstance: {fileID: 277994555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &284244891
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1894360013}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.7806954
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9711995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7332611
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+      propertyPath: m_Name
+      value: PersonHolding
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
 --- !u!1001 &288547036
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 245828926985835481, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
@@ -1602,9 +1666,6 @@ PrefabInstance:
       value: Microscopio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
 --- !u!4 &288547037 stripped
 Transform:
@@ -1616,7 +1677,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
@@ -1625,7 +1685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8149788072315336000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8149788072315336000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1668,12 +1728,6 @@ PrefabInstance:
       value: -71.644
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 289867082}
   m_SourcePrefab: {fileID: 100100000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
 --- !u!4 &289867080 stripped
 Transform:
@@ -1693,30 +1747,25 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289867081}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.04784171, y: 0.022184767, z: 0.04635948}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.00006245492, y: 0.000032346732, z: 0.02317975}
 --- !u!1001 &290459494
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1759,9 +1808,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &290459495 stripped
 Transform:
@@ -1773,12 +1819,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1821,9 +1870,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &323353372 stripped
 Transform:
@@ -1835,7 +1881,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -1899,9 +1944,6 @@ PrefabInstance:
       value: Parede (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &327716916 stripped
 Transform:
@@ -1913,12 +1955,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1961,9 +2006,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &327926876 stripped
 Transform:
@@ -1975,12 +2017,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2023,9 +2068,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &343555059 stripped
 Transform:
@@ -2037,12 +2079,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2085,16 +2130,12 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!1001 &361989750
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -2146,9 +2187,6 @@ PrefabInstance:
       value: -85.904
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &361989751 stripped
 Transform:
@@ -2160,12 +2198,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2208,9 +2249,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &386324579 stripped
 Transform:
@@ -2303,25 +2341,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402906665}
-  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &423717745
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2364,9 +2405,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &423717746 stripped
 Transform:
@@ -2378,7 +2416,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -2387,7 +2424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2430,9 +2467,6 @@ PrefabInstance:
       value: 18.428
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &441209278 stripped
 Transform:
@@ -2444,12 +2478,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2492,9 +2529,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &452162869 stripped
 Transform:
@@ -2506,12 +2540,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2554,9 +2591,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &467843461 stripped
 Transform:
@@ -2568,7 +2602,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -2620,9 +2653,6 @@ PrefabInstance:
       value: 169.702
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &481735859 stripped
 Transform:
@@ -2634,12 +2664,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2682,9 +2715,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &491059065 stripped
 Transform:
@@ -2696,7 +2726,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -2760,9 +2789,6 @@ PrefabInstance:
       value: Parede (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &497659523 stripped
 Transform:
@@ -2774,12 +2800,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2822,9 +2851,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &512676768 stripped
 Transform:
@@ -2854,7 +2880,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516929921}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -16.593319, y: -250.33334, z: -261.71307}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2869,94 +2894,98 @@ Transform:
   - {fileID: 288547037}
   - {fileID: 955692985}
   - {fileID: 1351549908}
-  - {fileID: 1526835659}
-  - {fileID: 520445303}
-  - {fileID: 1030932308}
-  - {fileID: 1463533740}
-  - {fileID: 1348443390}
-  - {fileID: 2085820085}
-  - {fileID: 1536566962}
-  - {fileID: 1691117049}
-  - {fileID: 1410274791}
-  - {fileID: 1521461679}
+  - {fileID: 23092835}
+  - {fileID: 69156518}
   - {fileID: 146205291}
-  - {fileID: 1841015047}
+  - {fileID: 146791808}
+  - {fileID: 189314667}
+  - {fileID: 198785189}
+  - {fileID: 231799450}
+  - {fileID: 240041876}
+  - {fileID: 251818520}
+  - {fileID: 290459495}
+  - {fileID: 323353372}
+  - {fileID: 327926876}
+  - {fileID: 343555059}
+  - {fileID: 386324579}
+  - {fileID: 423717746}
+  - {fileID: 452162869}
   - {fileID: 467843461}
-  - {fileID: 2093339100}
+  - {fileID: 491059065}
+  - {fileID: 512676768}
+  - {fileID: 520445303}
+  - {fileID: 532377452}
+  - {fileID: 541403008}
+  - {fileID: 568725351}
+  - {fileID: 571637410}
+  - {fileID: 666874469}
+  - {fileID: 724005695}
+  - {fileID: 732295576}
+  - {fileID: 770578253}
+  - {fileID: 875452558}
+  - {fileID: 961553836}
+  - {fileID: 989570913}
   - {fileID: 991682158}
   - {fileID: 1003076819}
+  - {fileID: 1019964331}
+  - {fileID: 1030932308}
+  - {fileID: 1037696937}
   - {fileID: 1109250730}
-  - {fileID: 189314667}
-  - {fileID: 532377452}
-  - {fileID: 1691824735}
-  - {fileID: 1578295764}
-  - {fileID: 1607034316}
-  - {fileID: 1533288058}
-  - {fileID: 491059065}
-  - {fileID: 452162869}
-  - {fileID: 732295576}
-  - {fileID: 1606624422}
+  - {fileID: 1212090317}
+  - {fileID: 1227439986}
+  - {fileID: 1230607495}
+  - {fileID: 1272346290}
+  - {fileID: 1311651562}
   - {fileID: 1324951844}
-  - {fileID: 571637410}
-  - {fileID: 1735552023}
-  - {fileID: 290459495}
-  - {fileID: 1940124821}
-  - {fileID: 343555059}
-  - {fileID: 146791808}
+  - {fileID: 1348443390}
+  - {fileID: 1370461994}
+  - {fileID: 1410274791}
+  - {fileID: 1411763487}
+  - {fileID: 1431887423}
   - {fileID: 1438049523}
   - {fileID: 1445339931}
-  - {fileID: 1546128949}
-  - {fileID: 770578253}
-  - {fileID: 23092835}
-  - {fileID: 231799450}
-  - {fileID: 989570913}
+  - {fileID: 1463533740}
   - {fileID: 1511240005}
-  - {fileID: 1227439986}
-  - {fileID: 1758281667}
-  - {fileID: 2028150116}
-  - {fileID: 1431887423}
-  - {fileID: 386324579}
-  - {fileID: 724005695}
-  - {fileID: 1370461994}
-  - {fileID: 198785189}
-  - {fileID: 323353372}
-  - {fileID: 1628666927}
-  - {fileID: 666874469}
   - {fileID: 1520977283}
-  - {fileID: 1037696937}
-  - {fileID: 875452558}
-  - {fileID: 69156518}
-  - {fileID: 1019964331}
-  - {fileID: 541403008}
-  - {fileID: 1212090317}
-  - {fileID: 1998188217}
-  - {fileID: 251818520}
-  - {fileID: 512676768}
-  - {fileID: 1311651562}
-  - {fileID: 1272346290}
-  - {fileID: 568725351}
+  - {fileID: 1521461679}
+  - {fileID: 1526835659}
+  - {fileID: 1533288058}
+  - {fileID: 1536566962}
   - {fileID: 1540453440}
-  - {fileID: 1230607495}
-  - {fileID: 1826670413}
-  - {fileID: 1411763487}
-  - {fileID: 423717746}
+  - {fileID: 1546128949}
+  - {fileID: 1578295764}
+  - {fileID: 1606624422}
+  - {fileID: 1607034316}
+  - {fileID: 1628666927}
   - {fileID: 1644753541}
-  - {fileID: 961553836}
-  - {fileID: 327926876}
-  - {fileID: 240041876}
+  - {fileID: 1691117049}
+  - {fileID: 1691824735}
+  - {fileID: 1735552023}
+  - {fileID: 1758281667}
+  - {fileID: 1826670413}
+  - {fileID: 1841015047}
+  - {fileID: 1940124821}
+  - {fileID: 1998188217}
+  - {fileID: 2028150116}
+  - {fileID: 2085820085}
+  - {fileID: 2093339100}
   m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &520445302
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2999,9 +3028,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &520445303 stripped
 Transform:
@@ -3013,7 +3039,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -3065,9 +3090,6 @@ PrefabInstance:
       value: -3.216
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &525268829 stripped
 Transform:
@@ -3079,7 +3101,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -3143,9 +3164,6 @@ PrefabInstance:
       value: Parede (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &525877826 stripped
 Transform:
@@ -3157,12 +3175,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3205,9 +3226,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &532377452 stripped
 Transform:
@@ -3219,12 +3237,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3267,9 +3288,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &541403008 stripped
 Transform:
@@ -3281,9 +3299,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2070324482104011903, guid: d9fbb65674173a44699ce2ea964d4a45, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2070324482104011903, guid: d9fbb65674173a44699ce2ea964d4a45, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.952
@@ -3329,21 +3350,21 @@ PrefabInstance:
       value: Caixinha_de_fogo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9fbb65674173a44699ce2ea964d4a45, type: 3}
 --- !u!1001 &568725350
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3386,9 +3407,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &568725351 stripped
 Transform:
@@ -3400,12 +3418,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3448,9 +3469,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &571637410 stripped
 Transform:
@@ -3462,7 +3480,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 185820363065619839, guid: 9dcd3f4f6923d3e4fb35542350f31b62, type: 3}
@@ -3514,9 +3531,6 @@ PrefabInstance:
       value: Estante_Tubo_de_ensaio_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dcd3f4f6923d3e4fb35542350f31b62, type: 3}
 --- !u!4 &591068993 stripped
 Transform:
@@ -3528,7 +3542,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -3592,9 +3605,6 @@ PrefabInstance:
       value: Parede (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &594403996 stripped
 Transform:
@@ -3606,7 +3616,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 710426772}
     m_Modifications:
     - target: {fileID: 4993901162158091722, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
@@ -3670,9 +3679,6 @@ PrefabInstance:
       value: Porta_solta (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
 --- !u!4 &615174844 stripped
 Transform:
@@ -3684,7 +3690,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -3748,21 +3753,90 @@ PrefabInstance:
       value: Parede (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &621018949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
   m_PrefabInstance: {fileID: 621018948}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &623018997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1894360013}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8893042
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9311996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.903267
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+      propertyPath: m_Name
+      value: ZombieRunning
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
 --- !u!1001 &648124931
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -3826,9 +3900,6 @@ PrefabInstance:
       value: Parede (35)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &648124932 stripped
 Transform:
@@ -3840,12 +3911,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3888,9 +3962,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &666874469 stripped
 Transform:
@@ -3902,7 +3973,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
@@ -3911,7 +3981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8149788072315336000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8149788072315336000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3954,12 +4024,6 @@ PrefabInstance:
       value: 56.371
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 668397253}
   m_SourcePrefab: {fileID: 100100000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
 --- !u!4 &668397251 stripped
 Transform:
@@ -3979,18 +4043,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668397252}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.047841694, y: 0.02218475, z: 0.046359453}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.00006242021, y: 0.000032341868, z: 0.023179745}
 --- !u!1 &710426771
 GameObject:
@@ -4015,18 +4071,18 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710426771}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1192698436}
-  - {fileID: 2005142124}
   - {fileID: 615174844}
-  - {fileID: 1567954289}
   - {fileID: 722644962}
+  - {fileID: 2005142124}
+  - {fileID: 1567954289}
   m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &711176193
 GameObject:
@@ -4051,7 +4107,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711176193}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -4069,13 +4124,13 @@ Transform:
   - {fileID: 160184790}
   - {fileID: 1537494560}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &722644961
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 710426772}
     m_Modifications:
     - target: {fileID: 4993901162158091722, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
@@ -4139,9 +4194,6 @@ PrefabInstance:
       value: Porta_solta (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
 --- !u!4 &722644962 stripped
 Transform:
@@ -4153,12 +4205,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4201,9 +4256,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &724005695 stripped
 Transform:
@@ -4215,12 +4267,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4263,9 +4318,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &732295576 stripped
 Transform:
@@ -4277,7 +4329,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -4341,9 +4392,6 @@ PrefabInstance:
       value: Parede (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &762787408 stripped
 Transform:
@@ -4355,7 +4403,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1113009153}
     m_Modifications:
     - target: {fileID: 5059205777145318251, guid: 44775ed3a49acb242a39190ba6995b82, type: 3}
@@ -4407,9 +4454,6 @@ PrefabInstance:
       value: Curva_U
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44775ed3a49acb242a39190ba6995b82, type: 3}
 --- !u!4 &767616560 stripped
 Transform:
@@ -4421,9 +4465,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
+    - target: {fileID: 245828926985835481, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
     - target: {fileID: 245828926985835481, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.918319
@@ -4469,21 +4516,90 @@ PrefabInstance:
       value: Microscopio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
 --- !u!4 &770578253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 245828926985835481, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
   m_PrefabInstance: {fileID: 770578252}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &798066793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1894360013}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.150696
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9711995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9632645
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+      propertyPath: m_Name
+      value: PersonIdle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
 --- !u!1001 &807232470
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -4547,21 +4663,90 @@ PrefabInstance:
       value: Parede (34)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &807232471 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
   m_PrefabInstance: {fileID: 807232470}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &823178226
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1894360013}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.30930424
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9311996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.26326
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 749836603802c684596f2a022d72c666, type: 3}
+      propertyPath: m_Name
+      value: ZombieIdle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 749836603802c684596f2a022d72c666, type: 3}
 --- !u!1001 &832072280
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -4625,9 +4810,6 @@ PrefabInstance:
       value: Parede (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &832072281 stripped
 Transform:
@@ -4639,7 +4821,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -4648,7 +4829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4691,9 +4872,6 @@ PrefabInstance:
       value: 52.271
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &852840650 stripped
 Transform:
@@ -4705,12 +4883,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4753,9 +4934,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &875452558 stripped
 Transform:
@@ -4767,7 +4945,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -4819,9 +4996,6 @@ PrefabInstance:
       value: 45.658
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &891174996 stripped
 Transform:
@@ -4833,7 +5007,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -4885,9 +5058,6 @@ PrefabInstance:
       value: 85.939
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &912418365 stripped
 Transform:
@@ -4899,12 +5069,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4947,16 +5120,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!1001 &955692984
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5131391375546536596, guid: 1c7ef0dddddaf4e4abf41a09f31b3293, type: 3}
@@ -5008,9 +5177,6 @@ PrefabInstance:
       value: Estante_Tubo_de_ensaio_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c7ef0dddddaf4e4abf41a09f31b3293, type: 3}
 --- !u!4 &955692985 stripped
 Transform:
@@ -5022,7 +5188,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -5074,9 +5239,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &955759590 stripped
 Transform:
@@ -5088,12 +5250,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5136,9 +5301,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &961553836 stripped
 Transform:
@@ -5150,12 +5312,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5198,9 +5363,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &989570913 stripped
 Transform:
@@ -5212,12 +5374,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5260,9 +5425,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &991682158 stripped
 Transform:
@@ -5274,12 +5436,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5322,9 +5487,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1003076819 stripped
 Transform:
@@ -5336,7 +5498,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -5400,9 +5561,6 @@ PrefabInstance:
       value: Parede (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1011741056 stripped
 Transform:
@@ -5414,7 +5572,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -5423,7 +5580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5466,9 +5623,6 @@ PrefabInstance:
       value: 212.897
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &1016009045 stripped
 Transform:
@@ -5480,12 +5634,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5528,9 +5685,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1019964331 stripped
 Transform:
@@ -5542,12 +5696,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5590,9 +5747,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1030932308 stripped
 Transform:
@@ -5604,7 +5758,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -5668,9 +5821,6 @@ PrefabInstance:
       value: Parede (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1035600992 stripped
 Transform:
@@ -5682,12 +5832,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5730,9 +5883,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1037696937 stripped
 Transform:
@@ -5762,7 +5912,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042990867}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -5773,13 +5922,13 @@ Transform:
   - {fileID: 1064676719}
   - {fileID: 178565485}
   m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1057336539
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -5843,9 +5992,6 @@ PrefabInstance:
       value: Parede (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1057336540 stripped
 Transform:
@@ -5857,7 +6003,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 245828926985835481, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
@@ -5909,9 +6054,6 @@ PrefabInstance:
       value: Microscopio (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac10b61c447d5e47b5deb0d72e1832a, type: 3}
 --- !u!4 &1059925771 stripped
 Transform:
@@ -5923,7 +6065,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1042990868}
     m_Modifications:
     - target: {fileID: 171413150334201896, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
@@ -5999,9 +6140,6 @@ PrefabInstance:
       value: 15.327837
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
 --- !u!4 &1064676719 stripped
 Transform:
@@ -6013,7 +6151,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -6065,9 +6202,6 @@ PrefabInstance:
       value: 97.738
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &1072713364 stripped
 Transform:
@@ -6079,7 +6213,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -6143,9 +6276,6 @@ PrefabInstance:
       value: Parede (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1073833020 stripped
 Transform:
@@ -6157,7 +6287,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -6221,9 +6350,6 @@ PrefabInstance:
       value: Parede (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1073896173 stripped
 Transform:
@@ -6235,12 +6361,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6283,9 +6412,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1109250730 stripped
 Transform:
@@ -6315,7 +6441,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111603353}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -6336,6 +6461,7 @@ Transform:
   - {fileID: 109110350}
   - {fileID: 1586713074}
   m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1113009152
 GameObject:
@@ -6360,7 +6486,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113009152}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -6370,13 +6495,44 @@ Transform:
   - {fileID: 1352694412}
   - {fileID: 63245787}
   m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1137571313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+  m_PrefabInstance: {fileID: 284244891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1137571314
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137571313}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06cb27cc0684f9143b498ccee18f496a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1137571315 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: be78921fb4c1c44438f530f563b61adb, type: 3}
+  m_PrefabInstance: {fileID: 284244891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1192698435
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 710426772}
     m_Modifications:
     - target: {fileID: 4993901162158091722, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
@@ -6440,9 +6596,6 @@ PrefabInstance:
       value: Porta_solta
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
 --- !u!4 &1192698436 stripped
 Transform:
@@ -6454,7 +6607,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -6518,9 +6670,6 @@ PrefabInstance:
       value: Parede (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1211007270 stripped
 Transform:
@@ -6532,7 +6681,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -6596,9 +6744,6 @@ PrefabInstance:
       value: Parede (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1211875764 stripped
 Transform:
@@ -6610,12 +6755,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6658,9 +6806,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1212090317 stripped
 Transform:
@@ -6672,12 +6817,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6720,9 +6868,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1227439986 stripped
 Transform:
@@ -6734,12 +6879,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6782,9 +6930,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1230607495 stripped
 Transform:
@@ -6796,7 +6941,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -6805,7 +6949,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6848,9 +6992,6 @@ PrefabInstance:
       value: -23.109
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &1256024905 stripped
 Transform:
@@ -6862,12 +7003,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6910,9 +7054,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1272346290 stripped
 Transform:
@@ -6924,7 +7065,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -6988,9 +7128,6 @@ PrefabInstance:
       value: Parede (31)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1274086846 stripped
 Transform:
@@ -7002,12 +7139,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7050,9 +7190,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1311651562 stripped
 Transform:
@@ -7064,12 +7201,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7112,9 +7252,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1324951844 stripped
 Transform:
@@ -7126,7 +7263,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -7135,7 +7271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7178,9 +7314,6 @@ PrefabInstance:
       value: 46.548
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &1333951838 stripped
 Transform:
@@ -7192,7 +7325,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -7256,9 +7388,6 @@ PrefabInstance:
       value: Parede (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1334057330 stripped
 Transform:
@@ -7270,7 +7399,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -7334,9 +7462,6 @@ PrefabInstance:
       value: Parede (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1337018602 stripped
 Transform:
@@ -7348,12 +7473,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 52
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7396,9 +7524,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1348443390 stripped
 Transform:
@@ -7410,7 +7535,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 3514178259349146258, guid: 11f248cee14faf9419618d0198a7eea5, type: 3}
@@ -7462,9 +7586,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f248cee14faf9419618d0198a7eea5, type: 3}
 --- !u!4 &1351549908 stripped
 Transform:
@@ -7476,7 +7597,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -7540,9 +7660,6 @@ PrefabInstance:
       value: Parede (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1352119059 stripped
 Transform:
@@ -7554,7 +7671,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1113009153}
     m_Modifications:
     - target: {fileID: 5059205777145318251, guid: 44775ed3a49acb242a39190ba6995b82, type: 3}
@@ -7610,9 +7726,6 @@ PrefabInstance:
       value: Curva_U (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44775ed3a49acb242a39190ba6995b82, type: 3}
 --- !u!4 &1352694412 stripped
 Transform:
@@ -7624,12 +7737,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7672,26 +7788,57 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1370461994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
   m_PrefabInstance: {fileID: 1370461993}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1398563132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+  m_PrefabInstance: {fileID: 623018997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1398563133
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398563132}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98ddad4df06f2cb4c84b2c7facee5dac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1398563134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 03ad4adeaf6164846aed48b3f3991507, type: 3}
+  m_PrefabInstance: {fileID: 623018997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1410274790
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 54
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7734,9 +7881,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1410274791 stripped
 Transform:
@@ -7748,12 +7892,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7796,9 +7943,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1411763487 stripped
 Transform:
@@ -7810,7 +7954,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 1142265748973306216, guid: c193ae9ca35ea9d4fb66467cfc780e09, type: 3}
@@ -7862,9 +8005,6 @@ PrefabInstance:
       value: Produto_Quimico_Azul
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c193ae9ca35ea9d4fb66467cfc780e09, type: 3}
 --- !u!4 &1416924037 stripped
 Transform:
@@ -7876,12 +8016,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7924,9 +8067,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1431887423 stripped
 Transform:
@@ -7938,12 +8078,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 57
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7986,9 +8129,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1438049523 stripped
 Transform:
@@ -8000,9 +8140,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
+    - target: {fileID: 5581552568944025430, guid: 786e7eab3451300409c39ef69e1f3360, type: 3}
+      propertyPath: m_RootOrder
+      value: 58
+      objectReference: {fileID: 0}
     - target: {fileID: 5581552568944025430, guid: 786e7eab3451300409c39ef69e1f3360, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.681319
@@ -8048,9 +8191,6 @@ PrefabInstance:
       value: Estante_Tubo_de_ensaio_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 786e7eab3451300409c39ef69e1f3360, type: 3}
 --- !u!4 &1445339931 stripped
 Transform:
@@ -8062,12 +8202,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 59
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8110,26 +8253,99 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1463533740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
   m_PrefabInstance: {fileID: 1463533739}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1510965712
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1894360013}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.850696
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9311996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.1432648
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+      propertyPath: m_Name
+      value: PersonSegurandoRelogio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
 --- !u!1001 &1511240004
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8172,9 +8388,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1511240005 stripped
 Transform:
@@ -8186,12 +8399,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8234,9 +8450,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1520977283 stripped
 Transform:
@@ -8248,12 +8461,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 62
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8296,9 +8512,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1521461679 stripped
 Transform:
@@ -8310,12 +8523,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8358,9 +8574,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1526835659 stripped
 Transform:
@@ -8372,7 +8585,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -8436,9 +8648,6 @@ PrefabInstance:
       value: Parede (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1533203264 stripped
 Transform:
@@ -8450,12 +8659,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8498,9 +8710,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1533288058 stripped
 Transform:
@@ -8512,12 +8721,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8560,9 +8772,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1536566962 stripped
 Transform:
@@ -8574,7 +8783,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -8626,9 +8834,6 @@ PrefabInstance:
       value: 117.685
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &1537494560 stripped
 Transform:
@@ -8640,12 +8845,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8688,9 +8896,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1540453440 stripped
 Transform:
@@ -8702,9 +8907,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
+    - target: {fileID: 5131391375546536596, guid: 1c7ef0dddddaf4e4abf41a09f31b3293, type: 3}
+      propertyPath: m_RootOrder
+      value: 67
+      objectReference: {fileID: 0}
     - target: {fileID: 5131391375546536596, guid: 1c7ef0dddddaf4e4abf41a09f31b3293, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.533177
@@ -8750,9 +8958,6 @@ PrefabInstance:
       value: Estante_Tubo_de_ensaio_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c7ef0dddddaf4e4abf41a09f31b3293, type: 3}
 --- !u!4 &1546128949 stripped
 Transform:
@@ -8799,17 +9004,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -8843,25 +9040,24 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555343955}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.17432344, y: -0, z: -0, w: 0.98468846}
+  m_LocalPosition: {x: 0, y: 6.86, z: 60.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 20.079, y: 0, z: 0}
 --- !u!1001 &1567954288
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 710426772}
     m_Modifications:
     - target: {fileID: 4993901162158091722, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4993901162158091722, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
       propertyPath: m_LocalScale.x
@@ -8920,9 +9116,6 @@ PrefabInstance:
       value: Porta_solta (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
 --- !u!4 &1567954289 stripped
 Transform:
@@ -8934,12 +9127,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8982,9 +9178,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1578295764 stripped
 Transform:
@@ -8996,12 +9189,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
       propertyPath: m_LocalScale.x
@@ -9060,9 +9252,6 @@ PrefabInstance:
       value: Parede (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1584537390 stripped
 Transform:
@@ -9074,7 +9263,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
@@ -9126,12 +9314,6 @@ PrefabInstance:
       value: 82.555
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 390226373545955257, guid: fcad732745f23fd428bb61b376049b78, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1586713073}
   m_SourcePrefab: {fileID: 100100000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
 --- !u!1 &1586713072 stripped
 GameObject:
@@ -9146,30 +9328,52 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586713072}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.04784171, y: 0.022184765, z: 0.04635947}
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: -0.00006241936, y: 0.000032338598, z: 0.023179742}
 --- !u!4 &1586713074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8149788072315336000, guid: fcad732745f23fd428bb61b376049b78, type: 3}
   m_PrefabInstance: {fileID: 1586713071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1589874588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+  m_PrefabInstance: {fileID: 798066793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1589874589 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd8dc603d42f7d54c9c2721c71024f66, type: 3}
+  m_PrefabInstance: {fileID: 798066793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1589874590
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589874588}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f4387755d8e24ab40aa2b5aed5cf7022, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1606273125
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -9221,9 +9425,6 @@ PrefabInstance:
       value: 160.794
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &1606273126 stripped
 Transform:
@@ -9235,12 +9436,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9283,9 +9487,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1606624422 stripped
 Transform:
@@ -9297,12 +9498,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9345,9 +9549,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1607034316 stripped
 Transform:
@@ -9359,12 +9560,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 324138564287894425, guid: 24bb35c369d7f4b49b4d0b6d64ee2e75, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 324138564287894425, guid: 24bb35c369d7f4b49b4d0b6d64ee2e75, type: 3}
       propertyPath: m_LocalScale.x
@@ -9423,21 +9623,21 @@ PrefabInstance:
       value: Ringue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24bb35c369d7f4b49b4d0b6d64ee2e75, type: 3}
 --- !u!1001 &1628666926
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 71
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9480,9 +9680,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1628666927 stripped
 Transform:
@@ -9494,12 +9691,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 72
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9542,9 +9742,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1644753541 stripped
 Transform:
@@ -9556,12 +9753,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
       propertyPath: m_LocalScale.x
@@ -9620,9 +9816,6 @@ PrefabInstance:
       value: Parede (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1689330297 stripped
 Transform:
@@ -9634,12 +9827,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 4122601342802212976, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Amarelo (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
+      propertyPath: m_RootOrder
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 6491760166530798295, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9682,9 +9878,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb5a2133f498b5d4e9ecaf044aabadce, type: 3}
 --- !u!4 &1691117049 stripped
 Transform:
@@ -9696,12 +9889,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 74
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9744,9 +9940,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1691824735 stripped
 Transform:
@@ -9776,7 +9969,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697206436}
-  serializedVersion: 2
   m_LocalRotation: {x: -0.7034382, y: -0.07193542, z: -0.07193542, w: 0.7034382}
   m_LocalPosition: {x: -35.7, y: 0.32, z: -2.1}
   m_LocalScale: {x: 100, y: 100.00002, z: 100.00003}
@@ -9785,11 +9977,8 @@ Transform:
   - {fileID: 2024285254}
   - {fileID: 1940574100}
   - {fileID: 1337018602}
-  - {fileID: 1689330297}
-  - {fileID: 1584537390}
   - {fileID: 807232471}
   - {fileID: 648124932}
-  - {fileID: 1955408564}
   - {fileID: 1211007270}
   - {fileID: 621018949}
   - {fileID: 270589265}
@@ -9819,14 +10008,90 @@ Transform:
   - {fileID: 594403996}
   - {fileID: 497659523}
   - {fileID: 1861983453}
+  - {fileID: 1689330297}
+  - {fileID: 1955408564}
+  - {fileID: 1584537390}
   m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1713433877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1894360013}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8906956
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9311996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3732605
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
+      propertyPath: m_Name
+      value: PersonRunning
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: adbb2756d51951441b6fd94d754a51dd, type: 3}
 --- !u!1001 &1723045089
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -9890,9 +10155,6 @@ PrefabInstance:
       value: Parede (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1723045090 stripped
 Transform:
@@ -9904,12 +10166,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9952,9 +10217,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1735552023 stripped
 Transform:
@@ -9966,7 +10228,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -10030,26 +10291,57 @@ PrefabInstance:
       value: Parede (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1738279451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
   m_PrefabInstance: {fileID: 1738279450}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1750426951 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+  m_PrefabInstance: {fileID: 1510965712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1750426952
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750426951}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3438a67f57db0734ea67a10817e5a62a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1750426953 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 660c1e4b48a8f9346910c3b210db346b, type: 3}
+  m_PrefabInstance: {fileID: 1510965712}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1758281666
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 76
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10092,9 +10384,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1758281667 stripped
 Transform:
@@ -10106,7 +10395,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -10115,7 +10403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_LocalScale.x
@@ -10166,26 +10454,57 @@ PrefabInstance:
       value: -53.33
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &1771929353 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
   m_PrefabInstance: {fileID: 1771929352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1819742035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 749836603802c684596f2a022d72c666, type: 3}
+  m_PrefabInstance: {fileID: 823178226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1819742036
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819742035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 436ce5625a344ff4cafa82a946b1560b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &1819742037 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 749836603802c684596f2a022d72c666, type: 3}
+  m_PrefabInstance: {fileID: 823178226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1826670412
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10228,9 +10547,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1826670413 stripped
 Transform:
@@ -10242,12 +10558,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 78
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10290,9 +10609,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1841015047 stripped
 Transform:
@@ -10304,7 +10620,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -10368,9 +10683,6 @@ PrefabInstance:
       value: Parede (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1861983453 stripped
 Transform:
@@ -10382,7 +10694,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1111603354}
     m_Modifications:
     - target: {fileID: 5005965503496451758, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
@@ -10391,7 +10702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
       propertyPath: m_LocalScale.x
@@ -10438,26 +10749,64 @@ PrefabInstance:
       value: -50.004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
 --- !u!4 &1882458300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5498583309458868768, guid: 1e2890bc5921d2245ad33a902b075464, type: 3}
   m_PrefabInstance: {fileID: 1882458299}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1894360012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894360013}
+  m_Layer: 0
+  m_Name: Personagens
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1894360013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894360012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.1006956, y: 2.9311996, z: 70.07674}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1137571315}
+  - {fileID: 1589874589}
+  - {fileID: 231140771}
+  - {fileID: 1750426953}
+  - {fileID: 10722058}
+  - {fileID: 1819742037}
+  - {fileID: 1398563134}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1940124820
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 79
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10500,9 +10849,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &1940124821 stripped
 Transform:
@@ -10514,7 +10860,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -10578,9 +10923,6 @@ PrefabInstance:
       value: Parede (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1940574100 stripped
 Transform:
@@ -10592,7 +10934,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -10656,9 +10997,6 @@ PrefabInstance:
       value: Parede (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1947120658 stripped
 Transform:
@@ -10670,12 +11008,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
       propertyPath: m_LocalScale.x
@@ -10734,9 +11071,6 @@ PrefabInstance:
       value: Parede (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1955408564 stripped
 Transform:
@@ -10748,7 +11082,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -10812,9 +11145,6 @@ PrefabInstance:
       value: Parede (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1984147484 stripped
 Transform:
@@ -10826,7 +11156,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 2070324482104011903, guid: d9fbb65674173a44699ce2ea964d4a45, type: 3}
@@ -10882,21 +11211,90 @@ PrefabInstance:
       value: Caixinha_de_fogo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9fbb65674173a44699ce2ea964d4a45, type: 3}
 --- !u!4 &1989203962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2070324482104011903, guid: d9fbb65674173a44699ce2ea964d4a45, type: 3}
   m_PrefabInstance: {fileID: 1989203961}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1989325201
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1894360013}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.020696
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.9311996
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6432648
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
+      propertyPath: m_Name
+      value: PersonWalking
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 46a52cfadf6813e4b9dcab64fb058c4f, type: 3}
 --- !u!1001 &1993981189
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -10960,9 +11358,6 @@ PrefabInstance:
       value: Parede (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &1993981190 stripped
 Transform:
@@ -10974,12 +11369,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 5589602657494413051, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Verde (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
+      propertyPath: m_RootOrder
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6190113471796702085, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11022,9 +11420,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bed4b86d2cf9e44a7f9bded0a514fb, type: 3}
 --- !u!4 &1998188217 stripped
 Transform:
@@ -11036,12 +11431,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 710426772}
     m_Modifications:
     - target: {fileID: 4993901162158091722, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4993901162158091722, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
       propertyPath: m_LocalScale.x
@@ -11100,9 +11494,6 @@ PrefabInstance:
       value: Porta_solta (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec7bac030b46bb74e9a44801c31c2ab0, type: 3}
 --- !u!4 &2005142124 stripped
 Transform:
@@ -11114,7 +11505,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -11178,9 +11568,6 @@ PrefabInstance:
       value: Parede
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &2024285254 stripped
 Transform:
@@ -11192,7 +11579,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -11244,9 +11630,6 @@ PrefabInstance:
       value: -92.321
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &2024314597 stripped
 Transform:
@@ -11258,12 +11641,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11306,9 +11692,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &2028150116 stripped
 Transform:
@@ -11320,7 +11703,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1042990868}
     m_Modifications:
     - target: {fileID: 171413150334201896, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
@@ -11396,9 +11778,6 @@ PrefabInstance:
       value: 15.327837
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
 --- !u!4 &2051159911 stripped
 Transform:
@@ -11410,7 +11789,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1697206437}
     m_Modifications:
     - target: {fileID: 4184636584033770718, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
@@ -11474,9 +11852,6 @@ PrefabInstance:
       value: Parede (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ac3a3153504a74fbab58e6641ccc76, type: 3}
 --- !u!4 &2084048722 stripped
 Transform:
@@ -11488,12 +11863,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 82
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11536,9 +11914,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &2085820085 stripped
 Transform:
@@ -11550,12 +11925,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 301128302131500089, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_Name
       value: Tubo_de_ensaio_Laranja (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 83
       objectReference: {fileID: 0}
     - target: {fileID: 5890734700476396875, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11598,9 +11976,6 @@ PrefabInstance:
       value: -90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc59fa45c0ee9ef4294a7a2203a3ca0f, type: 3}
 --- !u!4 &2093339100 stripped
 Transform:
@@ -11612,7 +11987,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 711176194}
     m_Modifications:
     - target: {fileID: 4673736727810415952, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
@@ -11668,9 +12042,6 @@ PrefabInstance:
       value: 21.491
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bce64aceb4a5ff4181696c361afbb18, type: 3}
 --- !u!4 &2098448838 stripped
 Transform:
@@ -11682,7 +12053,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 516929922}
     m_Modifications:
     - target: {fileID: 7540776456920967669, guid: 646209bb49418e343b860304290c18de, type: 3}
@@ -11734,9 +12104,6 @@ PrefabInstance:
       value: Produto_Quimico_Verde
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 646209bb49418e343b860304290c18de, type: 3}
 --- !u!4 &2102135208 stripped
 Transform:
@@ -11748,7 +12115,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1042990868}
     m_Modifications:
     - target: {fileID: 171413150334201896, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
@@ -11824,29 +12190,9 @@ PrefabInstance:
       value: 15.327837
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
 --- !u!4 &7950719078050195765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5593029912385153628, guid: 62ae0d97e97ead7489225f78b6df6fd4, type: 3}
   m_PrefabInstance: {fileID: 2578539425189561193}
   m_PrefabAsset: {fileID: 0}
---- !u!1660057539 &9223372036854775807
-SceneRoots:
-  m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 1555343958}
-  - {fileID: 402906667}
-  - {fileID: 516929922}
-  - {fileID: 1697206437}
-  - {fileID: 711176194}
-  - {fileID: 1113009153}
-  - {fileID: 1042990868}
-  - {fileID: 1111603354}
-  - {fileID: 710426772}
-  - {fileID: 1610730711}
-  - {fileID: 558313548}
-  - {fileID: 356002003}
-  - {fileID: 921505886}
