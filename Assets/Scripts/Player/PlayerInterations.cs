@@ -93,7 +93,7 @@ public class PlayerInterations : NetworkBehaviour
         isTakingOld = changed.Behaviour.isFireButtonPressed;
 
         if (isTakeCurrent && !isTakingOld)
-            changed.Behaviour.OnInteractionRemote();
+            changed.Behaviour.OnFireRemote();
 
     }
 
@@ -115,22 +115,21 @@ public class PlayerInterations : NetworkBehaviour
     {
         if (!Object.HasInputAuthority)
         {
-            if (!ItensScript.isItemInHands)
-            {
                 Debug.Log("DespertadorNO");
                 ItensScript.TakeItem();
-            }
-            else if(ItensScript.isItemInHands)
-            {
-                Debug.Log("DespertadorYES");
-                GameObject originalGameObject = GameObject.Find(ItensScript.ip);
-                GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
-                Despertador.ThrowObject();
-                GameObject temp = GameObject.Find("Despertador(Item Desativado)");
-                Destroy(temp);
-            }
-           
+        }
+    }
+    void OnFireRemote()
+    {
+        if (!Object.HasInputAuthority)
+        {
+            Debug.Log("DespertadorYES");
+            GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+            GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+            GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
+            Despertador.ThrowObject();
+            GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+            Destroy(temp);
         }
     }
 }
