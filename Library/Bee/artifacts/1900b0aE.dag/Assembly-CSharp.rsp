@@ -408,6 +408,7 @@
 "Assets/Scripts/Input/CharacterInputHandler.cs"
 "Assets/Scripts/Itens/Despertador/Despertador.cs"
 "Assets/Scripts/Itens/ItensScript.cs"
+"Assets/Scripts/Itens/POÇA/PlayerInternInteractions.cs"
 "Assets/Scripts/Movement/CharacterMovementHandler.cs"
 "Assets/Scripts/Movement/NetworkCharacterControllerPrototypeCustom.cs"
 "Assets/Scripts/NetWork/NetWorkInputData.cs"
