@@ -10,6 +10,8 @@ public class PlayerInternInteractions : MonoBehaviour
     public static string ip;
     public List<GameObject> playerinRange = new List<GameObject>();
     public float speedSet;
+    public float jumpSet;
+    public float rotationSet;
     void Start()
     {
         
@@ -29,6 +31,8 @@ public class PlayerInternInteractions : MonoBehaviour
             GameObject g = GameObject.Find(ip);
             NetworkCharacterControllerPrototypeCustom cs = g.GetComponent<NetworkCharacterControllerPrototypeCustom>();
             cs.maxSpeed = speedSet;
+            cs.jumpImpulse = jumpSet;
+            cs.rotationSpeed = rotationSet;
             playerinRange.Add(g);
 
         }
@@ -43,6 +47,8 @@ public class PlayerInternInteractions : MonoBehaviour
             GameObject g = GameObject.Find(ip);
             NetworkCharacterControllerPrototypeCustom cs = g.GetComponent<NetworkCharacterControllerPrototypeCustom>();
             cs.maxSpeed = 2f;
+            cs.jumpImpulse = 8.0f;
+            cs.rotationSpeed = 5.0f;
             playerinRange.Remove(g);
         }
     }
