@@ -7,7 +7,8 @@ using System;
 
 public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 {
-    public NetWorkPlayer playerPrefab;
+    
+    public NetWorkPlayer[] playerPrefab;
 
     CharacterInputHandler characterInputHandler;
 
@@ -21,7 +22,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
        if (runner.IsServer)
        {
            Debug.Log("OnplayerJoined we are server. Spawning player");
-           runner.Spawn(playerPrefab, Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
+           runner.Spawn(playerPrefab[0], Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
        }
        else Debug.Log("OnPlayerJoined");
    }
