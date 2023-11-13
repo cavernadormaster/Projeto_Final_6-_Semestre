@@ -575,6 +575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poca
       objectReference: {fileID: 0}
+    - target: {fileID: 5014379720462595407, guid: c6ab393de205a7442a79c0ad9a7ed7d5, type: 3}
+      propertyPath: speedSet
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8722558279708041136, guid: c6ab393de205a7442a79c0ad9a7ed7d5, type: 3}
       propertyPath: m_Size.z
       value: 0.0017027896
