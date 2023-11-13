@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1354057520388410440}
   - component: {fileID: 3832109656736692354}
   - component: {fileID: 8722558279708041136}
-  - component: {fileID: 2335273236375725675}
   - component: {fileID: 5014379720462595407}
   m_Layer: 0
   m_Name: Poca
@@ -97,21 +96,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.013314181, y: 0.021187978, z: 0.00070400664}
-  m_Center: {x: -0.0032971394, y: -0.0024042903, z: -0.000057639612}
---- !u!65 &2335273236375725675
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3327772125209418071}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.022789653, y: 0.0139611345, z: 0.00070400664}
-  m_Center: {x: 0.0014405971, y: -0.006017731, z: -0.00005763961}
+  m_Size: {x: 0.022883218, y: 0.021187978, z: 0.00202508}
+  m_Center: {x: 0.0014873926, y: -0.0024042903, z: 0.0006028968}
 --- !u!114 &5014379720462595407
 MonoBehaviour:
   m_ObjectHideFlags: 0

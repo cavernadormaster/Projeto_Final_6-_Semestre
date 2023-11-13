@@ -8,9 +8,9 @@ using UnityEngine;
 public class PlayerInternInteractions : MonoBehaviour
 {
     public static string ip;
-    public GameObject[] playerinRange;
+    public List<GameObject> playerinRange = new List<GameObject>();
     bool isinRange;
-    int i = 0;
+    int i = 1;
     void Start()
     {
         
@@ -30,8 +30,8 @@ public class PlayerInternInteractions : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             ip = other.gameObject.name;
-            playerinRange[i] = GameObject.Find(ip);
-            i++;
+            GameObject g = GameObject.Find(ip);
+            playerinRange.Add(g);
         }
     }
 
@@ -39,27 +39,12 @@ public class PlayerInternInteractions : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            Debug.Log("Player saiu");
             ip = other.gameObject.name;
-            GameObject foundObject = FindObjectByName(ip);
-            for (int i = 0; i < playerinRange.Length; i++)
-            {
-                if (playerinRange[i].name == ip)
-                {
-                    Destroy(playerinRange[i]); // Destroy the object
-                                              // Shift the remaining elements in the array to fill the gap
-                    for (int j = i; j < playerinRange.Length - 1; j++)
-                    {
-                        playerinRange[j] = playerinRange[j + 1];
-                    }
-                    Array.Resize(ref playerinRange, playerinRange.Length - 1);
-                    break; // Exit the loop once the object is found and deleted
-                }
-            }
+            GameObject g = GameObject.Find(ip);
+            playerinRange.Remove(g);
         }
     }
     
-        GameObject FindObjectByName(string nameToFind)
-    {
-        return playerinRange.FirstOrDefault(obj => obj.name == nameToFind);
-    }
+       
 }
