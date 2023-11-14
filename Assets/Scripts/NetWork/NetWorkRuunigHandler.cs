@@ -101,5 +101,13 @@ public class NetWorkRuunigHandler : MonoBehaviour
                 });
             }
         }
+        StartCoroutine(CleanUpHostMigrationCO());
+    }
+
+    IEnumerator CleanUpHostMigrationCO()
+    {
+        yield return new WaitForSeconds(5.0f);
+
+        FindObjectOfType<Spawner>().OnHostMigrationCleanUp();
     }
 }

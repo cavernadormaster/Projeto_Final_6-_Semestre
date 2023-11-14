@@ -65,6 +65,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
             else
             {
                 Debug.Log($"Spawning new player for connection token {playerToken}");
+
                 NetWorkPlayer spawnedNetworkPlayer = runner.Spawn(playerPrefab[0], Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
 
                 spawnedNetworkPlayer.token = playerToken;
@@ -72,7 +73,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
                 mapTokenIDWithNetworkPlayer[playerToken] = spawnedNetworkPlayer;
             }
 
-           runner.Spawn(playerPrefab[0], Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
+           //runner.Spawn(playerPrefab[0], Utils.GetRandomSpawnPoint(), Quaternion.identity, player);
        }
        else Debug.Log("OnPlayerJoined");
    }
@@ -109,7 +110,24 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     public void OnSceneLoadDone(NetworkRunner runner) { }
     public void OnSceneLoadStart(NetworkRunner runner) { }
 
-   
+   public void OnHostMigrationCleanUp()
+    {
+        Debug.Log("Spawner OnHostMigrationCleanUp started");
+
+        foreach(KeyValuePair<int, NetWorkPlayer> entry in mapTokenIDWithNetworkPlayer)
+        {
+            NetworkObject netWorkPlayerDictionary = entry.Value.GetComponent<NetworkObject>();
+
+            if(netWorkPlayerDictionary.InputAuthority.IsNone)
+            {
+                Debug.Log($"{Time.time} Found player thet has not reconnected. Despawning {entry.Value.nickName}");
+
+                netWorkPlayerDictionary.Runner.Despawn(netWorkPlayerDictionary);
+            }
+        }
+
+        Debug.Log("Spawner OnHostMigrationCleanUp Completed");
+    }
 
     
 
