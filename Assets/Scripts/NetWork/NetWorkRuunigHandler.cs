@@ -18,8 +18,8 @@ public class NetWorkRuunigHandler : MonoBehaviour
         networkRunner = Instantiate(networkRunnerPrefab);
         networkRunner.name = "Net Test";
 
-        //var clientTask = IniTializeNetworkRunner(networkRunner, GameMode.AutoHostOrClient, 
-        //                                          NetAddress.Any(), SceneManager.GetActiveScene().buildIndex, null);
+        var clientTask = IniTializeNetworkRunner(networkRunner, GameMode.AutoHostOrClient, GameManager.instance.GetConnectionToken(), 
+                                                  NetAddress.Any(), SceneManager.GetActiveScene().buildIndex, null);
 
         Debug.Log("Server NetWork Started"); 
     }
@@ -80,8 +80,8 @@ public class NetWorkRuunigHandler : MonoBehaviour
             SceneManager = scenemanager,
             HostMigrationToken = hostMigrationToken,
             HostMigrationResume = HostMigrationResume,
-            
-        }) ;
+            ConnectionToken = GameManager.instance.GetConnectionToken()
+        });
     }
 
     void HostMigrationResume(NetworkRunner runner)
@@ -93,6 +93,11 @@ public class NetWorkRuunigHandler : MonoBehaviour
                 runner.Spawn(resumeNetworkObject, position: characterController.ReadPosition(), rotation: characterController.ReadRotation(), onBeforeSpawned: (runner, newNetworkObject) =>
                 {
                     newNetworkObject.CopyStateFrom(resumeNetworkObject);
+
+                    if(resumeNetworkObject.TryGetBehaviour<NetWorkPlayer>(out var oldNetworkPlayer))
+                    {
+                        FindObjectOfType<Spawner>().SetConnectionTokenMapping(oldNetworkPlayer.token, newNetworkObject.GetComponent<NetWorkPlayer>());
+                    }
                 });
             }
         }

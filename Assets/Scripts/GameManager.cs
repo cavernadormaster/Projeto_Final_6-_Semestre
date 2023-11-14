@@ -23,7 +23,11 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        if (connectionToken == null)
+        {
+            connectionToken = ConnectionTokensUtil.NewToken();
+            Debug.Log($"Player connection token{ConnectionTokensUtil.HashToken(connectionToken)}");
+        }
     }
 
     public void SetConnectionToken(byte[] connectionToken)

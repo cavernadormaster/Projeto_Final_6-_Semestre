@@ -3,7 +3,7 @@ using System;
 public static class ConnectionTokensUtil
 {
 
-    public static byte[] newToken => Guid.NewGuid().ToByteArray();
+    public static byte[] NewToken() => Guid.NewGuid().ToByteArray();
 
     public static int HashToken(byte[] token) => new Guid(token).GetHashCode();
 
