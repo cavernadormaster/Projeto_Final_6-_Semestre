@@ -36,19 +36,28 @@ public class SessionListUIHandler : MonoBehaviour
         addedSessionInfoUIItem.OnjoinSession += AddedSessionInfoUIItem_OnJoinSession;
     }
 
-    void AddedSessionInfoUIItem_OnJoinSession(SessionInfo obj)
+    void AddedSessionInfoUIItem_OnJoinSession(SessionInfo sessionInfo)
     {
+        NetWorkRuunigHandler netWorkRuunigHandler = FindObjectOfType<NetWorkRuunigHandler>();
 
+        netWorkRuunigHandler.JoinGame(sessionInfo);
+
+        MainMenuUIHandler mainMenuUIHandler = FindObjectOfType<MainMenuUIHandler>();
+        mainMenuUIHandler.OnJoiningServer();
     }
 
     public void InNoSessionFound()
     {
+        ClearList();
+
         statusText.text = "No game session found";
         statusText.gameObject.SetActive(true);
     }
 
     public void OnLookingForGameSession()
     {
+        ClearList();
+
         statusText.text = "Looking for game sessions";
         statusText.gameObject.SetActive(true);
     }
