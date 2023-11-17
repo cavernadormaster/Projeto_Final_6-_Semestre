@@ -6,19 +6,61 @@ using TMPro;
 
 public class MainMenuUIHandler : MonoBehaviour
 {
-    public TMP_InputField inputField;
+    [Header("Panels")]
+    public GameObject playerDetailsPanel;
+    public GameObject sessionBrowserPanel;
+    public GameObject createSessionPanel;
+    public GameObject statusPanel;
+
+    [Header("Player settings")]
+    public TMP_InputField playerNameInputField;
+
+    [Header("New game session")]
+    public TMP_InputField sessionNameInputField;
 
     void Start()
     {
         if(PlayerPrefs.HasKey("PlayerNickname"))
-            inputField.text = PlayerPrefs.GetString("PlayerNickname");
+            playerNameInputField.text = PlayerPrefs.GetString("PlayerNickname");
     }
 
-    public void OnJoinGameClicked()
+    void HideAllPanels()
     {
-        PlayerPrefs.SetString("PlayerNickname", inputField.text);
+        playerDetailsPanel.SetActive(false);
+        sessionBrowserPanel.SetActive(false);
+        statusPanel.SetActive(false);
+        createSessionPanel.SetActive(false);
+    }
+
+    public void OnFindGameClicked()
+    {
+        PlayerPrefs.SetString("PlayerNickname", playerNameInputField.text);
         PlayerPrefs.Save();
-        SceneManager.LoadScene("SampleScene");
+        NetWorkRuunigHandler netWorkRuunigHandler = FindObjectOfType<NetWorkRuunigHandler>();
+
+        netWorkRuunigHandler.OnJoinLobby();
+
+        HideAllPanels();
+        sessionBrowserPanel.SetActive(true);
+
+        FindObjectOfType<SessionListUIHandler>(true).OnLookingForGameSession();
+    }
+
+    public void OnCreateNewGameClicked()
+    {
+        HideAllPanels();
+        createSessionPanel.SetActive(true);
+    }
+
+    public void OnStartNewSessionClicked()
+    {
+        NetWorkRuunigHandler netWorkRuunigHandler = FindObjectOfType<NetWorkRuunigHandler>();
+
+        netWorkRuunigHandler.CreateGAme(sessionNameInputField.text, "SampleScene");
+
+        HideAllPanels();
+
+        statusPanel.gameObject.SetActive(true);
     }
     
 }

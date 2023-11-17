@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     Dictionary<int, NetWorkPlayer> mapTokenIDWithNetworkPlayer;
 
     CharacterInputHandler characterInputHandler;
+    SessionListUIHandler sessionListUIHandler;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     private void Awake()
     {
         mapTokenIDWithNetworkPlayer = new Dictionary<int, NetWorkPlayer>();
+        sessionListUIHandler = FindObjectOfType<SessionListUIHandler>(true);
     }
 
     int GetPlayerToken(NetworkRunner runner, PlayerRef player)
@@ -96,7 +98,30 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     public void OnConnectRequest(NetworkRunner runner, NetworkRunnerCallbackArgs.ConnectRequest request, byte[] token) { Debug.Log("OnconnectedRequest"); }
     public void OnConnectFailed(NetworkRunner runner, NetAddress remoteAddress, NetConnectFailedReason reason) { Debug.Log("OnConnectedFailed");  }
     public void OnUserSimulationMessage(NetworkRunner runner, SimulationMessagePtr message) { }
-    public void OnSessionListUpdated(NetworkRunner runner, List<SessionInfo> sessionList) { }
+    public void OnSessionListUpdated(NetworkRunner runner, List<SessionInfo> sessionList) 
+    {
+        if (sessionListUIHandler == null)
+            return;
+
+        if(sessionList.Count == 0)
+        {
+            Debug.Log("Joined lobby sessions found");
+
+            sessionListUIHandler.InNoSessionFound();
+        }
+        else
+        {
+            sessionListUIHandler.ClearList();
+
+            foreach(SessionInfo sessionInfo in sessionList)
+            {
+                sessionListUIHandler.AddList(sessionInfo);
+
+                Debug.Log($"Found session {sessionInfo.Name} playerCount {sessionInfo.PlayerCount}");
+            }
+        }
+    
+    }
     public void OnCustomAuthenticationResponse(NetworkRunner runner, Dictionary<string, object> data) { }
     public async void OnHostMigration(NetworkRunner runner, HostMigrationToken hostmigrationtoken) 
     {
