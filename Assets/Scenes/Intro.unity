@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -686, y: -119}
+  m_AnchoredPosition: {x: -545, y: -306}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679047748
@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -477, y: 150}
+  m_AnchoredPosition: {x: -226, y: 150}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894810600
@@ -502,8 +502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 490.40375, y: -969}
-  m_SizeDelta: {x: 895.8497, y: 856.2611}
+  m_AnchoredPosition: {x: 490, y: -1017.408}
+  m_SizeDelta: {x: 917.52, y: 954.9031}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411519807
 MonoBehaviour:
@@ -527,16 +527,16 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Em 1950, em meio a Guerra Fria, a R\xFAssia come\xE7a uma frente de pesquisa
     em massa sobre armas biol\xF3gicas. Desde bombas at\xE9 muta\xE7\xF5es gen\xE9ticas.
-    Foi a\xED que em 1952, na cidade de Skolkovo, um laborat\xF3rio chamado Novoy
-    Budushcheye apresentou uma arma que mudaria o rumo das coisas. Uma muta\xE7\xE3o
-    gen\xE9tica quase indestrut\xEDvel. A R\xFAssia estava muito feliz com isso,
-    mas algo aconteceu\u2026\r\nNo ano seguinte, quando estavam fazendo alguns testes
-    para finalizar o projeto, uma vari\xE1vel surgiu. Sem querer, um dos cientistas
-    que trabalhava no laborat\xF3rio acabou aplicando em si a muta\xE7\xE3o, mas
-    seu corpo n\xE3o parece responder bem e consequ\xEAncias graves vieram com isso.\r\n"
+    Foi ai que em 1952, na cidade de Skolkovo, um laborat\xF3rio chamado Novoy Budushcheye
+    apresentou uma arma que mudaria o rumo das coisas. Uma muta\xE7\xE3o gen\xE9tica
+    quase indestrut\xEDvel. A R\xFAssia estava muito feliz com isso, mas algo aconteceu\u2026\r\nNo
+    ano seguinte, quando estavam fazendo alguns testes para finalizar o projeto,
+    uma vari\xE1vel surgiu. Sem querer, um dos cientistas que trabalhava no laborat\xF3rio
+    acabou aplicando em si a muta\xE7\xE3o, mas seu corpo n\xE3o parece responder
+    bem e consequ\xEAncias graves vieram com isso.\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5167f512df4ec6746a4ff456f2c4a820, type: 2}
+  m_sharedMaterial: {fileID: -8554457947832016404, guid: 5167f512df4ec6746a4ff456f2c4a820, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -567,8 +567,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 167.182}
+  m_margin: {x: 0, y: 0, z: 0, w: 0.05822754}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -764,7 +764,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -714.39325, y: 303.38025}
+  m_AnchoredPosition: {x: -740, y: 275}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519634837
