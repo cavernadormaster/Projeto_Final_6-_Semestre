@@ -427,6 +427,7 @@
 "Assets/Scripts/UI/MainMenuUIHandler.cs"
 "Assets/Scripts/UI/SessionInfoListUIItem.cs"
 "Assets/Scripts/UI/SessionListUIHandler.cs"
+"Assets/Scripts/Utils/SelectPrefabPlayerManager.cs"
 "Assets/Scripts/Utils/StartUp.cs"
 "Assets/Scripts/Utils/Utils.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"

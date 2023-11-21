@@ -11,6 +11,8 @@ public class SessionInfoListUIItem : MonoBehaviour
     public TextMeshProUGUI sessionNameText;
     public TextMeshProUGUI playerCountText;
     public Button joinButton;
+    const int PLAYERMAX = 5;
+
 
     SessionInfo sessioninfo;
     
@@ -24,11 +26,11 @@ public class SessionInfoListUIItem : MonoBehaviour
         this.sessioninfo = sessionInfo;
 
         sessionNameText.text = sessionInfo.Name;
-        playerCountText.text = $"{sessionInfo.PlayerCount.ToString()}/{sessionInfo.MaxPlayers.ToString()}";
+        playerCountText.text = $"{sessionInfo.PlayerCount.ToString()}/{PLAYERMAX.ToString()}";
 
         bool joinButtonActive = true;
 
-        if (sessionInfo.PlayerCount >= 1)
+        if (sessionInfo.PlayerCount >= PLAYERMAX || sessionInfo.IsOpen)
             joinButtonActive = false;
 
         joinButton.gameObject.SetActive(joinButtonActive);
