@@ -30,28 +30,28 @@ public class PlayerInterations : NetworkBehaviour
     {
         if(GetInput(out NetWorkInputData netWorkInputData))
         {
-            if (isInItemRange && !ItensScript.isItemInHands)
-            {
-                Debug.Log("IsInRange");
-                if (netWorkInputData.isTakeInputPressed)
+                if (isInItemRange && !ItensScript.isItemInHands)
                 {
-                    Interact();
+                    Debug.Log("IsInRange");
+                    if (netWorkInputData.isTakeInputPressed)
+                    {
+                        Interact();
+                    }
                 }
-            }
-            if (!Despertador.FiredRelogio)
-            {
-                if (netWorkInputData.isFireButtonPressed)
+                if (!Despertador.FiredRelogio)
                 {
-                    GameObject temp = GameObject.Find("Despertador(Item Desativado)");
-                    Destroy(temp);
-                    GameObject originalGameObject = GameObject.Find(ItensScript.ip);
-                    GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                    GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
-                    temp2.transform.SetParent(null);
-                    Despertador.FiredRelogio = true;
-                    FireInteract();
+                    if (netWorkInputData.isFireButtonPressed)
+                    {
+                        GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+                        Destroy(temp);
+                        GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+                        GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                        GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
+                        temp2.transform.SetParent(null);
+                        Despertador.FiredRelogio = true;
+                        FireInteract();
+                    }
                 }
-            }
         }
 
     }

@@ -10,5 +10,7 @@ public struct NetWorkInputData : INetworkInput
     public NetworkBool isJumpPressed;
     public NetworkBool isTakeInputPressed;
     public NetworkBool isFireButtonPressed;
+    public NetworkBool isCientist;
+    public NetworkBool isPhantom;
 
 }

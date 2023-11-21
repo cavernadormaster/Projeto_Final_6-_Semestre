@@ -37,8 +37,8 @@ public class CharacterInputHandler : MonoBehaviour
         moveInputVector.y = Input.GetAxis("Vertical");
 
         isJumpButoonPressed = Input.GetKey(KeyCode.Space);
-        isTakeButtonPressed = Input.GetKey(KeyCode.E);
-        isFireButtonPressed = Input.GetKey(KeyCode.F);
+        isTakeButtonPressed = Input.GetKey(KeyCode.Mouse1);
+        isFireButtonPressed = Input.GetKey(KeyCode.Mouse0);
     }
 
     public NetWorkInputData GetNetWorkInput()
