@@ -13,11 +13,14 @@ public class SessionInfoListUIItem : MonoBehaviour
     public Button joinButton;
 
     SessionInfo sessioninfo;
+    
+
 
     public event Action<SessionInfo> OnjoinSession;
 
     public void SetInformation(SessionInfo sessionInfo)
     {
+        
         this.sessioninfo = sessionInfo;
 
         sessionNameText.text = sessionInfo.Name;
@@ -25,7 +28,7 @@ public class SessionInfoListUIItem : MonoBehaviour
 
         bool joinButtonActive = true;
 
-        if (sessionInfo.PlayerCount >= sessionInfo.MaxPlayers)
+        if (sessionInfo.PlayerCount >= 1)
             joinButtonActive = false;
 
         joinButton.gameObject.SetActive(joinButtonActive);

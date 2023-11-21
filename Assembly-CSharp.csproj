@@ -59,6 +59,7 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\PlayerSpawnerPrototype.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\CommonSceneObject.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionGraphBase.cs" />
+    <Compile Include="Assets\Scripts\Player\ZombieInteractions.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
@@ -156,7 +157,6 @@
     <Compile Include="Assets\Scripts\NetWork\NetworkInGameMessage.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionGraph.cs" />
-    <Compile Include="Assets\Scripts\Player\ZombieInteractions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
