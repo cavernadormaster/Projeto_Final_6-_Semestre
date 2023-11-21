@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 679047747}
   - component: {fileID: 679047749}
   - component: {fileID: 679047748}
+  - component: {fileID: 679047750}
   m_Layer: 5
   m_Name: Foto_3
   m_TagString: Untagged
@@ -158,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -545, y: -306}
+  m_AnchoredPosition: {x: -545, y: -26}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679047748
@@ -199,6 +200,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679047746}
   m_CullTransparentMesh: 1
+--- !u!95 &679047750
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679047746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e6a41fc5cff6044d92f6a511549593c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &894810598
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +231,7 @@ GameObject:
   - component: {fileID: 894810599}
   - component: {fileID: 894810601}
   - component: {fileID: 894810600}
+  - component: {fileID: 894810602}
   m_Layer: 5
   m_Name: Foto_2
   m_TagString: Untagged
@@ -226,7 +248,7 @@ RectTransform:
   m_GameObject: {fileID: 894810598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417369736}
@@ -234,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -226, y: 150}
+  m_AnchoredPosition: {x: -25, y: 5}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894810600
@@ -275,6 +297,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894810598}
   m_CullTransparentMesh: 1
+--- !u!95 &894810602
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894810598}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6b1c5ac5ffab8d48b87834bf07d6fbe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &933922457
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +344,7 @@ RectTransform:
   m_GameObject: {fileID: 933922457}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0125, y: 1.1825285, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417369736}
@@ -419,53 +461,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1380271992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1380271994}
-  - component: {fileID: 1380271993}
-  m_Layer: 0
-  m_Name: Image_Appear
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1380271993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380271992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25c2274ad726c4245855ee684d037b95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Imagem_1: {fileID: 1519634835}
-  Imagem_2: {fileID: 894810598}
-  Imagem_3: {fileID: 679047746}
---- !u!4 &1380271994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380271992}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 971.787, y: 537.14624, z: -5.240406}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1411519805
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +472,7 @@ GameObject:
   - component: {fileID: 1411519806}
   - component: {fileID: 1411519808}
   - component: {fileID: 1411519807}
-  - component: {fileID: 1411519809}
+  - component: {fileID: 1411519810}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -494,7 +489,7 @@ RectTransform:
   m_GameObject: {fileID: 1411519805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5122, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417369736}
@@ -502,8 +497,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 490, y: -1017.408}
-  m_SizeDelta: {x: 917.52, y: 954.9031}
+  m_AnchoredPosition: {x: 580, y: 137}
+  m_SizeDelta: {x: 461.52, y: 932.9271}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411519807
 MonoBehaviour:
@@ -525,15 +520,32 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Em 1950, em meio a Guerra Fria, a R\xFAssia come\xE7a uma frente de pesquisa
-    em massa sobre armas biol\xF3gicas. Desde bombas at\xE9 muta\xE7\xF5es gen\xE9ticas.
-    Foi ai que em 1952, na cidade de Skolkovo, um laborat\xF3rio chamado Novoy Budushcheye
-    apresentou uma arma que mudaria o rumo das coisas. Uma muta\xE7\xE3o gen\xE9tica
-    quase indestrut\xEDvel. A R\xFAssia estava muito feliz com isso, mas algo aconteceu\u2026\r\nNo
-    ano seguinte, quando estavam fazendo alguns testes para finalizar o projeto,
-    uma vari\xE1vel surgiu. Sem querer, um dos cientistas que trabalhava no laborat\xF3rio
-    acabou aplicando em si a muta\xE7\xE3o, mas seu corpo n\xE3o parece responder
-    bem e consequ\xEAncias graves vieram com isso.\r\n"
+  m_text: "As sombras alongavam-se pelos corredores gelados do laborat\xF3rio secreto
+    russo, um covil oculto nas entranhas da Guerra Fria. O ar impregnado de mist\xE9rio
+    e o murm\xFArio sutil das m\xE1quinas sussurravam segredos sinistros. Sob o manto
+    da obscuridade, cientistas com mentes enigm\xE1ticas forjavam o futuro da guerra
+    biol\xF3gica, tecendo uma trama nefasta que desafiava os limites da \xE9tica
+    e da humanidade.\r\n\r\nNuma noite sombria, durante uma experimenta\xE7\xE3o
+    delicada e proibida, algo deu terrivelmente errado. Um descuido, um deslize na
+    coreografia mortal da manipula\xE7\xE3o gen\xE9tica, e as consequ\xEAncias foram
+    devastadoras. Entre tubos de ensaio quebrados e subst\xE2ncias desconhecidas,
+    um dos cientistas, antes um mestre das f\xF3rmulas letais, viu-se mergulhado
+    numa metamorfose incontrol\xE1vel. Seus olhos perderam a centelha da raz\xE3o,
+    e sua pele adquiriu uma palidez cadav\xE9rica.\r\n\r\nA trag\xE9dia criou algo
+    al\xE9m das fronteiras da ci\xEAncia convencional: um zumbi, uma aberra\xE7\xE3o
+    nascida do erro humano, espreitando nos cantos escuros do laborat\xF3rio. O cientista,
+    agora transformado numa criatura que s\xF3 habitava pesadelos, perambulava pelos
+    corredores desolados, alimentando-se da escurid\xE3o que o aprisionava.\r\n\r\nNo
+    submundo sombrio da Guerra Fria, onde a paranoia era tecida em cada conspira\xE7\xE3o,
+    a exist\xEAncia do zumbi tornou-se um segredo guardado a sete chaves. O laborat\xF3rio,
+    outrora palco de experimenta\xE7\xF5es cru\xE9is, tornou-se um t\xFAmulo silencioso
+    para aqueles que conheciam a verdade. Enquanto o mundo acima continuava sua dan\xE7a
+    delicada na corda bamba da geopol\xEDtica, nas entranhas da R\xFAssia, um monstro
+    espreitava, uma consequ\xEAncia macabra de ambi\xE7\xF5es desenfreadas e erros
+    que n\xE3o poderiam ser desfeitos. O eco de seus passos arrastados e o gemido
+    gutural ressoavam como uma advert\xEAncia, um sussurro sinistro daquilo que a
+    mente humana poderia desencadear quando tocasse nas fronteiras proibidas da vida
+    e da morte."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5167f512df4ec6746a4ff456f2c4a820, type: 2}
   m_sharedMaterial: {fileID: -8554457947832016404, guid: 5167f512df4ec6746a4ff456f2c4a820, type: 2}
@@ -567,8 +579,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 8
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -596,7 +608,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0.05822754}
+  m_margin: {x: 0, y: 0, z: 0, w: -5523.864}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -610,19 +622,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411519805}
   m_CullTransparentMesh: 1
---- !u!114 &1411519809
-MonoBehaviour:
+--- !u!95 &1411519810
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411519805}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f44f1b1159baa4448b9be14d5b22439, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainText: {fileID: 1411519807}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e2580c12f4426a3458a3be61a1dc25ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1417369732
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,6 +759,7 @@ GameObject:
   - component: {fileID: 1519634836}
   - component: {fileID: 1519634838}
   - component: {fileID: 1519634837}
+  - component: {fileID: 1519634839}
   m_Layer: 5
   m_Name: Foto_1
   m_TagString: Untagged
@@ -756,7 +776,7 @@ RectTransform:
   m_GameObject: {fileID: 1519634835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1417369736}
@@ -764,7 +784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -740, y: 275}
+  m_AnchoredPosition: {x: -21, y: 10}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519634837
@@ -805,6 +825,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519634835}
   m_CullTransparentMesh: 1
+--- !u!95 &1519634839
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519634835}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 06fe40d429bb15a49853445524c0dd4b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1637802408
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637802408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
