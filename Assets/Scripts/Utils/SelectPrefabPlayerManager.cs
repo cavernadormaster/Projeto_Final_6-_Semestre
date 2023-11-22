@@ -22,8 +22,6 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public bool isZumbi { get; set; }
 
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
-    [Header("Player Prefab")] public GameObject[] playerPrefab;
-    [Header("Paredes")] public GameObject paredes;
 
     public override void FixedUpdateNetwork()
     {
@@ -47,36 +45,29 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         if (TipoDePersonagem == "Cientista")
         {
             GameObject originalGameObject = GameObject.Find(ip);
-            GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-            Destroy(child);
+            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+            Material childmaterial = child.GetComponent<Material>();
 
-            if (corDoCientista == "Azul")
+            if(corDoCientista == "Azul")
             {
-                GameObject temp = Instantiate(playerPrefab[0]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.blue;
             }
 
-            if (corDoCientista == "Amarelo")
+            if(corDoCientista == "Amarelo")
             {
-                GameObject temp = Instantiate(playerPrefab[1]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.yellow;
             }
 
             if (corDoCientista == "Vermelho")
             {
-                GameObject temp = Instantiate(playerPrefab[2]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.red;
             }
 
             if (corDoCientista == "Verde")
             {
-                GameObject temp = Instantiate(playerPrefab[3]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.green;
             }
+
         }
         else if (TipoDePersonagem != "Cientista")
         {
@@ -94,17 +85,18 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         
         if (other.CompareTag("Player"))
         {
-            paredes.SetActive(true);
             TipoDePersonagem = TipoDePlataforma;
             ip = other.gameObject.name;
            if(TipoDePersonagem == "Cientista")
             {
                 Debug.Log(TipoDePersonagem);
+                NetWorkInputData netWorkInputData = new NetWorkInputData();
                 isCientist = true;
             }
             if(TipoDePersonagem != "Cientista")
             {
                 Debug.Log(TipoDePersonagem);
+                NetWorkInputData netWorkInputData = new NetWorkInputData();
                 isZumbi = true;
                
             }
@@ -168,35 +160,27 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         if (TipoDePersonagem == "Cientista")
         {
             GameObject originalGameObject = GameObject.Find(ip);
-            GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-            Destroy(child);
+            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+            Material childmaterial = child.GetComponent<Material>();
 
             if (corDoCientista == "Azul")
             {
-                GameObject temp = Instantiate(playerPrefab[0]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.blue;
             }
 
             if (corDoCientista == "Amarelo")
             {
-                GameObject temp = Instantiate(playerPrefab[1]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.yellow;
             }
 
             if (corDoCientista == "Vermelho")
             {
-                GameObject temp = Instantiate(playerPrefab[2]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.red;
             }
 
             if (corDoCientista == "Verde")
             {
-                GameObject temp = Instantiate(playerPrefab[3]);
-                temp.transform.position = originalGameObject.transform.position;
-                temp.transform.SetParent(originalGameObject.transform);
+                childmaterial.color = Color.green;
             }
 
         }
