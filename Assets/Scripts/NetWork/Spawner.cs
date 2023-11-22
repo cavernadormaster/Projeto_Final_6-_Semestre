@@ -20,6 +20,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         
     }
 
+
     private void Awake()
     {
         mapTokenIDWithNetworkPlayer = new Dictionary<int, NetWorkPlayer>();
@@ -49,6 +50,8 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     {
         mapTokenIDWithNetworkPlayer.Add(token, netWorkPlayer);
     }
+
+   
 
    public void OnPlayerJoined(NetworkRunner runner, PlayerRef player) 
    {

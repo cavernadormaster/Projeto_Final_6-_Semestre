@@ -30,7 +30,7 @@ public class NetWorkRuunigHandler : MonoBehaviour
 
             if (SceneManager.GetActiveScene().name != "Menu")
             {
-                var clientTask = IniTializeNetworkRunner(networkRunner, GameMode.AutoHostOrClient,"SampleScene", GameManager.instance.GetConnectionToken(),
+                var clientTask = IniTializeNetworkRunner(networkRunner, GameMode.AutoHostOrClient,"Jogo", GameManager.instance.GetConnectionToken(),
                                                           NetAddress.Any(), SceneManager.GetActiveScene().buildIndex, null);
             }
             Debug.Log("Server NetWork Started");

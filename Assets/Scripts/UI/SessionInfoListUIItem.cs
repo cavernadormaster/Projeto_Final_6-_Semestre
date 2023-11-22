@@ -13,7 +13,7 @@ public class SessionInfoListUIItem : MonoBehaviour
     public Button joinButton;
     const int PLAYERMAX = 5;
 
-
+    public static int playercount;
     SessionInfo sessioninfo;
     
 
@@ -33,6 +33,7 @@ public class SessionInfoListUIItem : MonoBehaviour
         if (sessionInfo.PlayerCount >= PLAYERMAX || sessionInfo.IsOpen)
             joinButtonActive = false;
 
+        playercount = sessionInfo.PlayerCount;
         joinButton.gameObject.SetActive(joinButtonActive);
     }
 

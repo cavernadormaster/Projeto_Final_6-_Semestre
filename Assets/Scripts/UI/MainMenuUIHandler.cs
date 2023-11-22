@@ -56,7 +56,7 @@ public class MainMenuUIHandler : MonoBehaviour
     {
         NetWorkRuunigHandler netWorkRuunigHandler = FindObjectOfType<NetWorkRuunigHandler>();
 
-        netWorkRuunigHandler.CreateGAme(sessionNameInputField.text, "SampleScene");
+        netWorkRuunigHandler.CreateGAme(sessionNameInputField.text, "Jogo");
 
         HideAllPanels();
 
