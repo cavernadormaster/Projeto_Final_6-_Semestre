@@ -30,7 +30,7 @@ public class SessionInfoListUIItem : MonoBehaviour
 
         bool joinButtonActive = true;
 
-        if (sessionInfo.PlayerCount >= PLAYERMAX || sessionInfo.IsOpen)
+        if (sessionInfo.PlayerCount >= PLAYERMAX )
             joinButtonActive = false;
 
         playercount = sessionInfo.PlayerCount;
