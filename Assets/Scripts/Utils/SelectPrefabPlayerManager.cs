@@ -18,7 +18,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     [Networked(OnChanged = nameof(OnPersonagemChange))]
     public bool isCientist { get; set; }
 
-    [Networked(OnChanged = nameof(OnPersonagemChange))]
+    [Networked(OnChanged = nameof(OnPersonagemChange2))]
     public bool isZumbi { get; set; }
 
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
@@ -69,10 +69,10 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             }
 
         }
-        else if (TipoDePersonagem == "Zumbi")
+        else if (TipoDePersonagem != "Cientista")
         {
             GameObject originalGameObject = GameObject.Find(ip);
-            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+            GameObject child = originalGameObject.transform.GetChild(0).gameObject;
             Destroy(child);
             GameObject temp = Instantiate(ZumbiePrefab);
             temp.transform.position = originalGameObject.transform.position;
@@ -91,13 +91,13 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 Debug.Log(TipoDePersonagem);
                 NetWorkInputData netWorkInputData = new NetWorkInputData();
-                netWorkInputData.isCientist = true;
+                isCientist = true;
             }
             if(TipoDePersonagem != "Cientista")
             {
                 Debug.Log(TipoDePersonagem);
                 NetWorkInputData netWorkInputData = new NetWorkInputData();
-                netWorkInputData.isZumbi = true;
+                isZumbi = true;
                
             }
         }
@@ -136,8 +136,23 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnChangeRemote();
 
-        if(isTakeCurrent && isTakingOld)
+        
+    }
+
+    static void OnPersonagemChange2(Changed<SelectPrefabPlayerManager> changed)
+    {
+        bool isTakeCurrent = changed.Behaviour.isZumbi;
+
+        Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.isZumbi}");
+
+        changed.LoadOld();
+
+        bool isTakingOld = changed.Behaviour.isZumbi;
+
+        if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnChangeRemote();
+
+        
     }
 
     void OnChangeRemote()
@@ -169,10 +184,10 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             }
 
         }
-        else if (TipoDePersonagem == "Zumbi")
+        else if (TipoDePersonagem != "Cientista")
         {
             GameObject originalGameObject = GameObject.Find(ip);
-            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+            GameObject child = originalGameObject.transform.GetChild(0).gameObject;
             Destroy(child);
             GameObject temp = Instantiate(ZumbiePrefab);
             temp.transform.position = originalGameObject.transform.position;
