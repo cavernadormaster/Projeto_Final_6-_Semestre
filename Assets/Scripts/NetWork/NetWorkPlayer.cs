@@ -32,6 +32,7 @@ public class NetWorkPlayer : NetworkBehaviour, IPlayerLeft
 
     public override void Spawned()
     {
+        SelectPrefabPlayerManager.playersInScene++;
         if (Object.HasInputAuthority)
         {
             Local = this;
@@ -49,6 +50,7 @@ public class NetWorkPlayer : NetworkBehaviour, IPlayerLeft
     }
     public void PlayerLeft(PlayerRef player)
     {
+        SelectPrefabPlayerManager.playersInScene--;
         if (Object.HasStateAuthority)
         {
             if (Runner.TryGetPlayerObject(player, out NetworkObject playerLeftNetworkObject))

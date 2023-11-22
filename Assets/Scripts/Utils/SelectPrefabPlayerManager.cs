@@ -7,8 +7,8 @@ using System;
 
 public class SelectPrefabPlayerManager : NetworkBehaviour
 {
-    int playersIn;
-    int playersInGame;
+    
+    
     public static bool PersonagemSelecionado;
     public string TipoDePersonagem;
     public string corDoCientista;
@@ -24,6 +24,19 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
     [Header("Player Prefab")] public GameObject[] Playerprefab;
     [Header("Paredes")] public GameObject parede;
+
+    public static int playersInScene;
+    int playersIn;
+
+    [Header("Lista de Players ma Cena")] public List<GameObject> playersNaCena = new List<GameObject>();
+
+    private void Update()
+    {
+        if (playersIn >= 3)
+        {
+
+        }
+    }
 
     public override void FixedUpdateNetwork()
     {
@@ -88,6 +101,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             GameObject temp = Instantiate(ZumbiePrefab);
             temp.transform.position = originalGameObject.transform.position;
             temp.transform.SetParent(originalGameObject.transform);
+
         }
     }
 
@@ -96,9 +110,11 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         
         if (other.CompareTag("Player"))
         {
+            playersIn++;
             parede.SetActive(true);
             TipoDePersonagem = TipoDePlataforma;
             ip = other.gameObject.name;
+            playersNaCena.Add(GameObject.Find(ip));
            if(TipoDePersonagem == "Cientista")
             {
                 Debug.Log(TipoDePersonagem);

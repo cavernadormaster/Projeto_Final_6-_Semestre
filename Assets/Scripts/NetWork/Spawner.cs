@@ -58,7 +58,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
        if (runner.IsServer)
        {
             int playerToken = GetPlayerToken(runner, player);
-
+            
            Debug.Log($"OnplayerJoined we are server. Connection token {playerToken}");
 
             if(mapTokenIDWithNetworkPlayer.TryGetValue(playerToken, out NetWorkPlayer netWorkPlayer))
