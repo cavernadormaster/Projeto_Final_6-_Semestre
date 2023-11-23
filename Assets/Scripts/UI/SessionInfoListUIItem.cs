@@ -29,8 +29,9 @@ public class SessionInfoListUIItem : MonoBehaviour
         playerCountText.text = $"{sessionInfo.PlayerCount.ToString()}/{PLAYERMAX.ToString()}";
 
         bool joinButtonActive = true;
+        
 
-        if (sessionInfo.PlayerCount >= PLAYERMAX )
+        if (sessionInfo.PlayerCount >= PLAYERMAX || !sessioninfo.IsOpen)
             joinButtonActive = false;
 
         playercount = sessionInfo.PlayerCount;

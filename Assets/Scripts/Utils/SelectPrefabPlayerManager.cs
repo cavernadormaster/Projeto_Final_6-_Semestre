@@ -7,8 +7,9 @@ using System;
 
 public class SelectPrefabPlayerManager : NetworkBehaviour
 {
-    
-    
+
+    SessionInfo sessionInfo1;
+    NetworkRunner runner1;
     public static bool PersonagemSelecionado;
     public string TipoDePersonagem;
     public string corDoCientista;
@@ -28,14 +29,14 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public static int playersInScene;
     int playersIn;
 
-    [Header("Lista de Players ma Cena")] public List<GameObject> playersNaCena = new List<GameObject>();
+    [Header("Lista de Players na plataforma")] public List<GameObject> playersNaCena = new List<GameObject>();
+
+    [Header("Numeros e Falas para começar a partida")] public GameObject[] CountDownToStart;
+    [Header("Start Button")] public GameObject startButton;
 
     private void Update()
     {
-        if (playersIn >= 3)
-        {
-
-        }
+       
     }
 
     public override void FixedUpdateNetwork()
@@ -126,26 +127,74 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 isZumbi = true;
                
             }
+
+            if(playersIn >=2)
+            {
+
+                CheckIfIsServer(runner1);
+            }
         }
     }
-
-    private void OnTriggerExit(Collider other)
+    void CheckIfIsServer(NetworkRunner runner)
     {
-        TipoDePersonagem = "Cientista";
-        if (other.CompareTag("Player"))
+        if (runner.IsServer)
+            startButton.SetActive(true);
+    }
+
+    public void StartCountDownEnumerator()
+    {
+        StartCoroutine(StartCountDown(sessionInfo1));
+    }
+
+    public IEnumerator StartCountDown(SessionInfo sessionInfo)
+    {
+        sessionInfo.IsOpen = false;
+        CountDownToStart[0].SetActive(true);
+        yield return new WaitForSeconds(3f);
+        CountDownToStart[0].SetActive(false);
+        CountDownToStart[1].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[1].SetActive(false);
+        CountDownToStart[2].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[2].SetActive(false);
+        CountDownToStart[3].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[3].SetActive(false);
+        CountDownToStart[4].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[4].SetActive(false);
+        CountDownToStart[5].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[5].SetActive(false);
+        CountDownToStart[6].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[6].SetActive(false);
+        
+        foreach(GameObject obj in playersNaCena)
         {
-            Debug.Log("Saiu");
-            ip = other.gameObject.name;
-            if (TipoDePersonagem == "Cientista")
+            CheckTag(obj);
+        }
+
+    }
+
+    void CheckTag(GameObject obj)
+    {
+        if (obj != null)
+        {
+            string tag = obj.tag;
+            if(tag != "Cientista")
             {
-                NetWorkInputData netWorkInputData = new NetWorkInputData();
-                netWorkInputData.isCientist = true;
+                obj.transform.position = new Vector3(-9.48f, 0, 1.63f);
             }
-            else if (TipoDePersonagem == "Zumbi")
+            else
             {
-                NetWorkInputData netWorkInputData = new NetWorkInputData();
-                netWorkInputData.isZumbi = true;
+                obj.transform.position = new Vector3(UnityEngine.Random.Range(-45.3f, 41.4f), UnityEngine.Random.Range(0, 1), UnityEngine.Random.Range(-44.8f, 41.5f));
             }
+        }
+        else
+        {
+            Debug.LogWarning("GameObject is null!");
         }
     }
 
