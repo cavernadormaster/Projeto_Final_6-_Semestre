@@ -21,17 +21,23 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     [Networked(OnChanged = nameof(OnPersonagemChange2))]
     public bool isZumbi { get; set; }
 
+    [Networked(OnChanged = nameof(startedGameChange))]
+    public bool started { get; set; }
+
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
     [Header("Player Prefab")] public GameObject[] Playerprefab;
     [Header("Paredes")] public GameObject parede;
 
     public static int playersInScene;
-    int playersIn;
+    int playersIn = 0;
 
-    [Header("Lista de Players na plataforma")] public List<GameObject> playersNaCena = new List<GameObject>();
+    [Header("Lista de Players na plataforma")] public GameObject[] playersNaCena;
+    [Header("Spawn Points")] public GameObject[] spawnpoints;
 
     [Header("Numeros e Falas para começar a partida")] public GameObject[] CountDownToStart;
     [Header("Start Button")] public GameObject startButton;
+
+
 
     private void Update()
     {
@@ -52,6 +58,66 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 Debug.Log("Zumbie");
                 ChangePersonagem();
             }
+
+            if(netWorkInputData.started)
+            {
+                Debug.Log("Started");
+                StartedGame();
+            }
+        }
+    }
+
+    void StartedGame()
+    {
+        if (playersNaCena[0].tag != "Cientista")
+        {
+            parede.SetActive(false);
+            playersNaCena[0].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[0] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[0].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[1].tag != "Cientista" && playersNaCena[1] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[1].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[1] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[1].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[2].tag != "Cientista" && playersNaCena[2] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[2].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[2] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[2].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[3].tag != "Cientista" && playersNaCena[3] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[3].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[3] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[3].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[4].tag != "Cientista" && playersNaCena[4] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[4].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[4] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[4].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
         }
     }
 
@@ -110,26 +176,27 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         
         if (other.CompareTag("Player"))
         {
+            ip = other.gameObject.name;
+            playersNaCena[playersIn] = (GameObject.Find(ip));
             playersIn++;
             parede.SetActive(true);
             TipoDePersonagem = TipoDePlataforma;
-            ip = other.gameObject.name;
-            playersNaCena.Add(GameObject.Find(ip));
            if(TipoDePersonagem == "Cientista")
             {
                 Debug.Log(TipoDePersonagem);
+                other.tag = "Cientista";
                 isCientist = true;
             }
             if(TipoDePersonagem != "Cientista")
             {
                 Debug.Log(TipoDePersonagem);
+                other.tag = "Zumbi";
                 isZumbi = true;
                
             }
 
-            if(playersIn >=2)
+            if(playersIn >=1)
             {
-
                 CheckIfIsServer();
             }
         }
@@ -147,7 +214,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     public IEnumerator StartCountDown(SessionInfo sessionInfo)
     {
-        sessionInfo.IsOpen = false;
+        SessionInfoListUIItem.isOpen = false;
         CountDownToStart[0].SetActive(true);
         yield return new WaitForSeconds(3f);
         CountDownToStart[0].SetActive(false);
@@ -169,32 +236,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         CountDownToStart[6].SetActive(true);
         yield return new WaitForSeconds(1f);
         CountDownToStart[6].SetActive(false);
-        
-        foreach(GameObject obj in playersNaCena)
-        {
-            CheckTag(obj);
-        }
-
-    }
-
-    void CheckTag(GameObject obj)
-    {
-        if (obj != null)
-        {
-            string tag = obj.tag;
-            if(tag != "Cientista")
-            {
-                obj.transform.position = new Vector3(-9.48f, 0, 1.63f);
-            }
-            else
-            {
-                obj.transform.position = new Vector3(UnityEngine.Random.Range(-45.3f, 41.4f), UnityEngine.Random.Range(0, 1), UnityEngine.Random.Range(-44.8f, 41.5f));
-            }
-        }
-        else
-        {
-            Debug.LogWarning("GameObject is null!");
-        }
+        started = true;
+       
     }
 
     static void OnPersonagemChange(Changed<SelectPrefabPlayerManager> changed)
@@ -227,6 +270,72 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             changed.Behaviour.OnChangeRemote();
 
         
+    }
+
+    static void startedGameChange(Changed<SelectPrefabPlayerManager> changed)
+    {
+        bool isTakeCurrent = changed.Behaviour.started;
+
+        changed.LoadOld();
+
+        bool isTakingOld = changed.Behaviour.started;
+
+        if (isTakeCurrent && !isTakingOld)
+            changed.Behaviour.OnStartedGame();
+    }
+
+    void OnStartedGame()
+    {
+        if (playersNaCena[0].tag != "Cientista")
+        {
+            parede.SetActive(false);
+            playersNaCena[0].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[0] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[0].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[1].tag != "Cientista" && playersNaCena[1] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[1].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[1] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[1].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[2].tag != "Cientista" && playersNaCena[2] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[2].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[2] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[2].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[3].tag != "Cientista" && playersNaCena[3] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[3].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[3] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[3].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
+        if (playersNaCena[4].tag != "Cientista" && playersNaCena[4] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[4].transform.position = spawnpoints[0].transform.position;
+        }
+        else if (playersNaCena[4] != null)
+        {
+            parede.SetActive(false);
+            playersNaCena[4].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+        }
     }
 
     void OnChangeRemote()
