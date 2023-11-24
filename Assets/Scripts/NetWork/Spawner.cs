@@ -9,6 +9,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 {
     
     public NetWorkPlayer[] playerPrefab;
+    public static bool isServer;
 
     Dictionary<int, NetWorkPlayer> mapTokenIDWithNetworkPlayer;
 
@@ -57,6 +58,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
    {
        if (runner.IsServer)
        {
+            isServer = true;
             int playerToken = GetPlayerToken(runner, player);
             
            Debug.Log($"OnplayerJoined we are server. Connection token {playerToken}");

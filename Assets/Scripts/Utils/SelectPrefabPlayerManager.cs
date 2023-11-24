@@ -9,7 +9,6 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 {
 
     SessionInfo sessionInfo1;
-    NetworkRunner runner1;
     public static bool PersonagemSelecionado;
     public string TipoDePersonagem;
     public string corDoCientista;
@@ -131,13 +130,13 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             if(playersIn >=2)
             {
 
-                CheckIfIsServer(runner1);
+                CheckIfIsServer();
             }
         }
     }
-    void CheckIfIsServer(NetworkRunner runner)
+    void CheckIfIsServer()
     {
-        if (runner.IsServer)
+        if (Spawner.isServer)
             startButton.SetActive(true);
     }
 
