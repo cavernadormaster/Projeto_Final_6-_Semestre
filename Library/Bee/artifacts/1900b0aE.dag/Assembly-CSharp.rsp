@@ -333,6 +333,8 @@
 -r:"D:/Unity/2021.3.16f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"D:/Unity/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
 -r:"D:/Unity/2021.3.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Cinemachine.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Fusion.Addressables.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Fusion.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/ParrelSync.ref.dll"

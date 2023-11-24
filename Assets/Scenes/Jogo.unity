@@ -437,6 +437,7 @@ MonoBehaviour:
   TipoDePlataforma: Cientista
   _isCientist: 0
   _isZumbi: 0
+  _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -2202,6 +2203,7 @@ MonoBehaviour:
   TipoDePlataforma: Cientista
   _isCientist: 0
   _isZumbi: 0
+  _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -3863,6 +3865,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: SelectPrefabPlayerManager, Assembly-CSharp
         m_MethodName: StartCountDownEnumerator
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 269322091}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6807,6 +6821,7 @@ MonoBehaviour:
   TipoDePlataforma: 'Zumbi '
   _isCientist: 0
   _isZumbi: 0
+  _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -8946,6 +8961,7 @@ MonoBehaviour:
   TipoDePlataforma: Cientista
   _isCientist: 0
   _isZumbi: 0
+  _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -11487,7 +11503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867415225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.4, y: 1.76, z: -178.1}
+  m_LocalPosition: {x: -6.71, y: 1.76, z: 40.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19546,8 +19562,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555343955}
-  m_LocalRotation: {x: 0.17514108, y: 0.70737624, z: -0.18815832, w: 0.6584383}
-  m_LocalPosition: {x: 369.76, y: 10.37, z: -462.58}
+  m_LocalRotation: {x: 0.3548906, y: 0, z: 0, w: 0.93490785}
+  m_LocalPosition: {x: 388.19, y: 10.52, z: -477.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20582,6 +20598,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24bb35c369d7f4b49b4d0b6d64ee2e75, type: 3}
+--- !u!1 &1610730712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5297391099508502314, guid: 24bb35c369d7f4b49b4d0b6d64ee2e75, type: 3}
+  m_PrefabInstance: {fileID: 1610730711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1610730713
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610730712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9079777, y: 1.9243162, z: 0.030132921}
+  m_Center: {x: -0.0066493223, y: 0.00015205384, z: -0.011642281}
 --- !u!4 &1621464841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5131391375546536596, guid: 1c7ef0dddddaf4e4abf41a09f31b3293, type: 3}
@@ -21107,6 +21141,7 @@ MonoBehaviour:
   TipoDePlataforma: Cientista
   _isCientist: 0
   _isZumbi: 0
+  _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}

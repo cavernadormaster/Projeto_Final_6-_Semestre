@@ -346,6 +346,8 @@
 -r:"D:/Unity/2021.3.16f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"D:/Unity/2021.3.16f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Cinemachine.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Fusion.Addressables.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Fusion.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/ParrelSync.ref.dll"
