@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class AutoScroll_Image : MonoBehaviour
 {
-    float speed = 100.0f;
+    float speed = 45.0f;
 
     float image1PosBegin = -914.0f;
     float image2PosBegin = -3006.0f;

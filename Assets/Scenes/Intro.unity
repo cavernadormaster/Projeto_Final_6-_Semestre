@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -508, y: -4493}
+  m_AnchoredPosition: {x: -573, y: -3050}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679047748
@@ -251,7 +251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -107, y: -3006}
+  m_AnchoredPosition: {x: -373, y: -1926}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894810600
@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 1411519808}
   - component: {fileID: 1411519807}
   - component: {fileID: 1411519809}
+  - component: {fileID: 1411519810}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -487,8 +488,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 580, y: -242}
-  m_SizeDelta: {x: 461.52, y: 932.9271}
+  m_AnchoredPosition: {x: 527, y: -1612}
+  m_SizeDelta: {x: 703.2241, y: 2938.8696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1411519807
 MonoBehaviour:
@@ -510,32 +511,24 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "As sombras alongavam-se pelos corredores gelados do laborat\xF3rio secreto
-    russo, um covil oculto nas entranhas da Guerra Fria. O ar impregnado de mist\xE9rio
-    e o murm\xFArio sutil das m\xE1quinas sussurravam segredos sinistros. Sob o manto
-    da obscuridade, cientistas com mentes enigm\xE1ticas forjavam o futuro da guerra
-    biol\xF3gica, tecendo uma trama nefasta que desafiava os limites da \xE9tica
-    e da humanidade.\r\n\r\nNuma noite sombria, durante uma experimenta\xE7\xE3o
+  m_text: "As sombras alongavam-se pelos corredores gelados do laborat\xF3rio russo.
+    O ar impregnado de mist\xE9rios e o murm\xFArio sutil das m\xE1quinas sussurravam
+    segredos. Sob o manto da obscuridade, cientistas com mentes enigm\xE1ticas forjavam
+    o futuro da guerra biol\xF3gica, tecendo uma trama nefasta que desafiava os limites
+    da \xE9tica e da humanidade.\r\n\r\nNuma noite sombria, durante uma experimenta\xE7\xE3o
     delicada e proibida, algo deu terrivelmente errado. Um descuido, um deslize na
     coreografia mortal da manipula\xE7\xE3o gen\xE9tica, e as consequ\xEAncias foram
     devastadoras. Entre tubos de ensaio quebrados e subst\xE2ncias desconhecidas,
-    um dos cientistas, antes um mestre das f\xF3rmulas letais, viu-se mergulhado
+    um dos cientistas, que antes era um mestre das f\xF3rmulas letais, viu-se mergulhado
     numa metamorfose incontrol\xE1vel. Seus olhos perderam a centelha da raz\xE3o,
     e sua pele adquiriu uma palidez cadav\xE9rica.\r\n\r\nA trag\xE9dia criou algo
-    al\xE9m das fronteiras da ci\xEAncia convencional: um zumbi, uma aberra\xE7\xE3o
-    nascida do erro humano, espreitando nos cantos escuros do laborat\xF3rio. O cientista,
-    agora transformado numa criatura que s\xF3 habitava pesadelos, perambulava pelos
-    corredores desolados, alimentando-se da escurid\xE3o que o aprisionava.\r\n\r\nNo
-    submundo sombrio da Guerra Fria, onde a paranoia era tecida em cada conspira\xE7\xE3o,
-    a exist\xEAncia do zumbi tornou-se um segredo guardado a sete chaves. O laborat\xF3rio,
-    outrora palco de experimenta\xE7\xF5es cru\xE9is, tornou-se um t\xFAmulo silencioso
-    para aqueles que conheciam a verdade. Enquanto o mundo acima continuava sua dan\xE7a
-    delicada na corda bamba da geopol\xEDtica, nas entranhas da R\xFAssia, um monstro
-    espreitava, uma consequ\xEAncia macabra de ambi\xE7\xF5es desenfreadas e erros
-    que n\xE3o poderiam ser desfeitos. O eco de seus passos arrastados e o gemido
-    gutural ressoavam como uma advert\xEAncia, um sussurro sinistro daquilo que a
-    mente humana poderia desencadear quando tocasse nas fronteiras proibidas da vida
-    e da morte."
+    al\xE9m das fronteiras da ci\xEAncia: um zumbi, uma aberra\xE7\xE3o nascida do
+    erro humano. O cientista, agora transformado numa criatura que s\xF3 habitava
+    pesadelos, perambulava pelos corredores desolados, alimentando-se da escurid\xE3o
+    que o aprisionava.\r\n\r\nO eco de seus passos arrastados e o gemido gutural
+    ressoavam como uma advert\xEAncia. A exist\xEAncia do zumbi tornou-se um segredo
+    guardado a sete chaves. O laborat\xF3rio, outrora palco de experimenta\xE7\xF5es
+    cru\xE9is, tornou-se um t\xFAmulo silencioso para aqueles que conheciam a verdade.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5167f512df4ec6746a4ff456f2c4a820, type: 2}
   m_sharedMaterial: {fileID: -8554457947832016404, guid: 5167f512df4ec6746a4ff456f2c4a820, type: 2}
@@ -598,7 +591,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -5523.864}
+  m_margin: {x: 0, y: 0, z: 211.48242, w: -1366.3733}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -625,6 +618,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainText: {fileID: 1411519807}
+--- !u!82 &1411519810
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411519805}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ddfc13670dc7e24e9354a2e1249701b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1417369732
 GameObject:
   m_ObjectHideFlags: 0
@@ -767,7 +856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -631, y: -914}
+  m_AnchoredPosition: {x: -520, y: -829}
   m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519634837

@@ -5,9 +5,8 @@ using TMPro;
 
 public class AutoScrollText : MonoBehaviour
 {
-    float speed = 100.0f;
-    float TextPosBegin = -242.0f;
-    float boundaryTextEnd = 5429.0f;
+    float speed = 45.0f;
+    float boundaryTextEnd = 2241.0f;
 
     RectTransform myCorectTransform;
     [SerializeField]
