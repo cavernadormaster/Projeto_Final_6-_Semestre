@@ -30,7 +30,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     [Header("Paredes")] public GameObject parede;
 
     public static int playersInScene;
-    int playersIn = 0;
+   public int playersIn = 0;
 
     [Header("Lista de Players na plataforma")] public GameObject[] playersNaCena;
     [Header("Spawn Points")] public GameObject[] spawnpoints;
@@ -38,7 +38,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     [Header("Numeros e Falas para começar a partida")] public GameObject[] CountDownToStart;
     [Header("Start Button")] public GameObject startButton;
 
-
+    
 
     private void Update()
     {
@@ -73,7 +73,6 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         if (playersNaCena[0].tag != "Cientista")
         {
             parede.SetActive(false);
-            playersNaCena[0].GetComponent<CharacterController>().enabled = false;
             playersNaCena[0].transform.position = spawnpoints[0].transform.position;
         }
         else if (playersNaCena[0] != null)
@@ -197,7 +196,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                
             }
 
-            if(playersIn >=1)
+            if(playersIn >=2)
             {
                 CheckIfIsServer();
             }
@@ -281,8 +280,6 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnChangeRemote();
-
-        
     }
 
     static void OnPersonagemChange2(Changed<SelectPrefabPlayerManager> changed)
@@ -315,74 +312,75 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     void OnStartedGame()
     {
+        
         if (playersNaCena[0].tag != "Cientista")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = RandomPosition();
+            playersNaCena[0].transform.position = spawnpoints[0].transform.position;
             EnableControllers();
         }
-        else if (playersNaCena[0] != null)
+        else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = RandomPosition();
+            playersNaCena[0].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
             EnableControllers();
         }
         if (playersNaCena[1].tag != "Cientista" && playersNaCena[1] != null)
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[1].transform.position = RandomPosition();
+            playersNaCena[1].transform.position = spawnpoints[0].transform.position;
             EnableControllers();
         }
-        else if (playersNaCena[1] != null)
+        else if (playersNaCena[1] != null && playersNaCena[1].tag == "Cientista")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[1].transform.position = RandomPosition();
+            playersNaCena[1].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
             EnableControllers();
         }
         if (playersNaCena[2].tag != "Cientista" && playersNaCena[2] != null)
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[2].transform.position = RandomPosition();
+            playersNaCena[2].transform.position = spawnpoints[0].transform.position;
             EnableControllers();
         }
-        else if (playersNaCena[2] != null)
+        else if (playersNaCena[2] != null && playersNaCena[2].tag == "Cientista")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[2].transform.position = RandomPosition();
+            playersNaCena[2].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
             EnableControllers();
         }
         if (playersNaCena[3].tag != "Cientista" && playersNaCena[3] != null)
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[3].transform.position = RandomPosition();
+            playersNaCena[3].transform.position = spawnpoints[0].transform.position;
             EnableControllers();
         }
-        else if (playersNaCena[3] != null)
+        else if (playersNaCena[3] != null && playersNaCena[3].tag == "Cientista")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[3].transform.position = RandomPosition();
+            playersNaCena[3].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
             EnableControllers();
         }
         if (playersNaCena[4].tag != "Cientista" && playersNaCena[4] != null)
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[4].transform.position = RandomPosition();
+            playersNaCena[4].transform.position = spawnpoints[0].transform.position;
             EnableControllers();
         }
-        else if (playersNaCena[4] != null)
+        else if (playersNaCena[4] != null && playersNaCena[4].tag == "Cientista")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[4].transform.position = RandomPosition();
+            playersNaCena[4].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
             EnableControllers();
         }
     }

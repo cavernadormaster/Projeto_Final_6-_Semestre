@@ -107,7 +107,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     public void OnConnectFailed(NetworkRunner runner, NetAddress remoteAddress, NetConnectFailedReason reason) { Debug.Log("OnConnectedFailed");  }
     public void OnUserSimulationMessage(NetworkRunner runner, SimulationMessagePtr message) { }
     public void OnSessionListUpdated(NetworkRunner runner, List<SessionInfo> sessionList) 
-    {
+    {           
         if (sessionListUIHandler == null)
             return;
 

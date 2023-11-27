@@ -15,16 +15,21 @@ public class SessionInfoListUIItem : MonoBehaviour
     const int PLAYERMAX = 5;
 
     public static int playercount;
-    SessionInfo sessioninfo;
+    SessionInfo sessioninfo1;
+    
     
 
-
     public event Action<SessionInfo> OnjoinSession;
+
+    public void SetIsOpen()
+    {
+        sessioninfo1.IsOpen = false;
+    }
 
     public void SetInformation(SessionInfo sessionInfo)
     {
         
-        this.sessioninfo = sessionInfo;
+        this.sessioninfo1 = sessionInfo;
 
         sessionNameText.text = sessionInfo.Name;
         playerCountText.text = $"{sessionInfo.PlayerCount.ToString()}/{PLAYERMAX.ToString()}";
@@ -32,7 +37,7 @@ public class SessionInfoListUIItem : MonoBehaviour
         bool joinButtonActive = true;
         
 
-        if (sessionInfo.PlayerCount >= PLAYERMAX || !isOpen)
+        if (sessionInfo.PlayerCount >= PLAYERMAX || !sessioninfo1.IsOpen)
             joinButtonActive = false;
 
         playercount = sessionInfo.PlayerCount;
@@ -41,6 +46,6 @@ public class SessionInfoListUIItem : MonoBehaviour
 
     public void OnClick()
     {
-        OnjoinSession?.Invoke(sessioninfo);
+        OnjoinSession?.Invoke(sessioninfo1);
     }
 }
