@@ -28,6 +28,7 @@ public class CharacterInputHandler : MonoBehaviour
     {
         if (!characterMovementHandler.Object.HasInputAuthority)
             return;
+        
 
         Camera.main.transform.position = gameObject.transform.position + new Vector3(0, 5, -5);
 

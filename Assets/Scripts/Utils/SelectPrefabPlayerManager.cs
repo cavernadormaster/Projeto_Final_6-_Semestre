@@ -4,6 +4,7 @@ using UnityEngine;
 using Fusion;
 using Fusion.Sockets;
 using System;
+using Random = UnityEngine.Random;
 
 public class SelectPrefabPlayerManager : NetworkBehaviour
 {
@@ -16,7 +17,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public string TipoDePlataforma;
     string ip;
     [Networked(OnChanged = nameof(OnPersonagemChange))]
-    public bool isCientist { get; set; }
+    public bool isCientistblue { get; set; }
 
     [Networked(OnChanged = nameof(OnPersonagemChange2))]
     public bool isZumbi { get; set; }
@@ -48,7 +49,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     {
         if (GetInput(out NetWorkInputData netWorkInputData))
         {
-            if (netWorkInputData.isCientist)
+            if (netWorkInputData.isCientistBlue)
             {
                 Debug.Log("Cientista");
                 ChangePersonagem();
@@ -72,6 +73,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         if (playersNaCena[0].tag != "Cientista")
         {
             parede.SetActive(false);
+            playersNaCena[0].GetComponent<CharacterController>().enabled = false;
             playersNaCena[0].transform.position = spawnpoints[0].transform.position;
         }
         else if (playersNaCena[0] != null)
@@ -177,7 +179,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         if (other.CompareTag("Player"))
         {
             ip = other.gameObject.name;
-            playersNaCena[playersIn] = (GameObject.Find(ip));
+            AddToGameObjectsArray(GameObject.Find(ip));
             playersIn++;
             parede.SetActive(true);
             TipoDePersonagem = TipoDePlataforma;
@@ -185,7 +187,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 Debug.Log(TipoDePersonagem);
                 other.tag = "Cientista";
-                isCientist = true;
+                isCientistblue = true;
             }
             if(TipoDePersonagem != "Cientista")
             {
@@ -201,6 +203,33 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             }
         }
     }
+
+    void AddToGameObjectsArray(GameObject newGameObject)
+    {
+        if (newGameObject != null)
+        {
+            // Resize the array to accommodate the new GameObject
+            int newSize = playersNaCena.Length + 1;
+            GameObject[] newArray = new GameObject[newSize];
+
+            // Copy existing elements to the new array
+            for (int i = 0; i < playersNaCena.Length; i++)
+            {
+                newArray[i] = playersNaCena[i];
+            }
+
+            // Add the new GameObject to the end of the array
+            newArray[newSize - 1] = newGameObject;
+
+            // Update the reference to the new array
+            playersNaCena = newArray;
+        }
+        else
+        {
+            Debug.LogError("The provided GameObject is null!");
+        }
+    }
+
     void CheckIfIsServer()
     {
         if (Spawner.isServer)
@@ -242,13 +271,13 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     static void OnPersonagemChange(Changed<SelectPrefabPlayerManager> changed)
     {
-       bool isTakeCurrent = changed.Behaviour.isCientist;
+       bool isTakeCurrent = changed.Behaviour.isCientistblue;
 
-        Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.isCientist}");
+        Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.isCientistblue}");
 
         changed.LoadOld();
 
-       bool isTakingOld = changed.Behaviour.isCientist;
+       bool isTakingOld = changed.Behaviour.isCientistblue;
 
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnChangeRemote();
@@ -288,54 +317,114 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     {
         if (playersNaCena[0].tag != "Cientista")
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[0].transform.position;
+            playersNaCena[0].transform.position = RandomPosition();
+            EnableControllers();
         }
         else if (playersNaCena[0] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            playersNaCena[0].transform.position = RandomPosition();
+            EnableControllers();
         }
         if (playersNaCena[1].tag != "Cientista" && playersNaCena[1] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[1].transform.position = spawnpoints[0].transform.position;
+            playersNaCena[1].transform.position = RandomPosition();
+            EnableControllers();
         }
         else if (playersNaCena[1] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[1].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            playersNaCena[1].transform.position = RandomPosition();
+            EnableControllers();
         }
         if (playersNaCena[2].tag != "Cientista" && playersNaCena[2] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[2].transform.position = spawnpoints[0].transform.position;
+            playersNaCena[2].transform.position = RandomPosition();
+            EnableControllers();
         }
         else if (playersNaCena[2] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[2].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            playersNaCena[2].transform.position = RandomPosition();
+            EnableControllers();
         }
         if (playersNaCena[3].tag != "Cientista" && playersNaCena[3] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[3].transform.position = spawnpoints[0].transform.position;
+            playersNaCena[3].transform.position = RandomPosition();
+            EnableControllers();
         }
         else if (playersNaCena[3] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[3].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            playersNaCena[3].transform.position = RandomPosition();
+            EnableControllers();
         }
         if (playersNaCena[4].tag != "Cientista" && playersNaCena[4] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[4].transform.position = spawnpoints[0].transform.position;
+            playersNaCena[4].transform.position = RandomPosition();
+            EnableControllers();
         }
         else if (playersNaCena[4] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
-            playersNaCena[4].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            playersNaCena[4].transform.position = RandomPosition();
+            EnableControllers();
         }
+    }
+    void DisableControllers()
+    {
+        foreach (GameObject obj in playersNaCena)
+        {
+            CharacterController controller = obj.GetComponent<CharacterController>();
+
+            if (controller != null)
+            {
+                controller.enabled = false;
+            }
+            else
+            {
+                Debug.LogWarning("CharacterController not found on object: " + obj.name);
+            }
+        }
+    }
+
+    void EnableControllers()
+    {
+        foreach (GameObject obj in playersNaCena)
+        {
+            CharacterController controller = obj.GetComponent<CharacterController>();
+
+            if (controller != null)
+            {
+                controller.enabled = true;
+            }
+            else
+            {
+                Debug.LogWarning("CharacterController not found on object: " + obj.name);
+            }
+        }
+    }
+
+    Vector3 RandomPosition()
+    {
+        float x = Random.Range(-32f, +32f);
+        float z = Random.Range(-32f, +32f);
+        return new Vector3(x, 32f, z);
     }
 
     void OnChangeRemote()

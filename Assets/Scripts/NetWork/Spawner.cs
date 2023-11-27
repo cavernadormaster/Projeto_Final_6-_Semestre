@@ -52,7 +52,10 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         mapTokenIDWithNetworkPlayer.Add(token, netWorkPlayer);
     }
 
-   
+   public static void SpawnPlayers()
+    {
+       // OnPlayerJoined();
+    }
 
    public void OnPlayerJoined(NetworkRunner runner, PlayerRef player) 
    {
