@@ -36,5 +36,8 @@ public class audio_manager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         audio.clip = corpo_caindo;
         audio.Play();
+        yield return new WaitForSeconds(7.5f);
+        audio.clip = zumbis;
+        audio.Play();
     }
 }
