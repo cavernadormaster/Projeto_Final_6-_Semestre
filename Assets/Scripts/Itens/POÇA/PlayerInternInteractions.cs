@@ -25,7 +25,7 @@ public class PlayerInternInteractions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Cientista") || other.CompareTag("Zumbi"))
         {
             ip = other.gameObject.name;
             GameObject g = GameObject.Find(ip);
@@ -40,7 +40,7 @@ public class PlayerInternInteractions : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Cientista") || other.CompareTag("Zumbi"))
         {
             Debug.Log("Player saiu");
             ip = other.gameObject.name;

@@ -8,6 +8,7 @@ public class ZombieInteractions : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            InGameManager.CientistInGame--;
             string ip = other.gameObject.name;
             Destroy(GameObject.Find(ip));
         }

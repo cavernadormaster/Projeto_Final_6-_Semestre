@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 5314719328404118309}
   - component: {fileID: 188235767072591488}
   - component: {fileID: 5950707981487272973}
+  - component: {fileID: 4229371052297118252}
   m_Layer: 0
   m_Name: ZombieHands
   m_TagString: Untagged
@@ -127,7 +128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5503368338863504133}
   m_LocalRotation: {x: -0, y: 0.9998916, z: -0, w: -0.014724693}
-  m_LocalPosition: {x: -0.026207112, y: 0, z: -0.889614}
+  m_LocalPosition: {x: 0.02, y: 0, z: 0.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -159,6 +160,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5905968, y: 0.33230698, z: 0.5324954}
   m_Center: {x: -0.019239083, y: 0.064794004, z: -0.23375231}
+--- !u!114 &4229371052297118252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5503368338863504133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f10dde730ee2084d95ee7e3ee39c4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8116780745475097522
 GameObject:
   m_ObjectHideFlags: 0
