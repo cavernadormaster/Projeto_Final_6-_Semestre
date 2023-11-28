@@ -23,7 +23,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public bool isZumbi { get; set; }
 
     [Networked(OnChanged = nameof(startedGameChange))]
-    public bool started { get; set; }
+    public bool  started { get; set; }
 
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
     [Header("Player Prefab")] public GameObject[] Playerprefab;
@@ -201,11 +201,10 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     public void StartCountDownEnumerator()
     {
-        if (isZumbi)
-        {
+
             StartCoroutine(StartCountDown(sessionInfo1));
             startButton.SetActive(false);
-        }
+        
     }
 
     public IEnumerator StartCountDown(SessionInfo sessionInfo)
@@ -233,7 +232,6 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         CountDownToStart[6].SetActive(true);
         yield return new WaitForSeconds(1f);
         CountDownToStart[6].SetActive(false);
-        
         started = true;
     }
 
@@ -270,10 +268,12 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     static void startedGameChange(Changed<SelectPrefabPlayerManager> changed)
     {
         bool isTakeCurrent = changed.Behaviour.started;
+;
 
         changed.LoadOld();
 
         bool isTakingOld = changed.Behaviour.started;
+;
 
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnStartedGame();
