@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -435,7 +435,7 @@ MonoBehaviour:
   TipoDePersonagem: 
   corDoCientista: Amarelo
   TipoDePlataforma: Cientista
-  _isCientistBlue: 0
+  _isCientistblue: 0
   _isZumbi: 0
   _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
@@ -445,7 +445,6 @@ MonoBehaviour:
   - {fileID: 6679044594905642881, guid: e57a3ecab3c49cd419714e3e9a3a3d8d, type: 3}
   - {fileID: 6679044594905642881, guid: b163c775145938d4198f3706d996e2db, type: 3}
   parede: {fileID: 1588263769}
-  playersIn: 0
   playersNaCena: []
   spawnpoints:
   - {fileID: 867415225}
@@ -2197,7 +2196,7 @@ MonoBehaviour:
   TipoDePersonagem: 
   corDoCientista: Verde
   TipoDePlataforma: Cientista
-  _isCientistBlue: 0
+  _isCientistblue: 0
   _isZumbi: 0
   _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
@@ -2207,7 +2206,6 @@ MonoBehaviour:
   - {fileID: 6679044594905642881, guid: e57a3ecab3c49cd419714e3e9a3a3d8d, type: 3}
   - {fileID: 6679044594905642881, guid: b163c775145938d4198f3706d996e2db, type: 3}
   parede: {fileID: 1820150134}
-  playersIn: 0
   playersNaCena: []
   spawnpoints:
   - {fileID: 867415225}
@@ -3854,54 +3852,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 472127660}
-        m_TargetAssemblyTypeName: SelectPrefabPlayerManager, Assembly-CSharp
-        m_MethodName: StartCountDownEnumerator
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 631595630}
-        m_TargetAssemblyTypeName: SelectPrefabPlayerManager, Assembly-CSharp
-        m_MethodName: StartCountDownEnumerator
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1686413805}
-        m_TargetAssemblyTypeName: SelectPrefabPlayerManager, Assembly-CSharp
-        m_MethodName: StartCountDownEnumerator
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 175037171}
-        m_TargetAssemblyTypeName: SelectPrefabPlayerManager, Assembly-CSharp
-        m_MethodName: StartCountDownEnumerator
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 23134622}
         m_TargetAssemblyTypeName: SelectPrefabPlayerManager, Assembly-CSharp
         m_MethodName: StartCountDownEnumerator
         m_Mode: 1
@@ -5948,7 +5898,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &405320324
 GameObject:
@@ -6859,7 +6809,7 @@ MonoBehaviour:
   TipoDePersonagem: 
   corDoCientista: NONE
   TipoDePlataforma: 'Zumbi '
-  _isCientistBlue: 0
+  _isCientistblue: 0
   _isZumbi: 0
   _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
@@ -6869,7 +6819,6 @@ MonoBehaviour:
   - {fileID: 6679044594905642881, guid: e57a3ecab3c49cd419714e3e9a3a3d8d, type: 3}
   - {fileID: 6679044594905642881, guid: b163c775145938d4198f3706d996e2db, type: 3}
   parede: {fileID: 405320324}
-  playersIn: 0
   playersNaCena: []
   spawnpoints:
   - {fileID: 867415225}
@@ -8995,7 +8944,7 @@ MonoBehaviour:
   TipoDePersonagem: 
   corDoCientista: Azul
   TipoDePlataforma: Cientista
-  _isCientistBlue: 0
+  _isCientistblue: 0
   _isZumbi: 0
   _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
@@ -9005,7 +8954,6 @@ MonoBehaviour:
   - {fileID: 6679044594905642881, guid: e57a3ecab3c49cd419714e3e9a3a3d8d, type: 3}
   - {fileID: 6679044594905642881, guid: b163c775145938d4198f3706d996e2db, type: 3}
   parede: {fileID: 298972116}
-  playersIn: 0
   playersNaCena: []
   spawnpoints:
   - {fileID: 867415225}
@@ -9864,7 +9812,7 @@ Transform:
   - {fileID: 1839660765}
   - {fileID: 98736321}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &713587243
 GameObject:
@@ -12248,7 +12196,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 198599124863473873, guid: 3ec2bb576a4de754d9947f1fe23db1a1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 198599124863473873, guid: 3ec2bb576a4de754d9947f1fe23db1a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13908,7 +13856,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 16a98dc4e1e2afc4aa18115a52479185, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 16a98dc4e1e2afc4aa18115a52479185, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14323,7 +14271,7 @@ Transform:
   - {fileID: 683724134}
   - {fileID: 965210045}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1113009152
 GameObject:
@@ -14357,7 +14305,7 @@ Transform:
   - {fileID: 1352694412}
   - {fileID: 63245787}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1117181821
 PrefabInstance:
@@ -19677,7 +19625,7 @@ Transform:
   m_Children:
   - {fileID: 842308205}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 29.791, y: 94.104, z: 0}
 --- !u!1001 &1559267937
 PrefabInstance:
@@ -21173,7 +21121,7 @@ MonoBehaviour:
   TipoDePersonagem: 
   corDoCientista: Vermelho
   TipoDePlataforma: Cientista
-  _isCientistBlue: 0
+  _isCientistblue: 0
   _isZumbi: 0
   _started: 0
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
@@ -21183,7 +21131,6 @@ MonoBehaviour:
   - {fileID: 6679044594905642881, guid: e57a3ecab3c49cd419714e3e9a3a3d8d, type: 3}
   - {fileID: 6679044594905642881, guid: b163c775145938d4198f3706d996e2db, type: 3}
   parede: {fileID: 366043223}
-  playersIn: 0
   playersNaCena: []
   spawnpoints:
   - {fileID: 867415225}

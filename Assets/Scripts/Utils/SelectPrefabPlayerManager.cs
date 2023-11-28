@@ -17,7 +17,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public string TipoDePlataforma;
     string ip;
     [Networked(OnChanged = nameof(OnPersonagemChange))]
-    public bool isCientistBlue { get; set; }
+    public bool isCientistblue { get; set; }
 
     [Networked(OnChanged = nameof(OnPersonagemChange2))]
     public bool isZumbi { get; set; }
@@ -175,28 +175,31 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        
         if (other.CompareTag("Player"))
         {
             ip = other.gameObject.name;
             AddToGameObjectsArray(GameObject.Find(ip));
+            playersIn++;
             parede.SetActive(true);
             TipoDePersonagem = TipoDePlataforma;
            if(TipoDePersonagem == "Cientista")
-           {
+            {
                 Debug.Log(TipoDePersonagem);
                 other.tag = "Cientista";
-                isCientistBlue = true;
-                playersIn++;
+                isCientistblue = true;
             }
-            if (TipoDePersonagem != "Cientista")
-           {
+            if(TipoDePersonagem != "Cientista")
+            {
                 Debug.Log(TipoDePersonagem);
                 other.tag = "Zumbi";
                 isZumbi = true;
-                playersIn++;
+               
             }
-           CheckIfIsServer();
+
+            if(playersIn >=2)
+            {
+                CheckIfIsServer();
+            }
         }
     }
 
@@ -234,7 +237,6 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     public void StartCountDownEnumerator()
     {
-        if(isZumbi && isCientistBlue)
         StartCoroutine(StartCountDown(sessionInfo1));
     }
 
@@ -268,13 +270,13 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     static void OnPersonagemChange(Changed<SelectPrefabPlayerManager> changed)
     {
-       bool isTakeCurrent = changed.Behaviour.isCientistBlue;
+       bool isTakeCurrent = changed.Behaviour.isCientistblue;
 
-        Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.isCientistBlue}");
+        Debug.Log($"{Time.time} OnTakeChanged value Fire {changed.Behaviour.isCientistblue}");
 
         changed.LoadOld();
 
-       bool isTakingOld = changed.Behaviour.isCientistBlue;
+       bool isTakingOld = changed.Behaviour.isCientistblue;
 
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.OnChangeRemote();
