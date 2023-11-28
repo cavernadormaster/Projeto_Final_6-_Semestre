@@ -63,62 +63,83 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             if(netWorkInputData.started)
             {
                 Debug.Log("Started");
-                StartedGame();
+                StartCoroutine(StartCountDown(sessionInfo1));
             }
         }
     }
 
     void StartedGame()
     {
+
         if (playersNaCena[0].tag != "Cientista")
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[0].transform.position = spawnpoints[0].transform.position;
+            EnableControllers();
         }
-        else if (playersNaCena[0] != null)
+        else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista")
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[0].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            EnableControllers();
         }
         if (playersNaCena[1].tag != "Cientista" && playersNaCena[1] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[1].transform.position = spawnpoints[0].transform.position;
+            EnableControllers();
         }
-        else if (playersNaCena[1] != null)
+        else if (playersNaCena[1] != null && playersNaCena[1].tag == "Cientista")
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[1].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            EnableControllers();
         }
         if (playersNaCena[2].tag != "Cientista" && playersNaCena[2] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[2].transform.position = spawnpoints[0].transform.position;
+            EnableControllers();
         }
-        else if (playersNaCena[2] != null)
+        else if (playersNaCena[2] != null && playersNaCena[2].tag == "Cientista")
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[2].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            EnableControllers();
         }
         if (playersNaCena[3].tag != "Cientista" && playersNaCena[3] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[3].transform.position = spawnpoints[0].transform.position;
+            EnableControllers();
         }
-        else if (playersNaCena[3] != null)
+        else if (playersNaCena[3] != null && playersNaCena[3].tag == "Cientista")
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[3].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            EnableControllers();
         }
         if (playersNaCena[4].tag != "Cientista" && playersNaCena[4] != null)
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[4].transform.position = spawnpoints[0].transform.position;
+            EnableControllers();
         }
-        else if (playersNaCena[4] != null)
+        else if (playersNaCena[4] != null && playersNaCena[4].tag == "Cientista")
         {
+            DisableControllers();
             parede.SetActive(false);
             playersNaCena[4].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            EnableControllers();
         }
     }
 
@@ -235,7 +256,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     public void StartCountDownEnumerator()
     {
-        if (isZumbi && isCientistBlue)
+        if (isZumbi)
         {
             StartCoroutine(StartCountDown(sessionInfo1));
             startButton.SetActive(false);
@@ -245,6 +266,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public IEnumerator StartCountDown(SessionInfo sessionInfo)
     {
         SessionInfoListUIItem.isOpen = false;
+        started = true;
         CountDownToStart[0].SetActive(true);
         yield return new WaitForSeconds(3f);
         CountDownToStart[0].SetActive(false);
@@ -266,7 +288,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         CountDownToStart[6].SetActive(true);
         yield return new WaitForSeconds(1f);
         CountDownToStart[6].SetActive(false);
-        started = true;
+        StartedGame();
        
     }
 

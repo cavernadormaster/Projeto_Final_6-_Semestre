@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 23134622}
   - component: {fileID: 23134623}
   m_Layer: 0
-  m_Name: Button
+  m_Name: ButtonC.AM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2163,6 +2163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c974b60b945dcd54bac68d0734b13ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
   ExitDoors:
   - {fileID: 823159344}
   - {fileID: 518642430}
@@ -2196,7 +2197,7 @@ GameObject:
   - component: {fileID: 175037171}
   - component: {fileID: 175037172}
   m_Layer: 0
-  m_Name: Button
+  m_Name: ButtonC.VE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9172,7 +9173,7 @@ GameObject:
   - component: {fileID: 631595630}
   - component: {fileID: 631595631}
   m_Layer: 0
-  m_Name: Button
+  m_Name: ButtonC.A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21601,7 +21602,7 @@ GameObject:
   - component: {fileID: 1686413805}
   - component: {fileID: 1686413806}
   m_Layer: 0
-  m_Name: Button
+  m_Name: ButtonC.VR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
