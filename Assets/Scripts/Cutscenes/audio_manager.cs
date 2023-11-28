@@ -33,7 +33,7 @@ public class audio_manager : MonoBehaviour
     {
         AudioSource audio = GetComponent<AudioSource>();
         audio.Play();
-        yield return new WaitForSeconds(8.7f);
+        yield return new WaitForSeconds(0.1f);
         audio.clip = corpo_caindo;
         audio.Play();
     }
