@@ -10,6 +10,7 @@ public class InGameManager : NetworkBehaviour
 
     public static int CientistInGame;
     public static bool HasStarted;
+    public static bool ZumbiWins;
     bool doorOpened;
     public GameObject[] ExitDoors;
 
@@ -31,7 +32,7 @@ public class InGameManager : NetworkBehaviour
             doorOpened = true;
         }
 
-        if (CientistInGame <= 0)
+        if (CientistInGame <= 0 || ZumbiWins)
         {
             SceneManager.LoadScene("Vitoria_Zumbi");
         }
