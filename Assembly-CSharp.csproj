@@ -166,6 +166,7 @@
     <Compile Include="Assets\Scripts\UI\Timer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionGraph.cs" />
+    <Compile Include="Assets\Scripts\Player\SetInside.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

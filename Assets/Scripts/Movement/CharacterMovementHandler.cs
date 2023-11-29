@@ -5,6 +5,10 @@ using Fusion;
 
 public class CharacterMovementHandler : NetworkBehaviour
 {
+    [Header("Animation")]
+    public static Animator CharacterAnimation;
+    public  Animator CharacterAnimation2;
+
     Vector2 viewInput;
 
     NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
@@ -17,7 +21,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 
     void Start()
     {
-        
+        CharacterAnimation2 = CharacterAnimation;
     }
 
     void Update()
@@ -36,6 +40,13 @@ public class CharacterMovementHandler : NetworkBehaviour
 
             if (networkInputData.isJumpPressed)
                 networkCharacterControllerPrototypeCustom.Jump();
+
+            Vector2 waklVector = new Vector2(networkCharacterControllerPrototypeCustom.Velocity.x, networkCharacterControllerPrototypeCustom.Velocity.z);
+            waklVector.Normalize();
+
+            float walkSpeed = Mathf.Clamp01(waklVector.magnitude);
+
+            CharacterAnimation.SetFloat("WalkSpeed", walkSpeed);
         }
     }
 

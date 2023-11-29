@@ -429,6 +429,7 @@
 "Assets/Scripts/NetWork/NetWorkRuunigHandler.cs"
 "Assets/Scripts/NetWork/Spawner.cs"
 "Assets/Scripts/Player/PlayerInterations.cs"
+"Assets/Scripts/Player/SetInside.cs"
 "Assets/Scripts/Player/ZombieInteractions.cs"
 "Assets/Scripts/UI/InGameMessageUIHandler.cs"
 "Assets/Scripts/UI/MainMenuUIHandler.cs"
