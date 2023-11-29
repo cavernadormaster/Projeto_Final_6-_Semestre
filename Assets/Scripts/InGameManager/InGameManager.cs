@@ -13,17 +13,19 @@ public class InGameManager : NetworkBehaviour
     private void Update()
     {
         Debug.Log("Cientista In Game: " + CientistInGame);
-       
-            if (CientistInGame == 1 && HasStarted)
+        if (GetInput(out NetWorkInputData netWorkInputData))
+        {
+            if (CientistInGame == 1 && netWorkInputData.started)
             {
                 Debug.Log("Cientista Ganhou");
                 ExitDoors[Random.Range(0, 4)].SetActive(true);
             }
 
-            if(CientistInGame == 0 && HasStarted)
+            if (CientistInGame <= 0 && netWorkInputData.started)
             {
                 SceneManager.LoadScene("Vitoria_Zumbi");
             }
-        
+        }
+
     }
 }
