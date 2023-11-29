@@ -133,6 +133,7 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\SpawnPoints\ISpawnPointManagerPrototypeT.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\UI\ScenenManagent.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionRuntimeCheck.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\Materials\FusionPrototypeMaterials.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -164,7 +165,6 @@
     <Compile Include="Assets\Scripts\NetWork\NetworkInGameMessage.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionGraph.cs" />
-    <Compile Include="Assets\Scripts\UI\ScenenManagent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
