@@ -13,10 +13,16 @@ public class InGameManager : NetworkBehaviour
     public static bool ZumbiWins;
     bool doorOpened;
     public GameObject[] ExitDoors;
-
+    
     private void Update()
     {
-        Debug.Log("Cientista In Game: " + CientistInGame);
+        
+
+       
+        
+
+
+            Debug.Log("Cientista In Game: " + CientistInGame);
             if (HasStarted)
             {
                 startedGameChange();

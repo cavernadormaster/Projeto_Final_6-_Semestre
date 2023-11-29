@@ -43,7 +43,9 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     private void Update()
     {
-      
+        
+
+
     }
 
     public override void FixedUpdateNetwork()
@@ -58,7 +60,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             if (netWorkInputData.isZumbi)
             {
                 Debug.Log("Zumbie");
-                ChangePersonagem();
+                if (GameObject.Find("PlayerZumbi(clone)") != null)
+                    ChangePersonagem();
             }
 
             if(netWorkInputData.started)

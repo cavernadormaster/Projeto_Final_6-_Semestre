@@ -29,6 +29,7 @@ public class CharacterMovementHandler : NetworkBehaviour
     {
         if(anim)
         {
+            Debug.Log("PEGOU");
             CharacterAnimation = PreAnim;
             anim = false;
         }

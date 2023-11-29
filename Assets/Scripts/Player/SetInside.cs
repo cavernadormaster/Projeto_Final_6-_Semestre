@@ -5,7 +5,7 @@ using UnityEngine;
 public class SetInside : MonoBehaviour
 {
     
-    public static Animator animator;
+    public Animator animator;
 
     private void Awake()
     {
