@@ -16,15 +16,10 @@ public class InGameManager : NetworkBehaviour
     private void Update()
     {
         Debug.Log("Cientista In Game: " + CientistInGame);
-        if (GetInput(out NetWorkInputData netWorkInputData))
-        {
             if (HasStarted)
             {
                 startedGameChange();
             }
-
-        }
-
     }
 
     void startedGameChange()

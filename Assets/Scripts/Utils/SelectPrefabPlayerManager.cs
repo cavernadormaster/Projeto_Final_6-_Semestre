@@ -309,6 +309,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         CountDownToStart[6].SetActive(true);
         yield return new WaitForSeconds(1f);
         CountDownToStart[6].SetActive(false);
+        InGameManager.HasStarted = true;
         OnStartedGame();
     }
 
