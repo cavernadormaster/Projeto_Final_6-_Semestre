@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class SetInside : MonoBehaviour
 {
-    public Animator animator;
-    void Start()
+    
+    public static Animator animator;
+
+    private void Awake()
     {
-        if (!CharacterInputHandler.characterMovementHandler.Object.HasInputAuthority)
-            return;
-        CharacterMovementHandler.CharacterAnimation = animator;
+        animator = GetComponent<Animator>();
     }
 
-    
+
+
 }

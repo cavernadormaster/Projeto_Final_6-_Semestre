@@ -6,8 +6,7 @@ using Fusion;
 public class CharacterMovementHandler : NetworkBehaviour
 {
     [Header("Animation")]
-    public static Animator CharacterAnimation;
-    public  Animator CharacterAnimation2;
+    public  Animator CharacterAnimation;
 
     Vector2 viewInput;
     float walkSpeed = 0;
@@ -17,12 +16,12 @@ public class CharacterMovementHandler : NetworkBehaviour
     private void Awake()
     {
         networkCharacterControllerPrototypeCustom = GetComponent<NetworkCharacterControllerPrototypeCustom>();
-        
+       
     }
 
     void Start()
     {
-        CharacterAnimation2 = CharacterAnimation;
+        
     }
 
     void Update()

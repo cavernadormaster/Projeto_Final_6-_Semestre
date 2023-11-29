@@ -391,7 +391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
-  CharacterAnimation2: {fileID: 0}
+  CharacterAnimation: {fileID: 1012683034765478603}
 --- !u!114 &2831743601498641239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,6 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2b5ceee2efa5a43832230ffc341ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterMovementHandler: {fileID: 7159886460817422420}
 --- !u!114 &7073460365675284114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +518,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5153365677349400734, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6679044594905642881, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_Name
       value: PlayerCientista
@@ -562,6 +567,11 @@ PrefabInstance:
 --- !u!4 &813639680030664354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1676160260753623492, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+  m_PrefabInstance: {fileID: 2019945908534996838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1012683034765478603 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1298602125768107437, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
   m_PrefabInstance: {fileID: 2019945908534996838}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &5980192114235440580 stripped
