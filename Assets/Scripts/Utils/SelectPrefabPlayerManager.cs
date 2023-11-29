@@ -42,11 +42,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     private void Update()
     {
-       if(startedGame)
-        {
-            StartCoroutine(StartCountDown2());
-            startedGame = false;
-        }
+      
     }
 
     public override void FixedUpdateNetwork()
@@ -68,7 +64,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 Debug.Log("Started");
                 InGameManager.HasStarted = true;
-                StartedGame();
+                StartCoroutine(StartCountDown2());
             }
         }
     }
@@ -206,10 +202,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     public void StartCountDownEnumerator()
     {
-
-            StartCoroutine(StartCountDown(sessionInfo1));
-            startButton.SetActive(false);
-        
+      startButton.SetActive(false);
+      started = true;
     }
 
     public IEnumerator StartCountDown(SessionInfo sessionInfo)
@@ -237,8 +231,6 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         CountDownToStart[6].SetActive(true);
         yield return new WaitForSeconds(1f);
         CountDownToStart[6].SetActive(false);
-        started = true;
-        InGameManager.HasStarted = true;
     }
 
     static void OnPersonagemChange(Changed<SelectPrefabPlayerManager> changed)
