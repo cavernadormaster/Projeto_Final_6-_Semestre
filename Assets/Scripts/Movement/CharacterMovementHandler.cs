@@ -41,7 +41,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 
             if (networkInputData.isJumpPressed)
                 networkCharacterControllerPrototypeCustom.Jump();
-
+          
             Vector2 waklVector = new Vector2(networkCharacterControllerPrototypeCustom.Velocity.x, networkCharacterControllerPrototypeCustom.Velocity.z);
             waklVector.Normalize();
 

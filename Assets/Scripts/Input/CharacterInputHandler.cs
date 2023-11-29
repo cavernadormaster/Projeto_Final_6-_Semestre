@@ -7,7 +7,7 @@ public class CharacterInputHandler : MonoBehaviour
     Vector2 moveInputVector = Vector2.zero;
     Vector2 viewInputVector = Vector2.zero;
 
-    CharacterMovementHandler characterMovementHandler;
+   public static CharacterMovementHandler characterMovementHandler;
 
     bool isJumpButoonPressed = false;
     bool isTakeButtonPressed = false;
