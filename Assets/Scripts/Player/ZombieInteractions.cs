@@ -10,6 +10,7 @@ public class ZombieInteractions : MonoBehaviour
         {
             InGameManager.CientistInGame--;
             string ip = other.gameObject.name;
+            Debug.Log("Destroy" + ip);
             Destroy(GameObject.Find(ip));
         }
     }

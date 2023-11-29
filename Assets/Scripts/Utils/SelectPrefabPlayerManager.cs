@@ -233,6 +233,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         yield return new WaitForSeconds(1f);
         CountDownToStart[6].SetActive(false);
         started = true;
+        InGameManager.HasStarted = true;
     }
 
     static void OnPersonagemChange(Changed<SelectPrefabPlayerManager> changed)
