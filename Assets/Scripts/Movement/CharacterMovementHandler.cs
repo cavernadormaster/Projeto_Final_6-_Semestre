@@ -10,6 +10,7 @@ public class CharacterMovementHandler : NetworkBehaviour
     public  Animator CharacterAnimation2;
 
     Vector2 viewInput;
+    float walkSpeed = 0;
 
     NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
 
@@ -44,7 +45,7 @@ public class CharacterMovementHandler : NetworkBehaviour
             Vector2 waklVector = new Vector2(networkCharacterControllerPrototypeCustom.Velocity.x, networkCharacterControllerPrototypeCustom.Velocity.z);
             waklVector.Normalize();
 
-            float walkSpeed = Mathf.Clamp01(waklVector.magnitude);
+            walkSpeed = Mathf.Lerp(walkSpeed, Mathf.Clamp01(waklVector.magnitude), Runner.DeltaTime * 5);
 
             CharacterAnimation.SetFloat("WalkSpeed", walkSpeed);
         }

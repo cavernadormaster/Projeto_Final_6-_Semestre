@@ -115,6 +115,7 @@
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\SpawnPoints\SpawnerPrototypeT.cs" />
+    <Compile Include="Assets\Scripts\Player\SetInside.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\AutoScroll_Image.cs" />
     <Compile Include="Assets\ParrelSync-master\Examples\CustomArgumentExample.cs" />
     <Compile Include="Assets\Scripts\NetWork\Spawner.cs" />
@@ -166,7 +167,6 @@
     <Compile Include="Assets\Scripts\UI\Timer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionGraph.cs" />
-    <Compile Include="Assets\Scripts\Player\SetInside.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
