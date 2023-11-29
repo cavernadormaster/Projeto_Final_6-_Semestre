@@ -25,6 +25,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     [Networked(OnChanged = nameof(startedGameChange))]
     public bool  started { get; set; }
 
+
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
     [Header("Player Prefab")] public GameObject[] Playerprefab;
     [Header("Paredes")] public GameObject parede;
@@ -64,8 +65,10 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 Debug.Log("Started");
                 InGameManager.HasStarted = true;
-                StartCoroutine(StartCountDown2());
+                
             }
+
+           
         }
     }
 
@@ -202,14 +205,14 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 
     public void StartCountDownEnumerator()
     {
-      startButton.SetActive(false);
-      started = true;
+        StartCoroutine(StartCountDown(sessionInfo1));
+        startButton.SetActive(false);
     }
 
     public IEnumerator StartCountDown(SessionInfo sessionInfo)
     {
         SessionInfoListUIItem.isOpen = false;
-        
+        started = true;
         CountDownToStart[0].SetActive(true);
         yield return new WaitForSeconds(3f);
         CountDownToStart[0].SetActive(false);
@@ -231,6 +234,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         CountDownToStart[6].SetActive(true);
         yield return new WaitForSeconds(1f);
         CountDownToStart[6].SetActive(false);
+        InGameManager.HasStarted = true;
     }
 
     static void OnPersonagemChange(Changed<SelectPrefabPlayerManager> changed)
@@ -274,14 +278,15 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 ;
 
         if (isTakeCurrent && !isTakingOld)
-            changed.Behaviour.StartCountDownStatic();
-    }
-     void StartCountDownStatic()
-    {
-        startedGame = true;
+            changed.Behaviour.StartCountDownUp();
     }
 
-    public  IEnumerator StartCountDown2()
+    void StartCountDownUp()
+    {
+        StartCoroutine(StartCountDown2());
+    }
+
+    public IEnumerator StartCountDown2()
     {
         CountDownToStart[0].SetActive(true);
         yield return new WaitForSeconds(3f);

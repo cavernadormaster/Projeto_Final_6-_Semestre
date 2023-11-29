@@ -160,9 +160,5 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         }
 
         Debug.Log("Spawner OnHostMigrationCleanUp Completed");
-    }
-
-    
-
-    
+    } 
 }

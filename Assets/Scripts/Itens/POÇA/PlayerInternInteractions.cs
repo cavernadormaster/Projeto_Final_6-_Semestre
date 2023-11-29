@@ -52,6 +52,4 @@ public class PlayerInternInteractions : MonoBehaviour
             playerinRange.Remove(g);
         }
     }
-    
-       
 }
