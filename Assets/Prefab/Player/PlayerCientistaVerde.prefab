@@ -776,7 +776,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3540600832127640157}
   - component: {fileID: 3963554446285480428}
-  - component: {fileID: 3661855712593986363}
   m_Layer: 0
   m_Name: PersonIdle
   m_TagString: Untagged
@@ -821,19 +820,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &3661855712593986363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4209015303190608103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa78f8150e8cd24cbdcdb9b68973dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3963554446285480428}
 --- !u!1 &4258625346014984082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,6 +1569,7 @@ GameObject:
   - component: {fileID: 6044590985210263093}
   - component: {fileID: 1776224595832000580}
   - component: {fileID: -4434435696403248078}
+  - component: {fileID: 5810331755129489336}
   m_Layer: 0
   m_Name: PlayerCientistaVerde
   m_TagString: Player
@@ -1716,6 +1703,19 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 1776224595832000580}
   SimulationBehaviours: []
+--- !u!114 &5810331755129489336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679044594905642881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa78f8150e8cd24cbdcdb9b68973dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 3963554446285480428}
 --- !u!1 &6834024006442240549
 GameObject:
   m_ObjectHideFlags: 0
