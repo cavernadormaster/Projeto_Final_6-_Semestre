@@ -105,6 +105,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[0]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -112,6 +113,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[1]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -119,6 +121,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[2]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -126,6 +129,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[3]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -137,6 +141,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             Destroy(child);
             GameObject temp = Instantiate(ZumbiePrefab);
             temp.transform.position = originalGameObject.transform.position;
+            temp.transform.rotation = originalGameObject.transform.rotation;
             temp.transform.SetParent(originalGameObject.transform);
 
         }
@@ -386,6 +391,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[0]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -393,6 +399,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[1]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -400,6 +407,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[2]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -407,6 +415,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             {
                 GameObject temp = Instantiate(Playerprefab[3]);
                 temp.transform.position = originalGameObject.transform.position;
+                temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
             }
 
@@ -418,6 +427,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             Destroy(child);
             GameObject temp = Instantiate(ZumbiePrefab);
             temp.transform.position = originalGameObject.transform.position;
+            temp.transform.rotation = originalGameObject.transform.rotation;
             temp.transform.SetParent(originalGameObject.transform);
         }
     }
