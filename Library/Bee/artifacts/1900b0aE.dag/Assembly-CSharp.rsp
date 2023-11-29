@@ -432,6 +432,7 @@
 "Assets/Scripts/Player/ZombieInteractions.cs"
 "Assets/Scripts/UI/InGameMessageUIHandler.cs"
 "Assets/Scripts/UI/MainMenuUIHandler.cs"
+"Assets/Scripts/UI/ScenenManagent.cs"
 "Assets/Scripts/UI/SessionInfoListUIItem.cs"
 "Assets/Scripts/UI/SessionListUIHandler.cs"
 "Assets/Scripts/Utils/OutOfRange.cs"
