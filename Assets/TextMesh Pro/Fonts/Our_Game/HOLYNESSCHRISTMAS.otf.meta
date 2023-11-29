@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ea6157b53bb04714f831e99e1674f11f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - HOLYNESS CHRISTMAS
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 67ff98e8a5e458c439d4c0b1073fdf08, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

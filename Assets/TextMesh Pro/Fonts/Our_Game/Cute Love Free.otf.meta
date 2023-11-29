@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 69bcfaed33e8f2a4fa6eb1ea780181fc
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Cute Love
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c59de1e5ccb3b5741be0ca22a33b357c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
