@@ -38,11 +38,15 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     [Header("Numeros e Falas para começar a partida")] public GameObject[] CountDownToStart;
     [Header("Start Button")] public GameObject startButton;
 
-    
+    public static bool startedGame;
 
     private void Update()
     {
-       
+       if(startedGame)
+        {
+            StartCoroutine(StartCountDown2());
+            startedGame = false;
+        }
     }
 
     public override void FixedUpdateNetwork()
@@ -63,6 +67,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             if(netWorkInputData.started)
             {
                 Debug.Log("Started");
+                InGameManager.HasStarted = true;
                 StartedGame();
             }
         }
@@ -161,7 +166,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 Debug.Log(TipoDePersonagem);
                 other.tag = "Zumbi";
                 isZumbi = true;
-               
+                
             }
             CheckIfIsServer();
         }
@@ -277,7 +282,37 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
 ;
 
         if (isTakeCurrent && !isTakingOld)
-            changed.Behaviour.OnStartedGame();
+            changed.Behaviour.StartCountDownStatic();
+    }
+     void StartCountDownStatic()
+    {
+        startedGame = true;
+    }
+
+    public  IEnumerator StartCountDown2()
+    {
+        CountDownToStart[0].SetActive(true);
+        yield return new WaitForSeconds(3f);
+        CountDownToStart[0].SetActive(false);
+        CountDownToStart[1].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[1].SetActive(false);
+        CountDownToStart[2].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[2].SetActive(false);
+        CountDownToStart[3].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[3].SetActive(false);
+        CountDownToStart[4].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[4].SetActive(false);
+        CountDownToStart[5].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[5].SetActive(false);
+        CountDownToStart[6].SetActive(true);
+        yield return new WaitForSeconds(1f);
+        CountDownToStart[6].SetActive(false);
+        OnStartedGame();
     }
 
     void OnStartedGame()

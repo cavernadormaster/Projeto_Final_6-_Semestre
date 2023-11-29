@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class InGameManager : NetworkBehaviour
 {
+    
+
     public static int CientistInGame;
     public static bool HasStarted;
+    bool doorOpened;
     public GameObject[] ExitDoors;
 
     private void Update()
@@ -15,17 +18,27 @@ public class InGameManager : NetworkBehaviour
         Debug.Log("Cientista In Game: " + CientistInGame);
         if (GetInput(out NetWorkInputData netWorkInputData))
         {
-            if (CientistInGame == 1 && netWorkInputData.started)
+            if (HasStarted)
             {
-                Debug.Log("Cientista Ganhou");
-                ExitDoors[Random.Range(0, 4)].SetActive(true);
+                startedGameChange();
             }
 
-            if (CientistInGame <= 0 && netWorkInputData.started)
-            {
-                SceneManager.LoadScene("Vitoria_Zumbi");
-            }
         }
 
+    }
+
+    void startedGameChange()
+    {
+        if (CientistInGame == 1 && !doorOpened)
+        {
+            Debug.Log("Cientista Ganhou");
+            ExitDoors[Random.Range(0, 4)].SetActive(true);
+            doorOpened = true;
+        }
+
+        if (CientistInGame <= 0)
+        {
+            SceneManager.LoadScene("Vitoria_Zumbi");
+        }
     }
 }
