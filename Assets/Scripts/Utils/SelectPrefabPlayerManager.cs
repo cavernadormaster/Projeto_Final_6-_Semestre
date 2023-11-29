@@ -55,7 +55,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             if (netWorkInputData.isCientistBlue)
             {
                 Debug.Log("Cientista");
-                ChangePersonagem();
+                if (GameObject.Find("PlayerCientistaAmarelo(clone)") != null || GameObject.Find("PlayerCientistaAzul(clone)") != null || GameObject.Find("PlayerCientistaVerde(clone)") != null || GameObject.Find("PlayerCientistaVermelho(clone)") != null)
+                    ChangePersonagem();
             }
             if (netWorkInputData.isZumbi)
             {
