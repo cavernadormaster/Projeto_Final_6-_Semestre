@@ -300,7 +300,6 @@ GameObject:
   m_Component:
   - component: {fileID: 441295151378158491}
   - component: {fileID: 1298602125768107437}
-  - component: {fileID: 5876134045499911159}
   m_Layer: 0
   m_Name: PersonIdle
   m_TagString: Untagged
@@ -345,19 +344,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &5876134045499911159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960422542371129633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa78f8150e8cd24cbdcdb9b68973dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1298602125768107437}
 --- !u!1 &1052747590030388955
 GameObject:
   m_ObjectHideFlags: 0

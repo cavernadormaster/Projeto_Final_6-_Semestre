@@ -7,7 +7,8 @@ public class CharacterMovementHandler : NetworkBehaviour
 {
     [Header("Animation")]
     public  Animator CharacterAnimation;
-
+    public static Animator PreAnim;
+    public static bool anim;
     Vector2 viewInput;
     float walkSpeed = 0;
 
@@ -26,8 +27,14 @@ public class CharacterMovementHandler : NetworkBehaviour
 
     void Update()
     {
-        
+        if(anim)
+        {
+            CharacterAnimation = PreAnim;
+            anim = false;
+        }
     }
+
+    
 
     public override void FixedUpdateNetwork()
     {

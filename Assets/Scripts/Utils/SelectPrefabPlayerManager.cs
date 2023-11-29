@@ -163,6 +163,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 InGameManager.CientistInGame++;
                 Debug.Log(TipoDePersonagem);
                 other.tag = "Cientista";
+
                 isCientistBlue = true;
             }
             if(TipoDePersonagem != "Cientista")
