@@ -1324,6 +1324,7 @@ GameObject:
   - component: {fileID: 5153365677349400734}
   - component: {fileID: 6044590985210263093}
   - component: {fileID: 1776224595832000580}
+  - component: {fileID: -3585331949876118741}
   m_Layer: 0
   m_Name: PlayerCientistaAzul
   m_TagString: Player
@@ -1433,6 +1434,30 @@ MonoBehaviour:
   _isFireButtonPressed: 0
   ItensTOSpawn:
   - {fileID: 4671411570357435588, guid: f23ca35826f808b4ba82e59e83833236, type: 3}
+--- !u!114 &-3585331949876118741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679044594905642881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2305
+  NetworkGuid:
+    RawGuidValue: 579ee48357ded094ba55a562c79c4b63
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 1776224595832000580}
+  SimulationBehaviours: []
 --- !u!1 &6974168796921638830
 GameObject:
   m_ObjectHideFlags: 0

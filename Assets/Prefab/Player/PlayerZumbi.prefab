@@ -491,6 +491,7 @@ GameObject:
   - component: {fileID: 1739074067105079537}
   - component: {fileID: 2557997044163278573}
   - component: {fileID: 3970214976030535750}
+  - component: {fileID: 1048105228034173026}
   m_Layer: 0
   m_Name: PlayerZumbi
   m_TagString: Untagged
@@ -580,6 +581,19 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1048105228034173026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056337718556750322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa78f8150e8cd24cbdcdb9b68973dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 5034942540344775727}
 --- !u!1 &4329738601603361999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1062,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6691138141147842624}
   - component: {fileID: 5034942540344775727}
-  - component: {fileID: 686445431242724856}
   m_Layer: 0
   m_Name: ZombieIdle
   m_TagString: Untagged
@@ -1093,19 +1106,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &686445431242724856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6309650953374995194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa78f8150e8cd24cbdcdb9b68973dae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 5034942540344775727}
 --- !u!1 &6435126783247085037
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class SetInside : MonoBehaviour
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        
         CharacterMovementHandler.PreAnim = animator;
         CharacterMovementHandler.anim = true;
     }
