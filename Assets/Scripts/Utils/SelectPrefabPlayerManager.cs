@@ -26,7 +26,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public bool  started { get; set; }
 
 
-    public Animator[] animations;
+    [Header("Animations")] public Animator[] animations;
 
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
     [Header("Player Prefab")] public GameObject[] Playerprefab;

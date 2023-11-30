@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -438,6 +438,9 @@ MonoBehaviour:
   _isCientistBlue: 0
   _isZumbi: 0
   _started: 0
+  animations:
+  - {fileID: 3104196212006998140, guid: b7759b2882eb17143b2a515f5ea7f825, type: 3}
+  - {fileID: 6669182812067626795, guid: fc89020562567e043b75e5573d051c66, type: 3}
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -2275,6 +2278,9 @@ MonoBehaviour:
   _isCientistBlue: 0
   _isZumbi: 0
   _started: 0
+  animations:
+  - {fileID: 3104196212006998140, guid: b7759b2882eb17143b2a515f5ea7f825, type: 3}
+  - {fileID: 6669182812067626795, guid: fc89020562567e043b75e5573d051c66, type: 3}
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -7164,6 +7170,9 @@ MonoBehaviour:
   _isCientistBlue: 0
   _isZumbi: 0
   _started: 0
+  animations:
+  - {fileID: 3104196212006998140, guid: b7759b2882eb17143b2a515f5ea7f825, type: 3}
+  - {fileID: 6669182812067626795, guid: fc89020562567e043b75e5573d051c66, type: 3}
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -9396,6 +9405,9 @@ MonoBehaviour:
   _isCientistBlue: 0
   _isZumbi: 0
   _started: 0
+  animations:
+  - {fileID: 3104196212006998140, guid: b7759b2882eb17143b2a515f5ea7f825, type: 3}
+  - {fileID: 6669182812067626795, guid: fc89020562567e043b75e5573d051c66, type: 3}
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
@@ -22363,6 +22375,9 @@ MonoBehaviour:
   _isCientistBlue: 0
   _isZumbi: 0
   _started: 0
+  animations:
+  - {fileID: 3104196212006998140, guid: b7759b2882eb17143b2a515f5ea7f825, type: 3}
+  - {fileID: 6669182812067626795, guid: fc89020562567e043b75e5573d051c66, type: 3}
   ZumbiePrefab: {fileID: 4056337718556750322, guid: 7cb3c8f5998b9cf4d8744fff0031743b, type: 3}
   Playerprefab:
   - {fileID: 6679044594905642881, guid: 579ee48357ded094ba55a562c79c4b63, type: 3}
