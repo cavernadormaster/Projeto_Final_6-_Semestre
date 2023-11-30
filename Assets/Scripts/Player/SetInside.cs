@@ -10,8 +10,6 @@ public class SetInside : MonoBehaviour
     private void Awake()
     {
         
-        CharacterMovementHandler.PreAnim = animator;
-        CharacterMovementHandler.anim = true;
     }
 
 
