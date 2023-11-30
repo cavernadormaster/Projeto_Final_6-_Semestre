@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Vitoria_Zumbi.unity
     guid: aa2d64968177ef242a2977ac2ba419ce
+  - enabled: 1
+    path: Assets/Scenes/Vitoria_Cientista.unity
+    guid: 8f9e0cb20cfcf714eb96649e213a1a24
   m_configObjects: {}

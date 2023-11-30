@@ -22,6 +22,9 @@ public class MainMenuUIHandler : MonoBehaviour
     {
         if(PlayerPrefs.HasKey("PlayerNickname"))
             playerNameInputField.text = PlayerPrefs.GetString("PlayerNickname");
+
+        if (ScenenManagent.JoinAgain)
+            OnFindGameClicked();
     }
 
     void HideAllPanels()
@@ -32,7 +35,9 @@ public class MainMenuUIHandler : MonoBehaviour
         createSessionPanel.SetActive(false);
     }
 
-    public void OnFindGameClicked()
+    
+
+    public  void OnFindGameClicked()
     {
         PlayerPrefs.SetString("PlayerNickname", playerNameInputField.text);
         PlayerPrefs.Save();
@@ -44,6 +49,7 @@ public class MainMenuUIHandler : MonoBehaviour
         sessionBrowserPanel.SetActive(true);
 
         FindObjectOfType<SessionListUIHandler>(true).OnLookingForGameSession();
+        ScenenManagent.JoinAgain = false;
     }
 
     public void OnCreateNewGameClicked()

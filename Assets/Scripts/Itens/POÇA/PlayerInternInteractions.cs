@@ -46,7 +46,7 @@ public class PlayerInternInteractions : MonoBehaviour
             ip = other.gameObject.name;
             GameObject g = GameObject.Find(ip);
             NetworkCharacterControllerPrototypeCustom cs = g.GetComponent<NetworkCharacterControllerPrototypeCustom>();
-            cs.maxSpeed = 2f;
+            cs.maxSpeed = 4f;
             cs.jumpImpulse = 8.0f;
             cs.rotationSpeed = 5.0f;
             playerinRange.Remove(g);
