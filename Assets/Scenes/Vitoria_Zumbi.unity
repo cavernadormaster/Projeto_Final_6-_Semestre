@@ -401,7 +401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MusicSource: {fileID: 454714395}
   SFXSource: {fileID: 1498388219}
-  zumbis: {fileID: 8300000, guid: 141e4830be57a774a8ef0c2c28238217, type: 3}
+  zumbis: {fileID: 8300000, guid: aaa61d2312c90d746b50ea3b56ea9fee, type: 3}
   corpo_caindo: {fileID: 8300000, guid: 16633de08c1a6eb4cb36200d301e3348, type: 3}
 --- !u!4 &1417910956
 Transform:
