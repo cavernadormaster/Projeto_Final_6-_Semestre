@@ -26,6 +26,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     public bool  started { get; set; }
 
 
+    public Animator[] animations;
+
     [Header("Zumbi Prefab")]public GameObject ZumbiePrefab;
     [Header("Player Prefab")] public GameObject[] Playerprefab;
     [Header("Paredes")] public GameObject parede;
@@ -111,6 +113,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
             if(corDoCientista == "Amarelo")
@@ -119,6 +122,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
             if (corDoCientista == "Vermelho")
@@ -127,6 +131,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
             if (corDoCientista == "Verde")
@@ -135,6 +140,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
         }
@@ -147,6 +153,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             temp.transform.position = originalGameObject.transform.position;
             temp.transform.rotation = originalGameObject.transform.rotation;
             temp.transform.SetParent(originalGameObject.transform);
+            temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[0];
 
         }
     }
@@ -398,6 +405,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
             if (corDoCientista == "Amarelo")
@@ -406,6 +414,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
             if (corDoCientista == "Vermelho")
@@ -414,6 +423,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
             if (corDoCientista == "Verde")
@@ -422,6 +432,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[1];
             }
 
         }
@@ -434,6 +445,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             temp.transform.position = originalGameObject.transform.position;
             temp.transform.rotation = originalGameObject.transform.rotation;
             temp.transform.SetParent(originalGameObject.transform);
+            temp.GetComponent<CharacterMovementHandler>().CharacterAnimation = animations[0];
         }
     }
 }

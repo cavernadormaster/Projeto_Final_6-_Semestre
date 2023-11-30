@@ -16,8 +16,6 @@ public class CharacterInputHandler : MonoBehaviour
     private void Awake()
     {
         characterMovementHandler = GetComponent<CharacterMovementHandler>();
-        
-
     }
 
     void Start()
