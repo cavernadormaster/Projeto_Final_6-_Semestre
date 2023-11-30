@@ -49,13 +49,8 @@ public class CharacterMovementHandler : NetworkBehaviour
             if (networkInputData.isJumpPressed)
                 networkCharacterControllerPrototypeCustom.Jump();
 
-
-            Vector2 waklVector = new Vector2(networkCharacterControllerPrototypeCustom.Velocity.x, networkCharacterControllerPrototypeCustom.Velocity.z);
-            waklVector.Normalize();
-
-            walkSpeed = Mathf.Lerp(walkSpeed, Mathf.Clamp01(waklVector.magnitude), Runner.DeltaTime * 5);
-
-            CharacterAnimation.SetFloat("WalkSpeed", walkSpeed);
+            CharacterAnimation.SetBool("IsWalking", networkInputData.Walking);
+            
         }
     }
 
