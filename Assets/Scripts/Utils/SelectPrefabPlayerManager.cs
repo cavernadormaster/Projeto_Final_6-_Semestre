@@ -357,60 +357,52 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             Destroy(child);
 
 
-            if (corDoCientista == "Azul")
+            if (corDoCientista == "Azul" && GameObject.Find("PlayerCientistaAzul(clone)") == null)
             {
                 GameObject temp = Instantiate(Playerprefab[0]);
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
-                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
-                Destroy(child);
+                
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
-                isCientistBlue = false;
             }
 
-            if (corDoCientista == "Amarelo")
+            if (corDoCientista == "Amarelo" && GameObject.Find("PlayerCientistaAmarelo(clone)") == null)
             {
                 GameObject temp = Instantiate(Playerprefab[1]);
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
-                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
-                Destroy(child);
+                
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
-                isCientistBlue = false;
             }
 
-            if (corDoCientista == "Vermelho")
+            if (corDoCientista == "Vermelho" && GameObject.Find("PlayerCientistaVermelho(clone)") == null)
             {
                 GameObject temp = Instantiate(Playerprefab[2]);
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
-                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
-                Destroy(child);
+                
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
-                isCientistBlue = false;
             }
 
-            if (corDoCientista == "Verde")
+            if (corDoCientista == "Verde" && GameObject.Find("PlayerCientistaVerde(Clone)") == null)
             {
                 GameObject temp = Instantiate(Playerprefab[3]);
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
-                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
-                Destroy(child);
+                
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
-                isCientistBlue = false;
             }
 
         }
-        else if (TipoDePersonagem != "Cientista")
+        else if (TipoDePersonagem != "Cientista" && GameObject.Find("PlayerZumbi(Clone)") == null)
         {
             GameObject originalGameObject = GameObject.Find(ip);
             GameObject child = originalGameObject.transform.GetChild(0).gameObject;
