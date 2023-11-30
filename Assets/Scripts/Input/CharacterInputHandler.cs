@@ -61,7 +61,7 @@ public class CharacterInputHandler : MonoBehaviour
         isJumpButoonPressed = false;
         isFireButtonPressed = false;
         isTakeButtonPressed = false;
-        IsWalking = false;
+        
         return netWorkInputData;
     }
 }
