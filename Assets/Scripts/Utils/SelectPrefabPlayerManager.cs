@@ -363,8 +363,11 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
+                Destroy(child);
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
+                isCientistBlue = false;
             }
 
             if (corDoCientista == "Amarelo")
@@ -373,8 +376,11 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
+                Destroy(child);
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
+                isCientistBlue = false;
             }
 
             if (corDoCientista == "Vermelho")
@@ -383,8 +389,11 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
+                Destroy(child);
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
+                isCientistBlue = false;
             }
 
             if (corDoCientista == "Verde")
@@ -393,8 +402,11 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                GameObject childed = originalGameObject.transform.GetChild(0).gameObject;
+                Destroy(child);
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
+                isCientistBlue = false;
             }
 
         }
