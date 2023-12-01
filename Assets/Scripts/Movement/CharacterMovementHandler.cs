@@ -39,7 +39,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 
     public override void FixedUpdateNetwork()
     {
-        if(GetInput(out NetWorkInputData networkInputData))
+        if(GetInput(out NetWorkInputData networkInputData) && Runner.IsForward)
         {
             Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
             moveDirection.Normalize();
@@ -52,7 +52,10 @@ public class CharacterMovementHandler : NetworkBehaviour
             CharacterAnimation.SetBool("IsWalking", networkInputData.Walking);
             
         }
+        
+
     }
+
 
     public void SetViewInputVector(Vector2 viewInput)
     {
