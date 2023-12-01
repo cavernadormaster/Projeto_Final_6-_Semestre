@@ -29823,7 +29823,6 @@ GameObject:
   - component: {fileID: 324138565898559310}
   - component: {fileID: 7486929211472521485}
   - component: {fileID: 6108130125673466993}
-  - component: {fileID: 7486929211472521486}
   - component: {fileID: 7486929211472521487}
   m_Layer: 0
   m_Name: Ringue
@@ -30501,20 +30500,6 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5297391097897870333}
-  m_Mesh: {fileID: -1133343431117563240, guid: 0545e3da8c985dc4c901aea77ca6471b, type: 3}
---- !u!64 &7486929211472521486
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5297391097897870333}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
   m_Mesh: {fileID: -1133343431117563240, guid: 0545e3da8c985dc4c901aea77ca6471b, type: 3}
 --- !u!65 &7486929211472521487
 BoxCollider:
