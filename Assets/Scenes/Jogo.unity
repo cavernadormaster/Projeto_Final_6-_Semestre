@@ -12057,7 +12057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1724350380}
-  elapsTime: 60
+  elapsTime: 300
 --- !u!1 &860066786
 GameObject:
   m_ObjectHideFlags: 0
