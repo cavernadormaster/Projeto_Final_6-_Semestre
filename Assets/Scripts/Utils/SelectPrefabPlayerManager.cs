@@ -291,7 +291,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
     void OnStartedGame()
     {
         
-        if (playersNaCena[0].tag != "Cientista" && playersNaCena[0] != null)
+        if (playersNaCena[0].tag != "Cientista Azul" && playersNaCena[0].tag != "Cientista Amarelo" &&
+            playersNaCena[0].tag != "Cientista Vermelho" && playersNaCena[0].tag != "Cientista Verde" && playersNaCena[0] != null)
         {
             DisableControllers();
             parede.SetActive(false);
