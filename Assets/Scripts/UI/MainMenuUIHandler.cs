@@ -11,6 +11,10 @@ public class MainMenuUIHandler : MonoBehaviour
     public GameObject sessionBrowserPanel;
     public GameObject createSessionPanel;
     public GameObject statusPanel;
+    public GameObject menuPanel;
+    public GameObject creditosPanel;
+    public GameObject optionPanel;
+    public GameObject botoesPanel;
 
     [Header("Player settings")]
     public TMP_InputField playerNameInputField;
@@ -33,6 +37,9 @@ public class MainMenuUIHandler : MonoBehaviour
         sessionBrowserPanel.SetActive(false);
         statusPanel.SetActive(false);
         createSessionPanel.SetActive(false);
+        creditosPanel.SetActive(false);
+        optionPanel.SetActive(false);
+
     }
 
     
@@ -46,6 +53,7 @@ public class MainMenuUIHandler : MonoBehaviour
         netWorkRuunigHandler.OnJoinLobby();
 
         HideAllPanels();
+        botoesPanel.SetActive(false);
         sessionBrowserPanel.SetActive(true);
 
         FindObjectOfType<SessionListUIHandler>(true).OnLookingForGameSession();
@@ -56,6 +64,27 @@ public class MainMenuUIHandler : MonoBehaviour
     {
         HideAllPanels();
         createSessionPanel.SetActive(true);
+    }
+
+    public void OnCreditsClicked()
+    {
+        HideAllPanels();
+        creditosPanel.SetActive(true);
+        ScenenManagent.JoinAgain = true;
+    }
+
+    public void OnOptionsClicked()
+    {
+        HideAllPanels();
+        optionPanel.SetActive(true);
+        ScenenManagent.JoinAgain = true;
+    }
+
+    public void OnBackClicked()
+    {
+        HideAllPanels();
+        menuPanel.SetActive(true);
+        ScenenManagent.JoinAgain = true;
     }
 
     public void OnStartNewSessionClicked()
@@ -74,5 +103,11 @@ public class MainMenuUIHandler : MonoBehaviour
         HideAllPanels();
 
         statusPanel.gameObject.SetActive(true);
+    }
+
+    public void OnExitClicked()
+    {
+        Debug.Log("Sair do Jogo");
+        Application.Quit();
     }
 }
