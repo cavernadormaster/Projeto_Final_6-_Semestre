@@ -28,7 +28,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 
         if(thisObject.HasInputAuthority)
         {
-            GetComponent<CharacterInputHandler>().enabled = true;
+            GetComponent<NetworkCharacterControllerPrototypeCustom>().enabled = true;
         }
     }
 

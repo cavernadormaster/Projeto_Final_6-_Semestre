@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -352,7 +352,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 64f8ffff16fbffff
+      m_ExpandedIDs: e8e0ffff16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 387.10602, y: 3.2129998, z: -462.33704}
     speed: 2
-    m_Value: {x: 387.10602, y: 3.2129998, z: -462.33704}
+    m_Value: {x: 0, y: 1.46, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -685,11 +685,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.28369427, y: 0.392664, z: -0.12873814, w: 0.8653124}
     speed: 2
-    m_Value: {x: 0.28369334, y: 0.39266273, z: -0.12873772, w: 0.8653096}
+    m_Value: {x: -0.1628404, y: 0.14212947, z: -0.023711763, w: -0.97607374}
   m_Size:
     m_Target: 0.8660254
     speed: 2
-    m_Value: 0.8660254
+    m_Value: 1.2402426
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -921,21 +921,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Movement
+    - Assets/Prefab/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Movement
+  - Assets/Prefab/Player
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\projetos de jogos\LostDungeonDev\Projeto_Final_6-_Semestre
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0a620000
-    m_LastClickedID: 25098
+    m_SelectedIDs: fa610000
+    m_LastClickedID: 25082
     m_ExpandedIDs: 00000000d4610000d6610000d8610000da610000dc61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
