@@ -7,6 +7,7 @@ public class CharacterMovementHandler : NetworkBehaviour
 {
     [Header("Animation")]
     public  Animator CharacterAnimation;
+    public static Animator PreAnim;
     public static bool anim;
     Vector2 viewInput;
     float walkSpeed = 0;
@@ -29,6 +30,7 @@ public class CharacterMovementHandler : NetworkBehaviour
         if(anim)
         {
             Debug.Log("PEGOU");
+            CharacterAnimation = PreAnim;
             anim = false;
         }
     }
@@ -43,15 +45,14 @@ public class CharacterMovementHandler : NetworkBehaviour
             moveDirection.Normalize();
 
             networkCharacterControllerPrototypeCustom.Move(moveDirection);
-            
-            CharacterAnimation.SetBool("IsWalking", networkInputData.isJumpPressed);         
 
-            if (networkInputData.Walking)
+            if (networkInputData.isJumpPressed)
                 networkCharacterControllerPrototypeCustom.Jump();
+
+            CharacterAnimation.SetBool("IsWalking", networkInputData.Walking);
+            
         }
     }
-
-
 
     public void SetViewInputVector(Vector2 viewInput)
     {

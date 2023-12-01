@@ -419,7 +419,6 @@
 "Assets/Scripts/Itens/POÇA/PlayerInternInteractions.cs"
 "Assets/Scripts/Movement/CharacterMovementHandler.cs"
 "Assets/Scripts/Movement/NetworkCharacterControllerPrototypeCustom.cs"
-"Assets/Scripts/Movement/PunRPCAttribute.cs"
 "Assets/Scripts/NetWork/ConnectionTokensUtil.cs"
 "Assets/Scripts/NetWork/NetworkInGameMessage.cs"
 "Assets/Scripts/NetWork/NetWorkInputData.cs"
