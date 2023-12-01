@@ -8,7 +8,7 @@ public class ZombieInteractions : MonoBehaviour
     {
         if(other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
-            InGameManager.CientistInGame--;
+            InGameManager.matou = true;
             string ip = other.gameObject.name;
             Debug.Log("Destroy" + ip);
             Destroy(GameObject.Find(ip));

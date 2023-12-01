@@ -11,16 +11,23 @@ public class InGameManager : NetworkBehaviour
     public static int CientistInGame;
     public static bool HasStarted;
     public static bool ZumbiWins;
+    public static bool matou;
     bool doorOpened;
     public GameObject[] ExitDoors;
     
     private void Update()
     {
-            Debug.Log("Cientista In Game: " + CientistInGame);
-            if (HasStarted)
-            {
-                startedGameChange();
-            }
+        Debug.Log("Cientista In Game: " + CientistInGame);
+        if (HasStarted)
+        {
+            startedGameChange();
+        }
+
+        if(matou)
+        {
+            CientistInGame--;
+            matou = false;    
+        }
     }
 
     void startedGameChange()

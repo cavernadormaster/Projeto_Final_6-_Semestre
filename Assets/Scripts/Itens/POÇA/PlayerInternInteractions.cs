@@ -40,7 +40,7 @@ public class PlayerInternInteractions : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.CompareTag("Cientista") || other.CompareTag("Zumbi"))
+        if(other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul") || other.CompareTag("Zumbi"))
         {
             Debug.Log("Player saiu");
             ip = other.gameObject.name;
