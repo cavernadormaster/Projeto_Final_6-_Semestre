@@ -25,7 +25,7 @@ public class PlayerInternInteractions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Cientista") || other.CompareTag("Zumbi"))
+        if(other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul") || other.CompareTag("Zumbi"))
         {
             ip = other.gameObject.name;
             GameObject g = GameObject.Find(ip);

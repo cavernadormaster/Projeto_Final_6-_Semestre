@@ -298,14 +298,35 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
             playersNaCena[0].transform.position = spawnpoints[0].transform.position;
             EnableControllers();
         }
-        else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista")
+        else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Azul")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[UnityEngine.Random.Range(1, 5)].transform.position;
+            playersNaCena[0].transform.position = spawnpoints[1].transform.position;
             EnableControllers();
         }
-        
+        else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Amarelo")
+        {
+            DisableControllers();
+            parede.SetActive(false);
+            playersNaCena[0].transform.position = spawnpoints[2].transform.position;
+            EnableControllers();
+        }
+        else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Vermelho")
+        {
+            DisableControllers();
+            parede.SetActive(false);
+            playersNaCena[0].transform.position = spawnpoints[3].transform.position;
+            EnableControllers();
+        }
+        else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Verde")
+        {
+            DisableControllers();
+            parede.SetActive(false);
+            playersNaCena[0].transform.position = spawnpoints[4].transform.position;
+            EnableControllers();
+        }
+
     }
     void DisableControllers()
     {
@@ -363,6 +384,7 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
+                originalGameObject.tag = "Cientista Azul";
                 
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
@@ -374,7 +396,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
-                
+                originalGameObject.tag = "Cientista Amarelo";
+
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
             }
@@ -385,7 +408,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
-                
+                originalGameObject.tag = "Cientista Vermelho";
+
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
             }
@@ -396,7 +420,8 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
                 temp.transform.position = originalGameObject.transform.position;
                 temp.transform.rotation = originalGameObject.transform.rotation;
                 temp.transform.SetParent(originalGameObject.transform);
-                
+                originalGameObject.tag = "Cientista Verde";
+
                 GameObject child2 = temp.transform.GetChild(5).gameObject;
                 originalGameObject.GetComponent<CharacterMovementHandler>().CharacterAnimation = child2.GetComponent<Animator>();
             }

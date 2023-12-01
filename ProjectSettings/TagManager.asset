@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Cientista
   - Zumbi
+  - Cientista Azul
+  - Cientista Amarelo
+  - Cientista Verde
+  - Cientista Vermelho
   layers:
   - Default
   - TransparentFX
