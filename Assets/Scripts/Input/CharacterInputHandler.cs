@@ -58,7 +58,7 @@ public class CharacterInputHandler : MonoBehaviour
         netWorkInputData.Walking = IsWalking;
 
 
-        isJumpButoonPressed = false;
+       // isJumpButoonPressed = false;
         isFireButtonPressed = false;
         isTakeButtonPressed = false;
         
