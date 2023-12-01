@@ -6,7 +6,7 @@ public class ZombieInteractions : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Cientista"))
+        if(other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
             InGameManager.CientistInGame--;
             string ip = other.gameObject.name;
