@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
+using Fusion.Sockets;
+using System;
 
 public class CharacterMovementHandler : NetworkBehaviour
 {
@@ -11,6 +13,8 @@ public class CharacterMovementHandler : NetworkBehaviour
     public static bool anim;
     Vector2 viewInput;
     float walkSpeed = 0;
+
+    
 
     NetworkCharacterControllerPrototypeCustom networkCharacterControllerPrototypeCustom;
 
@@ -27,19 +31,12 @@ public class CharacterMovementHandler : NetworkBehaviour
 
     void Update()
     {
-        if(anim)
-        {
-            Debug.Log("PEGOU");
-            CharacterAnimation = PreAnim;
-            anim = false;
-        }
+       
     }
-
-    
 
     public override void FixedUpdateNetwork()
     {
-        if(GetInput(out NetWorkInputData networkInputData) && Runner.IsForward)
+        if(GetInput(out NetWorkInputData networkInputData))
         {
             Vector3 moveDirection = transform.forward * networkInputData.movementInput.y + transform.right * networkInputData.movementInput.x;
             moveDirection.Normalize();
@@ -49,13 +46,15 @@ public class CharacterMovementHandler : NetworkBehaviour
             if (networkInputData.isJumpPressed)
                 networkCharacterControllerPrototypeCustom.Jump();
 
-            CharacterAnimation.SetBool("IsWalking", networkInputData.Walking);
-            
-        }
-        
+            if(networkInputData.Walking)
+            CharacterAnimation.SetBool("IsWalking", true);
 
+        }
     }
 
+   
+
+   
 
     public void SetViewInputVector(Vector2 viewInput)
     {
