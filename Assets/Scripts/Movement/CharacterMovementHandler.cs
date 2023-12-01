@@ -46,10 +46,10 @@ public class CharacterMovementHandler : NetworkBehaviour
 
             networkCharacterControllerPrototypeCustom.Move(moveDirection);
 
-          //  if (networkInputData.isJumpPressed)
-          //      networkCharacterControllerPrototypeCustom.Jump();
+            if (networkInputData.isJumpPressed)
+                networkCharacterControllerPrototypeCustom.Jump();
 
-            CharacterAnimation.SetBool("IsWalking", networkInputData.isJumpPressed);
+            CharacterAnimation.SetBool("IsWalking", networkInputData.Walking);
             
         }
     }

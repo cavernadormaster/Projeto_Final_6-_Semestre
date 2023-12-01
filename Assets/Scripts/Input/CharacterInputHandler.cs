@@ -39,7 +39,7 @@ public class CharacterInputHandler : MonoBehaviour
         moveInputVector.x = Input.GetAxis("Horizontal");
         moveInputVector.y = Input.GetAxis("Vertical");
 
-        IsWalking = moveInputVector.x > 0 || moveInputVector.y > 0;
+        IsWalking = Input.GetKey(KeyCode.W);
 
         isJumpButoonPressed = Input.GetKey(KeyCode.Space);
         isTakeButtonPressed = Input.GetKey(KeyCode.Mouse1);
