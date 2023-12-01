@@ -252,6 +252,7 @@ GameObject:
   - component: {fileID: 7159886460817422420}
   - component: {fileID: 2831743601498641239}
   - component: {fileID: 7073460365675284114}
+  - component: {fileID: 3808349695118925135}
   m_Layer: 0
   m_Name: NetworkPlayerPF
   m_TagString: Player
@@ -341,6 +342,7 @@ MonoBehaviour:
   - {fileID: 351802731132006059}
   - {fileID: 7159886460817422420}
   - {fileID: 7073460365675284114}
+  - {fileID: 3808349695118925135}
   SimulationBehaviours: []
 --- !u!114 &351802731132006059
 MonoBehaviour:
@@ -419,6 +421,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InGameMessageUIHandler: {fileID: 8190589399206674011}
+--- !u!114 &3808349695118925135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7077675181871988822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 506319458, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  Animator: {fileID: 1012683034765478603}
+  TotalWords: 2
+  SyncSettings: 79
+  FloatAccuracy:
+    _value: 0
+    _inverse: 0
+    _hash: -814817977
+  TimeAccuracy:
+    _value: 0
+    _inverse: 0
+    _hash: 1061325578
+  WeightAccuracy:
+    _value: 0
+    _inverse: 0
+    _hash: -814817977
+  StateHashes: 000000001ac76dfd297448caaa2894b81e9f14f6
+  TriggerHashes: 00000000
 --- !u!1001 &2019945908534996838
 PrefabInstance:
   m_ObjectHideFlags: 0
