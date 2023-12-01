@@ -9,8 +9,6 @@ public class CharacterMovementHandler : NetworkBehaviour
 {
     [Header("Animation")]
     public  Animator CharacterAnimation;
-    public static Animator PreAnim;
-    public static bool anim;
     Vector2 viewInput;
     float walkSpeed = 0;
 
@@ -24,9 +22,12 @@ public class CharacterMovementHandler : NetworkBehaviour
        
     }
 
-    void Start()
+    private void Start()
     {
-        networkCharacterControllerPrototypeCustom = GetComponent<NetworkCharacterControllerPrototypeCustom>();
+        if(Object.HasStateAuthority)
+        {
+            GetComponent<CharacterInputHandler>().enabled = true;
+        }
     }
 
     void Update()
@@ -46,16 +47,14 @@ public class CharacterMovementHandler : NetworkBehaviour
             if (networkInputData.isJumpPressed)
                 networkCharacterControllerPrototypeCustom.Jump();
 
-            if(networkInputData.Walking)
-            CharacterAnimation.SetBool("IsWalking", true);
-
+            
+            CharacterAnimation.SetBool("IsWalking", networkInputData.Walking);
         }
     }
 
    
 
-   
-
+    
     public void SetViewInputVector(Vector2 viewInput)
     {
         this.viewInput = viewInput;

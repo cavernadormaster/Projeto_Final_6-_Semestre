@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimatorControllerTool
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -215,14 +215,14 @@ MonoBehaviour:
     y: 0
     width: 1109
     height: 385
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,7 +251,7 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 19}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 3
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -352,7 +352,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 88f9ffff
+      m_ExpandedIDs: ca9bfffffeafffffa6b5ffff86c8ffff3ee0ffff16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -634,9 +634,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 390.39496, y: 1.8716254, z: -465.6548}
+    m_Target: {x: 387.10602, y: 3.2129998, z: -462.33704}
     speed: 2
-    m_Value: {x: 390.39496, y: 1.8716254, z: -465.6548}
+    m_Value: {x: 0, y: 1.46, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -685,11 +685,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.28369427, y: 0.392664, z: -0.12873814, w: 0.8653124}
     speed: 2
-    m_Value: {x: 0.28369334, y: 0.39266273, z: -0.12873772, w: 0.8653096}
+    m_Value: {x: -0.1628404, y: 0.14212947, z: -0.023711763, w: -0.97607374}
   m_Size:
-    m_Target: 6.2144527
+    m_Target: 0.8660254
     speed: 2
-    m_Value: 6.2144527
+    m_Value: 1.2402426
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -921,22 +921,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/NetWork
+    - Assets/Scripts/Movement
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/NetWork
+  - Assets/Scripts/Movement
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\projetos de jogos\LostDungeonDev\Projeto_Final_6-_Semestre
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 32800000
-    m_LastClickedID: 32818
-    m_ExpandedIDs: 00000000526300005463000056630000586300005a63000000ca9a3b
+    m_SelectedIDs: 0a620000
+    m_LastClickedID: 25098
+    m_ExpandedIDs: 00000000d4610000d6610000d8610000da610000dc61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -964,7 +964,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000526300005463000056630000586300005a630000
+    m_ExpandedIDs: 00000000d4610000d6610000d8610000da610000dc610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -995,18 +995,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000ce16000004620000506100000a6200001c620000546200003c660000302200002a6600004e660000726600008666000006660000a666000038610000a8610000c8610000c6170000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: NetWorkInputData
-      m_OriginalName: NetWorkInputData
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 4604
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -1078,7 +1078,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 41756
+  m_LastSelectedObjectID: 41766
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
