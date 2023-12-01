@@ -295,35 +295,35 @@ public class SelectPrefabPlayerManager : NetworkBehaviour
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[0].transform.position;
+            playersNaCena[0].GetComponent<NetworkCharacterControllerPrototypeCustom>().TeleportToPosition(spawnpoints[0].transform.position);
             EnableControllers();
         }
         else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Azul")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[1].transform.position;
+            playersNaCena[0].GetComponent<NetworkCharacterControllerPrototypeCustom>().TeleportToPosition(spawnpoints[1].transform.position);
             EnableControllers();
         }
         else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Amarelo")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[2].transform.position;
+            playersNaCena[0].GetComponent<NetworkCharacterControllerPrototypeCustom>().TeleportToPosition(spawnpoints[2].transform.position);
             EnableControllers();
         }
         else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Vermelho")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[3].transform.position;
+            playersNaCena[0].GetComponent<NetworkCharacterControllerPrototypeCustom>().TeleportToPosition(spawnpoints[3].transform.position);
             EnableControllers();
         }
         else if (playersNaCena[0] != null && playersNaCena[0].tag == "Cientista Verde")
         {
             DisableControllers();
             parede.SetActive(false);
-            playersNaCena[0].transform.position = spawnpoints[4].transform.position;
+            playersNaCena[0].GetComponent<NetworkCharacterControllerPrototypeCustom>().TeleportToPosition(spawnpoints[4].transform.position);
             EnableControllers();
         }
 
