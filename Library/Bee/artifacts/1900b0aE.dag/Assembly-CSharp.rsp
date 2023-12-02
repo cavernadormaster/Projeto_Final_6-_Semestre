@@ -434,6 +434,7 @@
 "Assets/Scripts/UI/ScenenManagent.cs"
 "Assets/Scripts/UI/SessionInfoListUIItem.cs"
 "Assets/Scripts/UI/SessionListUIHandler.cs"
+"Assets/Scripts/UI/SoundController.cs"
 "Assets/Scripts/UI/Timer.cs"
 "Assets/Scripts/Utils/ExitDoor.cs"
 "Assets/Scripts/Utils/OutOfRange.cs"

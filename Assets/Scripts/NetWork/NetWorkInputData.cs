@@ -14,8 +14,12 @@ public struct NetWorkInputData : INetworkInput
     public NetworkBool isZumbi;
     public NetworkBool started;
     public NetworkBool Walking;
-    public int door;
     public NetworkBool HasAExit;
+    public NetworkBool DOOR1;
+    public NetworkBool DOOR2;
+    public NetworkBool DOOR3;
+    public NetworkBool DOOR4;
+
 
 
 }
