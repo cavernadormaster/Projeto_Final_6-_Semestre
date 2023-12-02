@@ -168,8 +168,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f9431aadf1fbd4ea9cd1c4ad260f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paredes: {fileID: 581632451}
-  "Bot\xE3oAcionado": {fileID: 44407349}
+  _interpolationDataSource: 0
+  TipoDePersonagem: 
+  corDoCientista: 
+  TipoDePlataforma: 
+  _isCientistBlue: 0
+  _isZumbi: 0
+  _started: 0
+  animations: []
+  ZumbiePrefab: {fileID: 0}
+  Playerprefab: []
+  parede: {fileID: 0}
+  playersIn: 0
+  playersNaCena: []
+  spawnpoints: []
+  CountDownToStart: []
+  startButton: {fileID: 0}
 --- !u!65 &44407352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -228,8 +242,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f9431aadf1fbd4ea9cd1c4ad260f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paredes: {fileID: 1021463660}
-  "Bot\xE3oAcionado": {fileID: 65216775}
+  _interpolationDataSource: 0
+  TipoDePersonagem: 
+  corDoCientista: 
+  TipoDePlataforma: 
+  _isCientistBlue: 0
+  _isZumbi: 0
+  _started: 0
+  animations: []
+  ZumbiePrefab: {fileID: 0}
+  Playerprefab: []
+  parede: {fileID: 0}
+  playersIn: 0
+  playersNaCena: []
+  spawnpoints: []
+  CountDownToStart: []
+  startButton: {fileID: 0}
 --- !u!65 &65216778
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1402,8 +1430,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f9431aadf1fbd4ea9cd1c4ad260f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paredes: {fileID: 376786387}
-  "Bot\xE3oAcionado": {fileID: 953870216}
+  _interpolationDataSource: 0
+  TipoDePersonagem: 
+  corDoCientista: 
+  TipoDePlataforma: 
+  _isCientistBlue: 0
+  _isZumbi: 0
+  _started: 0
+  animations: []
+  ZumbiePrefab: {fileID: 0}
+  Playerprefab: []
+  parede: {fileID: 0}
+  playersIn: 0
+  playersNaCena: []
+  spawnpoints: []
+  CountDownToStart: []
+  startButton: {fileID: 0}
 --- !u!65 &953870219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1757,8 +1799,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f9431aadf1fbd4ea9cd1c4ad260f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paredes: {fileID: 348560647}
-  "Bot\xE3oAcionado": {fileID: 1291731181}
+  _interpolationDataSource: 0
+  TipoDePersonagem: 
+  corDoCientista: 
+  TipoDePlataforma: 
+  _isCientistBlue: 0
+  _isZumbi: 0
+  _started: 0
+  animations: []
+  ZumbiePrefab: {fileID: 0}
+  Playerprefab: []
+  parede: {fileID: 0}
+  playersIn: 0
+  playersNaCena: []
+  spawnpoints: []
+  CountDownToStart: []
+  startButton: {fileID: 0}
 --- !u!65 &1291731184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1835,8 +1891,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60f9431aadf1fbd4ea9cd1c4ad260f66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paredes: {fileID: 599271676}
-  "Bot\xE3oAcionado": {fileID: 1531212233}
+  _interpolationDataSource: 0
+  TipoDePersonagem: 
+  corDoCientista: 
+  TipoDePlataforma: 
+  _isCientistBlue: 0
+  _isZumbi: 0
+  _started: 0
+  animations: []
+  ZumbiePrefab: {fileID: 0}
+  Playerprefab: []
+  parede: {fileID: 0}
+  playersIn: 0
+  playersNaCena: []
+  spawnpoints: []
+  CountDownToStart: []
+  startButton: {fileID: 0}
 --- !u!1001 &1555405484
 PrefabInstance:
   m_ObjectHideFlags: 0
