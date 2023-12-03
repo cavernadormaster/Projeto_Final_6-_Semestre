@@ -18,4 +18,9 @@ public class Intro : MonoBehaviour
         if (timeElapsed > delayBeforeLoading)
             SceneManager.LoadScene(sceneNameToLoad);
     }
+
+    public void changeScene()
+    {
+        SceneManager.LoadScene(sceneNameToLoad);
+    }
 }
