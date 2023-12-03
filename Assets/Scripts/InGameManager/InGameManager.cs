@@ -38,11 +38,7 @@ public class InGameManager : NetworkBehaviour
             startedGameChange();
         }
 
-        if(matou)
-        {
-            CientistInGame--;
-            matou = false;    
-        }
+       
     }
 
    
