@@ -25,7 +25,7 @@ public class InGameManager : NetworkBehaviour
     public static int CientistInGame;
     public static bool HasStarted;
     public static bool ZumbiWins;
-    public static bool matou;
+    public static bool matou = false;
     bool doorOpened;
     public GameObject[] ExitDoors;
     int exits;
