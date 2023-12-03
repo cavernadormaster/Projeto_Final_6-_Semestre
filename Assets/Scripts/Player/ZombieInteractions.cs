@@ -6,6 +6,23 @@ public class ZombieInteractions : MonoBehaviour
 {
     string ip;
     CharacterMovementHandler characterMovementHandler;
+    public GameObject Mortes;
+
+    private void Awake()
+    {
+        GameObject ori = GameObject.Find("Main Camera");
+        GameObject child = ori.transform.GetChild(0).gameObject;
+        GameObject child2 = child.transform.GetChild(9).gameObject;
+        Mortes = child2;
+    }
+
+    private void Start()
+    {
+        GameObject ori = GameObject.Find("Main Camera");
+        GameObject child = ori.transform.GetChild(0).gameObject;
+        GameObject child2 = child.transform.GetChild(9).gameObject;
+        Mortes = child2;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
@@ -19,11 +36,10 @@ public class ZombieInteractions : MonoBehaviour
 
     IEnumerator MorteCountDown()
     {
-       
-        //InGameManager.matou = true;
-       //InGameManager.CientistInGame--;
         if (characterMovementHandler.Object.HasInputAuthority)
-            GameObject.Find("Mortes").SetActive(true);
+        {
+            Mortes.SetActive(true);
+        }
         Destroy(GameObject.Find(ip));
         yield return new WaitForSeconds(2f);
         InGameManager.matou = false;

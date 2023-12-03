@@ -37,12 +37,7 @@ public class InGameManager : NetworkBehaviour
         {
             startedGameChange();
         }
-
-       
     }
-
-   
-
     static void DoorOnChange(Changed<InGameManager> changed)
     {
         bool isTakeCurrent = changed.Behaviour.HasAExit;
@@ -54,7 +49,6 @@ public class InGameManager : NetworkBehaviour
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.SetDoor();
     }
-
     static void DoorOnChange2(Changed<InGameManager> changed)
     {
         bool isTakeCurrent = changed.Behaviour.DOOR1;
@@ -68,7 +62,6 @@ public class InGameManager : NetworkBehaviour
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.SetDoor1();
     }
-
     static void DoorOnChange3(Changed<InGameManager> changed)
     {
         bool isTakeCurrent = changed.Behaviour.DOOR2;
@@ -82,7 +75,6 @@ public class InGameManager : NetworkBehaviour
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.SetDoor2();
     }
-
     static void DoorOnChange4(Changed<InGameManager> changed)
     {
         bool isTakeCurrent = changed.Behaviour.DOOR3;
@@ -96,7 +88,6 @@ public class InGameManager : NetworkBehaviour
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.SetDoor3();
     }
-
     static void DoorOnChange5(Changed<InGameManager> changed)
     {
         bool isTakeCurrent = changed.Behaviour.DOOR4;
@@ -110,33 +101,26 @@ public class InGameManager : NetworkBehaviour
         if (isTakeCurrent && !isTakingOld)
             changed.Behaviour.SetDoor4();
     }
-
-    
-
     void SetDoor1()
     {
         Debug.Log("Cientista Ganhou Na Saida: " + exits);
         ExitDoors[0].SetActive(true);
     }
-
     void SetDoor2()
     {
         Debug.Log("Cientista Ganhou Na Saida: " + exits);
         ExitDoors[1].SetActive(true);
     }
-
     void SetDoor3()
     {
         Debug.Log("Cientista Ganhou Na Saida: " + exits);
         ExitDoors[2].SetActive(true);
     }
-
     void SetDoor4()
     {
         Debug.Log("Cientista Ganhou Na Saida: " + exits);
         ExitDoors[3].SetActive(true);
     }
-
     void SetDoor()
       {
         Debug.Log("Cientista Ganhou Na Saida: " + exits);
@@ -165,9 +149,6 @@ public class InGameManager : NetworkBehaviour
         //         break;
         // }
     }
-
-    
-
     void startedGameChange()
     {
         if (CientistInGame == 1 && !doorOpened)
@@ -181,13 +162,10 @@ public class InGameManager : NetworkBehaviour
             }
             
         }
-
         if (CientistInGame <= 0 || ZumbiWins)
         {
             
             SceneManager.LoadScene("Vitoria_Zumbi");
         }
     }
-
-   
 }

@@ -65,12 +65,14 @@
     <Compile Include="Assets\Scripts\UI\SoundController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+    <Compile Include="Assets\SceneChange.cs" />
     <Compile Include="Assets\Scripts\Cutscenes\AutoScrollText.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionProfiler.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionStatsBillboard.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuUIHandler.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\ToggleRunnerVisibility.cs" />
     <Compile Include="Assets\Scripts\Movement\NetworkCharacterControllerPrototypeCustom.cs" />
+    <Compile Include="Assets\Intro.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionStats\FusionStatsMeterBar.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\FusionPhotonClientSocket.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\InputBehaviourPrototype.cs" />
@@ -122,6 +124,7 @@
     <Compile Include="Assets\ParrelSync-master\Examples\CustomArgumentExample.cs" />
     <Compile Include="Assets\Scripts\NetWork\Spawner.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
+    <Compile Include="Assets\Esc.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInterations.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\NetworkSceneManagerBase.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\NetworkCharacterControllerPrototype.cs" />
@@ -142,6 +145,7 @@
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\Materials\FusionPrototypeMaterials.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\Prototyping\Assistants\FusionAssistants.cs" />
+    <Compile Include="Assets\Scripts\Cutscenes\AutoPassScenes.cs" />
     <Compile Include="Assets\Photon\Fusion\Scripts\BurstDeltaCompressor.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
