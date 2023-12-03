@@ -27,8 +27,8 @@ public class MainMenuUIHandler : MonoBehaviour
         if(PlayerPrefs.HasKey("PlayerNickname"))
             playerNameInputField.text = PlayerPrefs.GetString("PlayerNickname");
 
-        if (ScenenManagent.JoinAgain)
-            OnFindGameClicked();
+        //if (ScenenManagent.JoinAgain)
+         //   OnFindGameClicked();
     }
 
     void HideAllPanels()
@@ -57,7 +57,7 @@ public class MainMenuUIHandler : MonoBehaviour
         sessionBrowserPanel.SetActive(true);
 
         FindObjectOfType<SessionListUIHandler>(true).OnLookingForGameSession();
-        ScenenManagent.JoinAgain = false;
+        //ScenenManagent.JoinAgain = false;
     }
 
     public void OnCreateNewGameClicked()
@@ -70,21 +70,21 @@ public class MainMenuUIHandler : MonoBehaviour
     {
         HideAllPanels();
         creditosPanel.SetActive(true);
-        ScenenManagent.JoinAgain = true;
+        //ScenenManagent.JoinAgain = true;
     }
 
     public void OnOptionsClicked()
     {
         HideAllPanels();
         optionPanel.SetActive(true);
-        ScenenManagent.JoinAgain = true;
+        //ScenenManagent.JoinAgain = true;
     }
 
     public void OnBackClicked()
     {
         HideAllPanels();
         menuPanel.SetActive(true);
-        ScenenManagent.JoinAgain = true;
+        //ScenenManagent.JoinAgain = true;
     }
 
     public void OnStartNewSessionClicked()

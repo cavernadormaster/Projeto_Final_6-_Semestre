@@ -5,10 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class ScenenManagent : MonoBehaviour
 {
-    public static bool JoinAgain;
-    public void SendToMenu()
+
+    
+    public float delayBeforeLoading = 100f;
+    [SerializeField]
+    private string sceneNameToLoad;
+
+    private float timeElapsed;
+
+    void Update()
     {
-        JoinAgain = true;
-        SceneManager.LoadScene("Menu");
+        timeElapsed += Time.deltaTime;
+
+        if (timeElapsed > delayBeforeLoading)
+            SceneManager.LoadScene(sceneNameToLoad);
     }
+
+    //public static bool JoinAgain;
+    //public void SendToMenu()
+    //{
+    //    JoinAgain = true;
+    //    SceneManager.LoadScene("Menu");
+    //}
 }

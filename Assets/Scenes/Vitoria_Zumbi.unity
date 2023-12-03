@@ -241,6 +241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cfd6b80effc15f449f7600b7372165e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delayBeforeLoading: 16
+  sceneNameToLoad: Menu
 --- !u!1 &454714393
 GameObject:
   m_ObjectHideFlags: 0

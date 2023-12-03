@@ -458,6 +458,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4492022052965114930}
     m_Modifications:
+    - target: {fileID: 751707249237774891, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1676160260753623492, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -502,6 +506,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1692755276759598909, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3116072533163289675, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791759281233835896, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4217458863665884806, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -548,6 +564,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4906285119339705690, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5114628195502357591, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_fontColor.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5153365677349400734, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}

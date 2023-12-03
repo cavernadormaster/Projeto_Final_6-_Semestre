@@ -20,11 +20,11 @@ public class ZombieInteractions : MonoBehaviour
     IEnumerator MorteCountDown()
     {
        
-        InGameManager.matou = true;
-        InGameManager.CientistInGame--;
-        Destroy(GameObject.Find(ip));
+        //InGameManager.matou = true;
+       //InGameManager.CientistInGame--;
         if (characterMovementHandler.Object.HasInputAuthority)
-            GameObject.Find("Morte").SetActive(true);
+            GameObject.Find("Mortes").SetActive(true);
+        Destroy(GameObject.Find(ip));
         yield return new WaitForSeconds(2f);
         InGameManager.matou = false;
     }
