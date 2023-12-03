@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 2831743601498641239}
   - component: {fileID: 7073460365675284114}
   - component: {fileID: 3808349695118925135}
+  - component: {fileID: -7675669820459205738}
   m_Layer: 0
   m_Name: NetworkPlayerPF
   m_TagString: Player
@@ -343,6 +344,7 @@ MonoBehaviour:
   - {fileID: 7159886460817422420}
   - {fileID: 7073460365675284114}
   - {fileID: 3808349695118925135}
+  - {fileID: -7675669820459205738}
   SimulationBehaviours: []
 --- !u!114 &351802731132006059
 MonoBehaviour:
@@ -451,6 +453,23 @@ MonoBehaviour:
     _hash: -814817977
   StateHashes: 000000001ac76dfd297448caaa2894b81e9f14f6
   TriggerHashes: 00000000
+--- !u!114 &-7675669820459205738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7077675181871988822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4896bf012a83014468f8c246e4b1e5fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  _isTakeInputPressed: 0
+  _isFireButtonPressed: 0
+  ItensTOSpawn:
+  - {fileID: 4671411570357435588, guid: f23ca35826f808b4ba82e59e83833236, type: 3}
 --- !u!1001 &2019945908534996838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -509,6 +528,14 @@ PrefabInstance:
     - target: {fileID: 1692755276759598909, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_fontColor.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760626624786061313, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00027888268
+      objectReference: {fileID: 0}
+    - target: {fileID: 2760626624786061313, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.53
       objectReference: {fileID: 0}
     - target: {fileID: 3116072533163289675, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_Color.a
@@ -573,6 +600,14 @@ PrefabInstance:
     - target: {fileID: 5153365677349400734, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350489954657081045, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 5350489954657081045, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: 6679044594905642881, guid: ba37cc9691f1f8041ac7ced0577d1585, type: 3}
       propertyPath: m_Name

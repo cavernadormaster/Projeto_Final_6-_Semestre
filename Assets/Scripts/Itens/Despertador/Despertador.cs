@@ -29,12 +29,13 @@ public class Despertador : MonoBehaviour
 
     public static void ThrowObject()
     {
+       Destroy(GameObject.Find("Despertador(Item Desativado) (1)"));
        esteItem = GameObject.Find("Despertador(Item Ativado)(Clone)");
        m_Rigidbody = esteItem.GetComponent<Rigidbody>();
-       esteItem.transform.SetParent(null);
 
         Vector3 forceAdd = esteItem.transform.forward * m_Thrust + esteItem.transform.up * m_Thrust_Up;  
        m_Rigidbody.AddForce(forceAdd, ForceMode.Impulse);
+       esteItem.transform.SetParent(null);
        FiredRelogio = true;
         
 
@@ -56,7 +57,7 @@ public class Despertador : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
             PlayerInterations.isInItemRange = true;
             ip = other.gameObject.name;
@@ -67,7 +68,7 @@ public class Despertador : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
             PlayerInterations.isInItemRange = false;
         }

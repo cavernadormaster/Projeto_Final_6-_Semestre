@@ -26,11 +26,19 @@ public class PlayerInterations : NetworkBehaviour
         
     }
 
+    private void Update()
+    {
+        if(gameObject.tag == "Zumbi")
+        {
+            gameObject.GetComponent<PlayerInterations>().enabled = false;
+        }
+    }
+
     public override void FixedUpdateNetwork()
     {
         if(GetInput(out NetWorkInputData netWorkInputData))
         {
-                if (isInItemRange && !ItensScript.isItemInHands)
+                if (isInItemRange)// && !ItensScript.isItemInHands)
                 {
                     Debug.Log("IsInRange");
                     if (netWorkInputData.isTakeInputPressed)

@@ -20,9 +20,10 @@ public class ItensScript : MonoBehaviour
     public static void TakeItem()
     {
             GameObject originalGameObject = GameObject.Find(ip);
-            GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-            esteItem.transform.position = child.transform.position;
-            esteItem.transform.parent = child.transform;
+            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+            GameObject child2 = child.transform.GetChild(0).gameObject;
+            esteItem.transform.position = child2.transform.position;
+            esteItem.transform.parent = child2.transform;
             isItemInHands = true;
     }
 
@@ -33,7 +34,8 @@ public class ItensScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") 
+            || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
             PlayerInterations.isInItemRange = true;
             ip = other.gameObject.name;
@@ -43,7 +45,7 @@ public class ItensScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
             PlayerInterations.isInItemRange = false;
         }

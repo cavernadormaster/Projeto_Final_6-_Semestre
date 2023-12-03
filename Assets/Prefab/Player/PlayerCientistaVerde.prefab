@@ -1548,7 +1548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6590576603628116014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 1.1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.577}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1567,7 +1567,6 @@ GameObject:
   - component: {fileID: 8996455529377457794}
   - component: {fileID: 5153365677349400734}
   - component: {fileID: 6044590985210263093}
-  - component: {fileID: 1776224595832000580}
   - component: {fileID: -4434435696403248078}
   - component: {fileID: 5810331755129489336}
   m_Layer: 0
@@ -1662,23 +1661,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1776224595832000580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6679044594905642881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4896bf012a83014468f8c246e4b1e5fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  _isTakeInputPressed: 0
-  _isFireButtonPressed: 0
-  ItensTOSpawn:
-  - {fileID: 4671411570357435588, guid: f23ca35826f808b4ba82e59e83833236, type: 3}
 --- !u!114 &-4434435696403248078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1700,8 +1682,7 @@ MonoBehaviour:
   NetworkGuid:
     RawGuidValue: b163c775145938d4198f3706d996e2db
   NestedObjects: []
-  NetworkedBehaviours:
-  - {fileID: 1776224595832000580}
+  NetworkedBehaviours: []
   SimulationBehaviours: []
 --- !u!114 &5810331755129489336
 MonoBehaviour:

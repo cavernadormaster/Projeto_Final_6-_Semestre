@@ -31,7 +31,7 @@ public class CharacterInputHandler : MonoBehaviour
             
         
 
-        Camera.main.transform.position = gameObject.transform.position + new Vector3(0, 5, -5);
+        Camera.main.transform.position = gameObject.transform.position + new Vector3(0, 7, -7);
 
         viewInputVector.x = Input.GetAxis("Mouse X");
 
@@ -40,7 +40,8 @@ public class CharacterInputHandler : MonoBehaviour
         moveInputVector.x = Input.GetAxis("Horizontal");
         moveInputVector.y = Input.GetAxis("Vertical");
 
-        IsWalking = Input.GetKey(KeyCode.W);
+        IsWalking = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || 
+                    Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.DownArrow);
 
         isJumpButoonPressed = Input.GetKey(KeyCode.Space);
         isTakeButtonPressed = Input.GetKey(KeyCode.Mouse1);
@@ -60,8 +61,8 @@ public class CharacterInputHandler : MonoBehaviour
 
 
         isJumpButoonPressed = false;
-        isFireButtonPressed = false;
-        isTakeButtonPressed = false;
+       // isFireButtonPressed = false;
+       // isTakeButtonPressed = false;
         
         return netWorkInputData;
     }
