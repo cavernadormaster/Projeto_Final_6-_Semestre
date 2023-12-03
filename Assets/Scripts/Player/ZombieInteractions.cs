@@ -12,11 +12,11 @@ public class ZombieInteractions : MonoBehaviour
             
             ip = other.gameObject.name;
 
-            if(other.GetComponent<CharacterMovementHandler>().Object.HasInputAuthority)
-                GameObject.Find("Morte").SetActive(true);
-
-            if(!InGameManager.matou)
-            StartCoroutine(MorteCountDown());
+          if(other.GetComponent<CharacterMovementHandler>().Object.HasInputAuthority)
+              GameObject.Find("Morte").SetActive(true);
+           //
+           // if(!InGameManager.matou)
+           // StartCoroutine(MorteCountDown());
 
             Destroy(GameObject.Find(ip));
         }
