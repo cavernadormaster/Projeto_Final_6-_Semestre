@@ -10173,7 +10173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346101883}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5652575, y: 4.8741097, z: -33.780807}
+  m_LocalPosition: {x: -5.5652575, y: 5.2, z: -33.780807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19472,7 +19472,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710426771}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
+  m_LocalPosition: {x: -21.082537, y: 12.78, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19506,7 +19506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711176193}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
+  m_LocalPosition: {x: -21.082537, y: 12.9, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27690,7 +27690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042990867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
+  m_LocalPosition: {x: -21.082537, y: 12.76, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29698,7 +29698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111603353}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
+  m_LocalPosition: {x: -21.082537, y: 12.817486, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29840,7 +29840,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113009152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.082537, y: 12.491595, z: 5.6125956}
+  m_LocalPosition: {x: -21.082537, y: 12.912, z: 5.6125956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -44748,7 +44748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697206436}
   m_LocalRotation: {x: -0.7034382, y: -0.07193542, z: -0.07193542, w: 0.7034382}
-  m_LocalPosition: {x: -31.6, y: 0.32, z: -1.3}
+  m_LocalPosition: {x: -31.6, y: 0.69, z: -1.3}
   m_LocalScale: {x: 100.000015, y: 100.00002, z: 100.00004}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50506,7 +50506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933659296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -57734,6 +57734,7 @@ GameObject:
   - component: {fileID: 6722127092087228084}
   - component: {fileID: 1180048922768696958}
   - component: {fileID: 4372092934681115095}
+  - component: {fileID: 6722127092087228085}
   m_Layer: 0
   m_Name: "Ringue.ch\xE3o"
   m_TagString: Untagged
@@ -57860,13 +57861,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6201409962920796673}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.33, z: -0}
   m_LocalScale: {x: 100.6301, y: 99.77573, z: 100.090385}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6722127092087228085
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201409962920796673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9467027, y: 0.9467025, z: 0.02285033}
+  m_Center: {x: -0.012660742, y: -0.010546877, z: -0.009923436}
 --- !u!4 &6761933616666816452
 Transform:
   m_ObjectHideFlags: 0
