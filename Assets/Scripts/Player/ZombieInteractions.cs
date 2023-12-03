@@ -30,18 +30,21 @@ public class ZombieInteractions : MonoBehaviour
 
             characterMovementHandler = other.GetComponent<CharacterMovementHandler>();
             ip = other.gameObject.name;
+
+            if(!InGameManager.matou)
             StartCoroutine(MorteCountDown());
+            
         }
     }
 
     IEnumerator MorteCountDown()
     {
+        InGameManager.matou = true;
         if (characterMovementHandler.Object.HasInputAuthority)
         {
             Mortes.SetActive(true);
         }
         Destroy(GameObject.Find(ip));
         yield return new WaitForSeconds(2f);
-        InGameManager.matou = false;
     }
 }

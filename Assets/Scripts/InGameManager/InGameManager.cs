@@ -37,6 +37,12 @@ public class InGameManager : NetworkBehaviour
         {
             startedGameChange();
         }
+
+        if(matou)
+          {
+            CientistInGame -= 1;
+            matou = false;
+          }
     }
     static void DoorOnChange(Changed<InGameManager> changed)
     {
