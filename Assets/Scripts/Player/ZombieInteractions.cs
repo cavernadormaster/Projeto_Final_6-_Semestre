@@ -12,22 +12,19 @@ public class ZombieInteractions : MonoBehaviour
         {
 
             characterMovementHandler = other.GetComponent<CharacterMovementHandler>();
-
-            if (!characterMovementHandler.Object.HasInputAuthority)
-                GameObject.Find("Morte").SetActive(true);
-
             ip = other.gameObject.name;
-
-            Destroy(GameObject.Find(ip));
+            StartCoroutine(MorteCountDown());
         }
     }
 
     IEnumerator MorteCountDown()
     {
-
+       
         InGameManager.matou = true;
         InGameManager.CientistInGame--;
-        
+        Destroy(GameObject.Find(ip));
+        if (characterMovementHandler.Object.HasInputAuthority)
+            GameObject.Find("Morte").SetActive(true);
         yield return new WaitForSeconds(2f);
         InGameManager.matou = false;
     }
