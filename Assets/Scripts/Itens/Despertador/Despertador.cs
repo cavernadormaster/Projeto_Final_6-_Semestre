@@ -28,6 +28,7 @@ public class Despertador : MonoBehaviour
     }
     public void ObjectOnHit()
     {
+        
         GameObject originalGameObject = GameObject.Find(ip);
         GameObject child = originalGameObject.transform.GetChild(1).gameObject;
         GameObject child2 = child.transform.GetChild(0).gameObject;

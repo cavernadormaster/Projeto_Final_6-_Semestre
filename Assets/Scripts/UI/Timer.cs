@@ -13,10 +13,8 @@ public class Timer : MonoBehaviour
     {
         if (InGameManager.HasStarted)
         {
-            if (elapsTime < 0)
-            {
-                elapsTime += Time.deltaTime;
-            } 
+           
+            elapsTime += Time.deltaTime;
             int minutes = Mathf.FloorToInt(elapsTime / 60);
             int seconds = Mathf.FloorToInt(elapsTime % 60);
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
