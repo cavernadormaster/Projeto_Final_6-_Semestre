@@ -29,7 +29,7 @@ public class Despertador : MonoBehaviour
 
     public static void ThrowObject()
     {
-       Destroy(GameObject.Find("Despertador(Item Desativado) (1)"));
+      // Destroy(GameObject.Find("Despertador(Item Desativado) (1)"));
        esteItem = GameObject.Find("Despertador(Item Ativado)(Clone)");
        m_Rigidbody = esteItem.GetComponent<Rigidbody>();
 

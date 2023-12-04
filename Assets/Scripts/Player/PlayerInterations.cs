@@ -23,6 +23,9 @@ public class PlayerInterations : NetworkBehaviour
     public GameObject[] ItensTOSpawn;
 
     public static string NomeDoRelogio;
+    string NomeDoRelogioArremeçavel;
+
+    bool pegou;
     void Start()
     {
         
@@ -40,28 +43,30 @@ public class PlayerInterations : NetworkBehaviour
     {
         if(GetInput(out NetWorkInputData netWorkInputData))
         {
-                if (isInItemRange && !ItensScript.isItemInHands)
-                {
-                    Debug.Log("IsInRange");
-                    if (netWorkInputData.isTakeInputPressed)
-                    {
-                        Interact();
-                    }
-                }
-                if (!Despertador.FiredRelogio)
-                {
-                    if (netWorkInputData.isFireButtonPressed)
-                    {
-                        GameObject temp = GameObject.Find("Despertador(Item Desativado)");
-                        Destroy(temp);
-                        GameObject originalGameObject = GameObject.Find(ItensScript.ip);
-                        GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                        GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
-                        temp2.transform.SetParent(null);
-                        Despertador.FiredRelogio = true;
-                        FireInteract();
-                    }
-                }
+            
+              if (isInItemRange)// && !ItensScript.isItemInHands)
+              {
+                  Debug.Log("IsInRange");
+                  if (netWorkInputData.isTakeInputPressed)
+                  {
+                    Interact();
+                  }
+              }
+              if (!Despertador.FiredRelogio)
+              {
+                  if (netWorkInputData.isFireButtonPressed)
+                  {
+                      Debug.Log(NomeDoRelogioArremeçavel);
+                      GameObject temp = GameObject.Find(NomeDoRelogioArremeçavel);
+                      Destroy(temp);
+                      GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+                      GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                      GameObject temparremessar = Instantiate(ItensTOSpawn[0], child.transform.parent);
+                      temparremessar.transform.SetParent(null);
+                      Despertador.FiredRelogio = true;
+                      FireInteract();
+                  }
+              }
         }
 
     }
@@ -81,14 +86,28 @@ public class PlayerInterations : NetworkBehaviour
         isFireButtonPressed = true;
         Despertador.ThrowObject();
         yield return new WaitForSeconds(0.09f);
+        Despertador.FiredRelogio = false;
         isFireButtonPressed = true;
     }
 
     IEnumerator TakeCO()
     {
-        isTakeInputPressed = true;
-        ItensScript.TakeItem();
+        if (!pegou)
+        {
+            pegou = true;
+            isTakeInputPressed = true;
+            Debug.Log(NomeDoRelogio);
+            GameObject temp = GameObject.Find(NomeDoRelogio);
+            Destroy(temp);
+            GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+            GameObject child2 = child.transform.GetChild(0).gameObject;
+            GameObject temp2 = Instantiate(ItensTOSpawn[1], child2.transform.parent);
+            temp2.transform.position = child2.transform.position;
+            NomeDoRelogioArremeçavel = temp2.name;
+        }
         yield return new WaitForSeconds(0.09f);
+        pegou = false;
         isTakeInputPressed = false;
     }
 
@@ -126,7 +145,14 @@ public class PlayerInterations : NetworkBehaviour
         if (!Object.HasInputAuthority)
         {
            Debug.Log("DespertadorNO");
-            ItensScript.TakeItem();
+            Debug.Log(NomeDoRelogio);
+            GameObject temp = GameObject.Find(NomeDoRelogio);
+            Destroy(temp);
+            GameObject originalGameObject = GameObject.Find(ItensScript.ip);
+            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+            GameObject child2 = child.transform.GetChild(0).gameObject;
+            GameObject temp2 = Instantiate(ItensTOSpawn[1], child2.transform.parent);
+            temp2.transform.position = child2.transform.position;
         }
     }
     void OnFireRemote()
@@ -138,7 +164,7 @@ public class PlayerInterations : NetworkBehaviour
             GameObject child = originalGameObject.transform.GetChild(0).gameObject;
             GameObject temp2 = Instantiate(ItensTOSpawn[0], child.transform.parent);
             Despertador.ThrowObject();
-            GameObject temp = GameObject.Find("Despertador(Item Desativado)");
+            GameObject temp = GameObject.Find(NomeDoRelogio);
             Destroy(temp);
         }
     }

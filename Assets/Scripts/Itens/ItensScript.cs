@@ -7,6 +7,8 @@ public class ItensScript : MonoBehaviour
     public static GameObject esteItem;
     public static string ip;
     public static bool isItemInHands;
+    public string ObjectName;
+
     void Start()
     {
         esteItem = this.gameObject;
@@ -44,7 +46,7 @@ public class ItensScript : MonoBehaviour
         {
             PlayerInterations.isInItemRange = true;
             ip = other.gameObject.name;
-            PlayerInterations.NomeDoRelogio = esteItem.name;
+            PlayerInterations.NomeDoRelogio = ObjectName;
             Debug.Log(ip);
         }
     }
