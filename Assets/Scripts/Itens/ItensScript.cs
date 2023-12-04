@@ -33,7 +33,7 @@ public class ItensScript : MonoBehaviour
         GameObject originalGameObject = GameObject.Find(ip);
         GameObject child = originalGameObject.transform.GetChild(1).gameObject;
         GameObject child2 = child.transform.GetChild(0).gameObject;
-        GameObject temp2 = Instantiate(ItensTOSpawn[1], child2.transform.parent);
+        GameObject temp2 = Instantiate(ItensTOSpawn[0], child2.transform.parent);
         temp2.transform.position = child2.transform.position;
         Despertador.tagNotToAttach = ip;
         GameObject temp = GameObject.Find(ObjectName);

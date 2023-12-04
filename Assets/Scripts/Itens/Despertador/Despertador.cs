@@ -25,7 +25,6 @@ public class Despertador : MonoBehaviour
     {
         Debug.Log("TIME LEFT TO DESTROY");
         yield return new WaitForSeconds(DestroyCooldown);
-        Destroy(this.gameObject);
     }
     public void ObjectOnHit()
     {
