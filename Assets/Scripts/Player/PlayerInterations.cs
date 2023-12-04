@@ -87,7 +87,7 @@ public class PlayerInterations : NetworkBehaviour
         Despertador.ThrowObject();
         yield return new WaitForSeconds(0.09f);
         Despertador.FiredRelogio = false;
-        isFireButtonPressed = true;
+        isFireButtonPressed = false;
     }
 
     IEnumerator TakeCO()
