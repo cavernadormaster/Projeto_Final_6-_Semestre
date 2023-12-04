@@ -6,13 +6,11 @@ public class Despertador : MonoBehaviour
 {
     public static Rigidbody m_Rigidbody;
     public static GameObject esteItem;
-    public static float m_Thrust = 10f ;
-    public static float m_Thrust_Up = 5f;
-    public static bool isThrowing;
-    public static bool FiredRelogio;
     public static string ip;
 
     public AudioSource audioSorce;
+
+    public static string tagNotToAttach;
 
     [Header("Tempo Para Destruir O Objeto")]
     public float DestroyCooldown;
@@ -22,24 +20,7 @@ public class Despertador : MonoBehaviour
         StartCoroutine(DestroyCoolDown());
     }
 
-    private void Update()
-    {
-        
-    }
 
-    public static void ThrowObject()
-    {
-      // Destroy(GameObject.Find("Despertador(Item Desativado) (1)"));
-       esteItem = GameObject.Find("Despertador(Item Ativado)(Clone)");
-       m_Rigidbody = esteItem.GetComponent<Rigidbody>();
-
-        Vector3 forceAdd = esteItem.transform.forward * m_Thrust + esteItem.transform.up * m_Thrust_Up;  
-       m_Rigidbody.AddForce(forceAdd, ForceMode.Impulse);
-       esteItem.transform.SetParent(null);
-       FiredRelogio = true;
-        
-
-    }
     IEnumerator DestroyCoolDown()
     {
         Debug.Log("TIME LEFT TO DESTROY");
@@ -50,7 +31,6 @@ public class Despertador : MonoBehaviour
     {
         GameObject originalGameObject = GameObject.Find(ip);
         GameObject child = originalGameObject.transform.GetChild(1).gameObject;
-        Destroy(m_Rigidbody);       
         esteItem.transform.position = child.transform.position;
         esteItem.transform.parent = child.transform;
     }
@@ -59,6 +39,9 @@ public class Despertador : MonoBehaviour
     {
         if (other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
+            if (other.name == tagNotToAttach)
+                return;
+            
             PlayerInterations.isInItemRange = true;
             ip = other.gameObject.name;
             Debug.Log(ip);
@@ -70,7 +53,7 @@ public class Despertador : MonoBehaviour
     {
         if (other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
-            PlayerInterations.isInItemRange = false;
+           
         }
     }
 }

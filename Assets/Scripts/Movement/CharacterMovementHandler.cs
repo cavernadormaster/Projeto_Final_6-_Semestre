@@ -44,8 +44,11 @@ public class CharacterMovementHandler : NetworkBehaviour
             if (networkInputData.isJumpPressed)
                 networkCharacterControllerPrototypeCustom.Jump();
 
-            
+            if (networkInputData.segurando)
+                Debug.Log("SEGURANDO");
+
             CharacterAnimation.SetBool("IsWalking", networkInputData.Walking);
+            CharacterAnimation.SetBool("Segurando", networkInputData.segurando);
         }
     }
 

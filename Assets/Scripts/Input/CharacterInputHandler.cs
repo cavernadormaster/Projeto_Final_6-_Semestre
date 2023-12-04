@@ -13,6 +13,8 @@ public class CharacterInputHandler : MonoBehaviour
     bool isTakeButtonPressed = false;
     bool isFireButtonPressed = false;
     bool IsWalking = false;
+
+    public static bool segurando;
     private void Awake()
     {
         characterMovementHandler = GetComponent<CharacterMovementHandler>();
@@ -50,7 +52,7 @@ public class CharacterInputHandler : MonoBehaviour
         netWorkInputData.isTakeInputPressed = isTakeButtonPressed;
         netWorkInputData.isFireButtonPressed = isFireButtonPressed;
         netWorkInputData.Walking = IsWalking;
-
+        netWorkInputData.segurando = segurando;
 
         isJumpButoonPressed = false;
         isFireButtonPressed = false;

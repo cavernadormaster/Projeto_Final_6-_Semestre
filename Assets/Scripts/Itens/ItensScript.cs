@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fusion;
 
-public class ItensScript : MonoBehaviour
+public class ItensScript : NetworkBehaviour
 {
     public static GameObject esteItem;
     public static string ip;
     public static bool isItemInHands;
     public string ObjectName;
+
+    
 
     void Start()
     {
@@ -32,6 +35,8 @@ public class ItensScript : MonoBehaviour
         esteItem.transform.position = child2.transform.position;
         esteItem.transform.parent = child2.transform;
         isItemInHands = true;
+        Despertador.tagNotToAttach = ip;
+
     }
 
     public static void DestroyYourSelf()

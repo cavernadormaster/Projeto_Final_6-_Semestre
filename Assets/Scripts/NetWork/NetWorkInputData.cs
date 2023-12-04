@@ -19,6 +19,7 @@ public struct NetWorkInputData : INetworkInput
     public NetworkBool DOOR2;
     public NetworkBool DOOR3;
     public NetworkBool DOOR4;
+    public NetworkBool segurando;
 
 
 
