@@ -11,7 +11,6 @@ public class CharacterInputHandler : MonoBehaviour
 
     bool isJumpButoonPressed = false;
     bool isTakeButtonPressed = false;
-    bool isFireButtonPressed = false;
     bool IsWalking = false;
 
     public static bool segurando;
@@ -39,7 +38,6 @@ public class CharacterInputHandler : MonoBehaviour
                     Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.DownArrow);
         isJumpButoonPressed = Input.GetKey(KeyCode.Space);
         isTakeButtonPressed = Input.GetKey(KeyCode.Mouse1);
-        isFireButtonPressed = Input.GetKey(KeyCode.Mouse0);
     }
 
     public NetWorkInputData GetNetWorkInput()
@@ -50,12 +48,10 @@ public class CharacterInputHandler : MonoBehaviour
         netWorkInputData.movementInput = moveInputVector;
         netWorkInputData.isJumpPressed = isJumpButoonPressed;
         netWorkInputData.isTakeInputPressed = isTakeButtonPressed;
-        netWorkInputData.isFireButtonPressed = isFireButtonPressed;
         netWorkInputData.Walking = IsWalking;
         netWorkInputData.segurando = segurando;
 
         isJumpButoonPressed = false;
-        isFireButtonPressed = false;
         isTakeButtonPressed = false;
         
         return netWorkInputData;

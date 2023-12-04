@@ -31,8 +31,9 @@ public class Despertador : MonoBehaviour
     {
         GameObject originalGameObject = GameObject.Find(ip);
         GameObject child = originalGameObject.transform.GetChild(1).gameObject;
-        esteItem.transform.position = child.transform.position;
-        esteItem.transform.parent = child.transform;
+        GameObject child2 = child.transform.GetChild(0).gameObject;
+        gameObject.transform.position = child2.transform.position;
+        gameObject.transform.parent = child2.transform;
     }
 
     private void OnTriggerEnter(Collider other)

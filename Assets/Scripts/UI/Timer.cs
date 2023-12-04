@@ -13,13 +13,10 @@ public class Timer : MonoBehaviour
     {
         if (InGameManager.HasStarted)
         {
-            if (elapsTime > 0)
+            if (elapsTime < 0)
             {
-                elapsTime -= Time.deltaTime;
-            } else if (elapsTime <= 0)
-            {
-                InGameManager.ZumbiWins = true;
-            }
+                elapsTime += Time.deltaTime;
+            } 
             int minutes = Mathf.FloorToInt(elapsTime / 60);
             int seconds = Mathf.FloorToInt(elapsTime % 60);
             timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);

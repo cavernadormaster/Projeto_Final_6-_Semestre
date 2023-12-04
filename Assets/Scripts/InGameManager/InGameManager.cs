@@ -168,9 +168,8 @@ public class InGameManager : NetworkBehaviour
             }
             
         }
-        if (CientistInGame <= 0 || ZumbiWins)
+        if (CientistInGame <= 0)
         {
-            
             SceneManager.LoadScene("Vitoria_Zumbi");
         }
     }
