@@ -12,6 +12,11 @@ public class ItensScript : MonoBehaviour
         esteItem = this.gameObject;
     }
 
+    private void Awake()
+    {
+        esteItem = this.gameObject;
+    }
+
     void Update()
     {
         
@@ -19,12 +24,12 @@ public class ItensScript : MonoBehaviour
 
     public static void TakeItem()
     {
-            GameObject originalGameObject = GameObject.Find(ip);
-            GameObject child = originalGameObject.transform.GetChild(1).gameObject;
-            GameObject child2 = child.transform.GetChild(0).gameObject;
-            esteItem.transform.position = child2.transform.position;
-            esteItem.transform.parent = child2.transform;
-            isItemInHands = true;
+        GameObject originalGameObject = GameObject.Find(ip);
+        GameObject child = originalGameObject.transform.GetChild(1).gameObject;
+        GameObject child2 = child.transform.GetChild(0).gameObject;
+        esteItem.transform.position = child2.transform.position;
+        esteItem.transform.parent = child2.transform;
+        isItemInHands = true;
     }
 
     public static void DestroyYourSelf()
@@ -39,6 +44,7 @@ public class ItensScript : MonoBehaviour
         {
             PlayerInterations.isInItemRange = true;
             ip = other.gameObject.name;
+            PlayerInterations.NomeDoRelogio = esteItem.name;
             Debug.Log(ip);
         }
     }

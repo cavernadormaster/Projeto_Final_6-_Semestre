@@ -21,6 +21,8 @@ public class PlayerInterations : NetworkBehaviour
     public static bool hasFirePressed;
     #endregion
     public GameObject[] ItensTOSpawn;
+
+    public static string NomeDoRelogio;
     void Start()
     {
         
@@ -38,7 +40,7 @@ public class PlayerInterations : NetworkBehaviour
     {
         if(GetInput(out NetWorkInputData netWorkInputData))
         {
-                if (isInItemRange)// && !ItensScript.isItemInHands)
+                if (isInItemRange && !ItensScript.isItemInHands)
                 {
                     Debug.Log("IsInRange");
                     if (netWorkInputData.isTakeInputPressed)
@@ -123,8 +125,8 @@ public class PlayerInterations : NetworkBehaviour
     {
         if (!Object.HasInputAuthority)
         {
-                Debug.Log("DespertadorNO");
-                ItensScript.TakeItem();
+           Debug.Log("DespertadorNO");
+            ItensScript.TakeItem();
         }
     }
     void OnFireRemote()
