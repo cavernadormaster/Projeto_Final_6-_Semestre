@@ -42,9 +42,10 @@ public class Despertador : MonoBehaviour
         {
             if (other.name == tagNotToAttach)
                 return;
-            
+
             PlayerInterations.isInItemRange = true;
             ip = other.gameObject.name;
+            tagNotToAttach = ip;
             Debug.Log(ip);
             ObjectOnHit();
         }

@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
 
-public class ItensScript : NetworkBehaviour
+public class ItensScript : MonoBehaviour
 {
     public static GameObject esteItem;
     public static string ip;
     public static bool isItemInHands;
     public string ObjectName;
 
-    
+    public GameObject[] ItensTOSpawn;
 
     void Start()
     {
@@ -27,15 +27,17 @@ public class ItensScript : NetworkBehaviour
         
     }
 
-    public static void TakeItem()
+    public void TakeItem()
     {
+        Debug.Log(ObjectName);
         GameObject originalGameObject = GameObject.Find(ip);
         GameObject child = originalGameObject.transform.GetChild(1).gameObject;
         GameObject child2 = child.transform.GetChild(0).gameObject;
-        esteItem.transform.position = child2.transform.position;
-        esteItem.transform.parent = child2.transform;
-        isItemInHands = true;
+        GameObject temp2 = Instantiate(ItensTOSpawn[1], child2.transform.parent);
+        temp2.transform.position = child2.transform.position;
         Despertador.tagNotToAttach = ip;
+        GameObject temp = GameObject.Find(ObjectName);
+        Destroy(temp);
 
     }
 
@@ -49,9 +51,8 @@ public class ItensScript : NetworkBehaviour
         if(other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") 
             || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
-            PlayerInterations.isInItemRange = true;
             ip = other.gameObject.name;
-            PlayerInterations.NomeDoRelogio = ObjectName;
+            TakeItem();
             Debug.Log(ip);
         }
     }
@@ -60,7 +61,7 @@ public class ItensScript : NetworkBehaviour
     {
         if (other.CompareTag("Cientista Verde") || other.CompareTag("Cientista Vermelho") || other.CompareTag("Cientista Amarelo") || other.CompareTag("Cientista Azul"))
         {
-            PlayerInterations.isInItemRange = false;
+
         }
     }
 
